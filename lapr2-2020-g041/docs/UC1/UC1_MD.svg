@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="445px" preserveAspectRatio="none" style="width:1326px;height:445px;" version="1.1" viewBox="0 0 1326 445" width="1326px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f14tde53kmupv0" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0" />
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" />
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" />
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal" />
+        </filter>
+    </defs>
+    <g>
+        <!--class Platform-->
+        <rect fill="#FEFECE" filter="url(#f14tde53kmupv0)" height="53.8359" id="Platform" style="stroke: #A80036; stroke-width: 1.5;" width="112" x="6" y="210.216" />
+        <ellipse cx="36.3" cy="226.216" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M39.0656,222.091 Q39.2219,221.8723 39.4094,221.7629 Q39.5969,221.6535 39.8156,221.6535 Q40.1906,221.6535 40.425,221.9113 Q40.6594,222.1691 40.6594,222.7785 L40.6594,224.2316 Q40.6594,224.841 40.425,225.1066 Q40.1906,225.3723 39.8156,225.3723 Q39.4719,225.3723 39.2688,225.1691 Q39.0656,224.9816 38.9563,224.466 Q38.9094,224.1066 38.7219,223.9191 Q38.3938,223.5441 37.7844,223.3254 Q37.175,223.1066 36.55,223.1066 Q35.7844,223.1066 35.1516,223.4348 Q34.5188,223.7629 34.0266,224.5129 Q33.5344,225.2629 33.5344,226.2941 L33.5344,227.3879 Q33.5344,228.6223 34.425,229.4426 Q35.3156,230.2629 36.9094,230.2629 Q37.8469,230.2629 38.5031,230.0129 Q38.8938,229.8566 39.3156,229.4191 Q39.5813,229.1535 39.7297,229.0754 Q39.8781,228.9973 40.0813,228.9973 Q40.4094,228.9973 40.6672,229.2551 Q40.925,229.5129 40.925,229.8566 Q40.925,230.2004 40.5813,230.6066 Q40.0813,231.1848 39.2844,231.5129 Q38.2063,231.966 36.9094,231.966 Q35.3938,231.966 34.1906,231.341 Q33.2063,230.841 32.5188,229.7707 Q31.8313,228.7004 31.8313,227.4191 L31.8313,226.2629 Q31.8313,224.9348 32.4484,223.7863 Q33.0656,222.6379 34.1594,222.0207 Q35.2531,221.4035 36.4875,221.4035 Q37.2219,221.4035 37.8703,221.5676 Q38.5188,221.7316 39.0656,222.091 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="46" x="53.7" y="231.1262">Platform</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="117" y1="242.216" y2="242.216" />
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="251.634" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="86" x="26" y="257.6349">String designation</text>
+        <!--class Organization-->
+        <rect fill="#FEFECE" filter="url(#f14tde53kmupv0)" height="53.8359" id="Organization" style="stroke: #A80036; stroke-width: 1.5;" width="112" x="679" y="183.216" />
+        <ellipse cx="698.95" cy="199.216" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M701.7156,195.091 Q701.8719,194.8723 702.0594,194.7629 Q702.2469,194.6535 702.4656,194.6535 Q702.8406,194.6535 703.075,194.9113 Q703.3094,195.1691 703.3094,195.7785 L703.3094,197.2316 Q703.3094,197.841 703.075,198.1066 Q702.8406,198.3723 702.4656,198.3723 Q702.1219,198.3723 701.9188,198.1691 Q701.7156,197.9816 701.6063,197.466 Q701.5594,197.1066 701.3719,196.9191 Q701.0438,196.5441 700.4344,196.3254 Q699.825,196.1066 699.2,196.1066 Q698.4344,196.1066 697.8016,196.4348 Q697.1688,196.7629 696.6766,197.5129 Q696.1844,198.2629 696.1844,199.2941 L696.1844,200.3879 Q696.1844,201.6223 697.075,202.4426 Q697.9656,203.2629 699.5594,203.2629 Q700.4969,203.2629 701.1531,203.0129 Q701.5438,202.8566 701.9656,202.4191 Q702.2313,202.1535 702.3797,202.0754 Q702.5281,201.9973 702.7313,201.9973 Q703.0594,201.9973 703.3172,202.2551 Q703.575,202.5129 703.575,202.8566 Q703.575,203.2004 703.2313,203.6066 Q702.7313,204.1848 701.9344,204.5129 Q700.8563,204.966 699.5594,204.966 Q698.0438,204.966 696.8406,204.341 Q695.8563,203.841 695.1688,202.7707 Q694.4813,201.7004 694.4813,200.4191 L694.4813,199.2629 Q694.4813,197.9348 695.0984,196.7863 Q695.7156,195.6379 696.8094,195.0207 Q697.9031,194.4035 699.1375,194.4035 Q699.8719,194.4035 700.5203,194.5676 Q701.1688,194.7316 701.7156,195.091 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="69" x="714.05" y="204.1262">Organization</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="680" x2="790" y1="215.216" y2="215.216" />
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="687" y="224.634" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="86" x="699" y="230.6349">String designation</text>
+        <!--class User-->
+        <rect fill="#FEFECE" filter="url(#f14tde53kmupv0)" height="81.5078" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="107" x="1208" y="175.216" />
+        <ellipse cx="1244.6" cy="191.216" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M1247.3656,187.091 Q1247.5219,186.8723 1247.7094,186.7629 Q1247.8969,186.6535 1248.1156,186.6535 Q1248.4906,186.6535 1248.725,186.9113 Q1248.9594,187.1691 1248.9594,187.7785 L1248.9594,189.2316 Q1248.9594,189.841 1248.725,190.1066 Q1248.4906,190.3723 1248.1156,190.3723 Q1247.7719,190.3723 1247.5688,190.1691 Q1247.3656,189.9816 1247.2563,189.466 Q1247.2094,189.1066 1247.0219,188.9191 Q1246.6938,188.5441 1246.0844,188.3254 Q1245.475,188.1066 1244.85,188.1066 Q1244.0844,188.1066 1243.4516,188.4348 Q1242.8188,188.7629 1242.3266,189.5129 Q1241.8344,190.2629 1241.8344,191.2941 L1241.8344,192.3879 Q1241.8344,193.6223 1242.725,194.4426 Q1243.6156,195.2629 1245.2094,195.2629 Q1246.1469,195.2629 1246.8031,195.0129 Q1247.1938,194.8566 1247.6156,194.4191 Q1247.8813,194.1535 1248.0297,194.0754 Q1248.1781,193.9973 1248.3813,193.9973 Q1248.7094,193.9973 1248.9672,194.2551 Q1249.225,194.5129 1249.225,194.8566 Q1249.225,195.2004 1248.8813,195.6066 Q1248.3813,196.1848 1247.5844,196.5129 Q1246.5063,196.966 1245.2094,196.966 Q1243.6938,196.966 1242.4906,196.341 Q1241.5063,195.841 1240.8188,194.7707 Q1240.1313,193.7004 1240.1313,192.4191 L1240.1313,191.2629 Q1240.1313,189.9348 1240.7484,188.7863 Q1241.3656,187.6379 1242.4594,187.0207 Q1243.5531,186.4035 1244.7875,186.4035 Q1245.5219,186.4035 1246.1703,186.5676 Q1246.8188,186.7316 1247.3656,187.091 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27" x="1263.4" y="196.1262">User</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1209" x2="1314" y1="207.216" y2="207.216" />
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1216" y="216.634" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1228" y="222.6349">String name</text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1216" y="230.4699" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="1228" y="236.4709">String email</text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1216" y="244.3058" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="1228" y="250.3068">String password</text>
+        <!--class Collaborator-->
+        <rect fill="#FEFECE" filter="url(#f14tde53kmupv0)" height="67.6719" id="Collaborator" style="stroke: #A80036; stroke-width: 1.5;" width="100" x="997" y="79.216" />
+        <ellipse cx="1012" cy="95.216" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M1014.7656,91.091 Q1014.9219,90.8723 1015.1094,90.7629 Q1015.2969,90.6535 1015.5156,90.6535 Q1015.8906,90.6535 1016.125,90.9113 Q1016.3594,91.1691 1016.3594,91.7785 L1016.3594,93.2316 Q1016.3594,93.841 1016.125,94.1066 Q1015.8906,94.3723 1015.5156,94.3723 Q1015.1719,94.3723 1014.9688,94.1691 Q1014.7656,93.9816 1014.6563,93.466 Q1014.6094,93.1066 1014.4219,92.9191 Q1014.0938,92.5441 1013.4844,92.3254 Q1012.875,92.1066 1012.25,92.1066 Q1011.4844,92.1066 1010.8516,92.4348 Q1010.2188,92.7629 1009.7266,93.5129 Q1009.2344,94.2629 1009.2344,95.2941 L1009.2344,96.3879 Q1009.2344,97.6223 1010.125,98.4426 Q1011.0156,99.2629 1012.6094,99.2629 Q1013.5469,99.2629 1014.2031,99.0129 Q1014.5938,98.8566 1015.0156,98.4191 Q1015.2813,98.1535 1015.4297,98.0754 Q1015.5781,97.9973 1015.7813,97.9973 Q1016.1094,97.9973 1016.3672,98.2551 Q1016.625,98.5129 1016.625,98.8566 Q1016.625,99.2004 1016.2813,99.6066 Q1015.7813,100.1848 1014.9844,100.5129 Q1013.9063,100.966 1012.6094,100.966 Q1011.0938,100.966 1009.8906,100.341 Q1008.9063,99.841 1008.2188,98.7707 Q1007.5313,97.7004 1007.5313,96.4191 L1007.5313,95.2629 Q1007.5313,93.9348 1008.1484,92.7863 Q1008.7656,91.6379 1009.8594,91.0207 Q1010.9531,90.4035 1012.1875,90.4035 Q1012.9219,90.4035 1013.5703,90.5676 Q1014.2188,90.7316 1014.7656,91.091 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="68" x="1026" y="100.1262">Collaborator</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="998" x2="1096" y1="111.216" y2="111.216" />
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1005" y="120.634" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1017" y="126.6349">String name</text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1005" y="134.4699" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="1017" y="140.4709">String email</text>
+        <!--class Manager-->
+        <rect fill="#FEFECE" filter="url(#f14tde53kmupv0)" height="67.6719" id="Manager" style="stroke: #A80036; stroke-width: 1.5;" width="83" x="1005.5" y="182.216" />
+        <ellipse cx="1021.85" cy="198.216" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M1024.6156,194.091 Q1024.7719,193.8723 1024.9594,193.7629 Q1025.1469,193.6535 1025.3656,193.6535 Q1025.7406,193.6535 1025.975,193.9113 Q1026.2094,194.1691 1026.2094,194.7785 L1026.2094,196.2316 Q1026.2094,196.841 1025.975,197.1066 Q1025.7406,197.3723 1025.3656,197.3723 Q1025.0219,197.3723 1024.8188,197.1691 Q1024.6156,196.9816 1024.5063,196.466 Q1024.4594,196.1066 1024.2719,195.9191 Q1023.9438,195.5441 1023.3344,195.3254 Q1022.725,195.1066 1022.1,195.1066 Q1021.3344,195.1066 1020.7016,195.4348 Q1020.0688,195.7629 1019.5766,196.5129 Q1019.0844,197.2629 1019.0844,198.2941 L1019.0844,199.3879 Q1019.0844,200.6223 1019.975,201.4426 Q1020.8656,202.2629 1022.4594,202.2629 Q1023.3969,202.2629 1024.0531,202.0129 Q1024.4438,201.8566 1024.8656,201.4191 Q1025.1313,201.1535 1025.2797,201.0754 Q1025.4281,200.9973 1025.6313,200.9973 Q1025.9594,200.9973 1026.2172,201.2551 Q1026.475,201.5129 1026.475,201.8566 Q1026.475,202.2004 1026.1313,202.6066 Q1025.6313,203.1848 1024.8344,203.5129 Q1023.7563,203.966 1022.4594,203.966 Q1020.9438,203.966 1019.7406,203.341 Q1018.7563,202.841 1018.0688,201.7707 Q1017.3813,200.7004 1017.3813,199.4191 L1017.3813,198.2629 Q1017.3813,196.9348 1017.9984,195.7863 Q1018.6156,194.6379 1019.7094,194.0207 Q1020.8031,193.4035 1022.0375,193.4035 Q1022.7719,193.4035 1023.4203,193.5676 Q1024.0688,193.7316 1024.6156,194.091 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48" x="1036.15" y="203.1262">Manager</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1006.5" x2="1087.5" y1="214.216" y2="214.216" />
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1013.5" y="223.634" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1025.5" y="229.6349">String name</text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1013.5" y="237.4699" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="1025.5" y="243.4709">String email</text>
+        <!--class Administrator-->
+        <rect fill="#FEFECE" filter="url(#f14tde53kmupv0)" height="40" id="Administrator" style="stroke: #A80036; stroke-width: 1.5;" width="105" x="275" y="274.216" />
+        <ellipse cx="290" cy="290.216" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M292.7656,286.091 Q292.9219,285.8723 293.1094,285.7629 Q293.2969,285.6535 293.5156,285.6535 Q293.8906,285.6535 294.125,285.9113 Q294.3594,286.1691 294.3594,286.7785 L294.3594,288.2316 Q294.3594,288.841 294.125,289.1066 Q293.8906,289.3723 293.5156,289.3723 Q293.1719,289.3723 292.9688,289.1691 Q292.7656,288.9816 292.6563,288.466 Q292.6094,288.1066 292.4219,287.9191 Q292.0938,287.5441 291.4844,287.3254 Q290.875,287.1066 290.25,287.1066 Q289.4844,287.1066 288.8516,287.4348 Q288.2188,287.7629 287.7266,288.5129 Q287.2344,289.2629 287.2344,290.2941 L287.2344,291.3879 Q287.2344,292.6223 288.125,293.4426 Q289.0156,294.2629 290.6094,294.2629 Q291.5469,294.2629 292.2031,294.0129 Q292.5938,293.8566 293.0156,293.4191 Q293.2813,293.1535 293.4297,293.0754 Q293.5781,292.9973 293.7813,292.9973 Q294.1094,292.9973 294.3672,293.2551 Q294.625,293.5129 294.625,293.8566 Q294.625,294.2004 294.2813,294.6066 Q293.7813,295.1848 292.9844,295.5129 Q291.9063,295.966 290.6094,295.966 Q289.0938,295.966 287.8906,295.341 Q286.9063,294.841 286.2188,293.7707 Q285.5313,292.7004 285.5313,291.4191 L285.5313,290.2629 Q285.5313,288.9348 286.1484,287.7863 Q286.7656,286.6379 287.8594,286.0207 Q288.9531,285.4035 290.1875,285.4035 Q290.9219,285.4035 291.5703,285.5676 Q292.2188,285.7316 292.7656,286.091 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="73" x="304" y="295.1262">Administrator</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="276" x2="379" y1="306.216" y2="306.216" />
+        <!--class ExternalPasswordGeneratorAlgorithm-->
+        <rect fill="#FEFECE" filter="url(#f14tde53kmupv0)" height="40" id="ExternalPasswordGeneratorAlgorithm" style="stroke: #A80036; stroke-width: 1.5;" width="239" x="410" y="352.216" />
+        <ellipse cx="425" cy="368.216" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M427.7656,364.091 Q427.9219,363.8723 428.1094,363.7629 Q428.2969,363.6535 428.5156,363.6535 Q428.8906,363.6535 429.125,363.9113 Q429.3594,364.1691 429.3594,364.7785 L429.3594,366.2316 Q429.3594,366.841 429.125,367.1066 Q428.8906,367.3723 428.5156,367.3723 Q428.1719,367.3723 427.9688,367.1691 Q427.7656,366.9816 427.6563,366.466 Q427.6094,366.1066 427.4219,365.9191 Q427.0938,365.5441 426.4844,365.3254 Q425.875,365.1066 425.25,365.1066 Q424.4844,365.1066 423.8516,365.4348 Q423.2188,365.7629 422.7266,366.5129 Q422.2344,367.2629 422.2344,368.2941 L422.2344,369.3879 Q422.2344,370.6223 423.125,371.4426 Q424.0156,372.2629 425.6094,372.2629 Q426.5469,372.2629 427.2031,372.0129 Q427.5938,371.8566 428.0156,371.4191 Q428.2813,371.1535 428.4297,371.0754 Q428.5781,370.9973 428.7813,370.9973 Q429.1094,370.9973 429.3672,371.2551 Q429.625,371.5129 429.625,371.8566 Q429.625,372.2004 429.2813,372.6066 Q428.7813,373.1848 427.9844,373.5129 Q426.9063,373.966 425.6094,373.966 Q424.0938,373.966 422.8906,373.341 Q421.9063,372.841 421.2188,371.7707 Q420.5313,370.7004 420.5313,369.4191 L420.5313,368.2629 Q420.5313,366.9348 421.1484,365.7863 Q421.7656,364.6379 422.8594,364.0207 Q423.9531,363.4035 425.1875,363.4035 Q425.9219,363.4035 426.5703,363.5676 Q427.2188,363.7316 427.7656,364.091 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="207" x="439" y="373.1262">ExternalPasswordGeneratorAlgorithm</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="411" x2="648" y1="384.216" y2="384.216" />
+        <!--link Platform to Organization-->
+        <path d="M118.298,232.275 C128.183,231.502 138.392,230.775 148,230.216 C342.863,218.873 574.579,213.302 678.616,211.22 " fill="none" id="Platform-Organization" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82" x="280" y="216.7111">has registered</text>
+        <polygon fill="#000000" points="365,209.8918,371,212.8918,365,215.8918,365,209.8918" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="125.9596" y="246.1951">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="666.0715" y="225.9018">*</text>
+        <!--link Platform to Administrator-->
+        <path d="M118.238,249.165 C164.417,259.154 229.787,273.295 274.915,283.057 " fill="none" id="Platform-Administrator" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82" x="149" y="252.7111">has registered</text>
+        <polygon fill="#000000" points="234,245.8918,240,248.8918,234,251.8918,234,245.8918" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="125.8919" y="265.2491">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="262.1687" y="296.1326">*</text>
+        <!--link Platform to User-->
+        <path d="M79.3019,210.063 C115.817,153.076 210.167,26.216 326.5,26.216 C326.5,26.216 326.5,26.216 1048,26.216 C1136.58,26.216 1205.18,119.108 1238.43,174.989 " fill="none" id="Platform-User" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82" x="687.5" y="22.7111">has registered</text>
+        <polygon fill="#000000" points="772.5,15.8918,778.5,18.8918,772.5,21.8918,772.5,15.8918" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="75.4936" y="199.4886">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="1229.195" y="164.4008">*</text>
+        <!--link Platform to ExternalPasswordGeneratorAlgorithm-->
+        <path d="M92.0053,264.414 C107.548,277.625 127.65,292.669 148,302.216 C230.395,340.8722 332.166,358.2181 409.719,365.9828 " fill="none" id="Platform-ExternalPasswordGeneratorAlgorithm" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="48" x="166" y="298.7111">resort to</text>
+        <polygon fill="#000000" points="217,291.8918,223,294.8918,217,297.8918,217,291.8918" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="90.8033" y="285.6651">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="394.8213" y="379.6024">1</text>
+        <!--link Organization to Collaborator-->
+        <path d="M791.065,192.986 C849.437,174.721 940.775,146.141 996.811,128.607 " fill="none" id="Organization-Collaborator" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="877" y="136.7111">has</text>
+        <polygon fill="#000000" points="901,129.8918,907,132.8918,901,135.8918,901,129.8918" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="799.069" y="205.2755">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="981.9254" y="145.5876">1</text>
+        <!--link Organization to Manager-->
+        <path d="M791.065,211.282 C852.482,212.47 950.393,214.366 1005.282,215.428 " fill="none" id="Organization-Manager" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="877" y="208.7111">has</text>
+        <polygon fill="#000000" points="901,201.8918,907,204.8918,901,207.8918,901,201.8918" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="799.069" y="226.03">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="990.5102" y="230.2211">1</text>
+        <!--link Collaborator to User-->
+        <path d="M1097.02,136.976 C1130.11,153.017 1173.77,174.175 1207.64,190.593 " fill="none" id="Collaborator-User" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36" x="1128" y="149.7111">act as</text>
+        <polygon fill="#000000" points="1167,142.8918,1173,145.8918,1167,148.8918,1167,142.8918" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22" x="1104.8382" y="154.5839">0..1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="1192.9323" y="201.7767">1</text>
+        <!--link Manager to User-->
+        <path d="M1088.72,216.216 C1122.59,216.216 1171.02,216.216 1207.83,216.216 " fill="none" id="Manager-User" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36" x="1128" y="212.7111">act as</text>
+        <polygon fill="#000000" points="1167,205.8918,1173,208.8918,1167,211.8918,1167,205.8918" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22" x="1096.4633" y="230.936">0..1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="1193.1478" y="230.8428">1</text>
+        <!--link Administrator to User-->
+        <path d="M380.245,297.12 C504.755,303.086 830.497,312.6176 1097,267.216 C1134.96,260.749 1176.35,247.774 1207.99,236.531 " fill="none" id="Administrator-User" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36" x="869.5" y="282.7111">act as</text>
+        <polygon fill="#000000" points="908.5,275.8918,914.5,278.8918,908.5,281.8918,908.5,275.8918" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22" x="388.0139" y="311.9655">0..1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="1192.973" y="254.0672">1</text>
+        <!--link Administrator to Organization-->
+        <path d="M380.297,287.583 C464.377,276.696 623.755,255.516 649,248.216 C659.093,245.297 669.541,241.411 679.512,237.237 " fill="none" id="Administrator-Organization" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="50" x="498" y="244.7111">registers</text>
+        <polygon fill="#000000" points="551,237.8918,557,240.8918,551,243.8918,551,237.8918" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="387.8619" y="301.2854">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="665.995" y="255.9137">*</text>
+        <!--link ExternalPasswordGeneratorAlgorithm to User-->
+        <path d="M628.357,392.2528 C763,414.2833 1008,433.9783 1178,329.216 C1205.61,312.2039 1226.86,282.205 1240.87,257.39 " fill="none" id="ExternalPasswordGeneratorAlgorithm-User" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="822" y="397.7111">generates password to</text>
+        <polygon fill="#000000" points="956,390.8918,962,393.8918,956,396.8918,956,390.8918" style="stroke: #000000; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="648.1762" y="413.6827">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="1232.4728" y="278.1695">*</text>
+        <!--
+@startuml
+
+hide methods
+left to right direction
+
+class Platform {
+  -String designation
+}
+
+class Organization {
+  -String designation
+}
+
+class User {
+  -String name
+  -String email
+  -String password
+}
+
+class Collaborator {
+  -String name
+  -String email
+}
+
+class Manager {
+  -String name
+  -String email
+}
+
+class Administrator {
+
+}
+
+class ExternalPasswordGeneratorAlgorithm {
+}
+
+Platform "1" - - "*" Organization : has registered >
+Platform "1" - - "*" Administrator : has registered >
+Platform "1" - - "*" User : has registered >
+Platform "1" - - "1" ExternalPasswordGeneratorAlgorithm : resort to >
+
+Organization "1" - - "1" Collaborator: has >
+Organization "1" - - "1" Manager: has >
+
+Collaborator "0..1" - - "1" User : act as >
+
+Manager "0..1" - - "1" User : act as >
+
+Administrator "0..1" - - "1" User : act as >
+Administrator "1" - - "*" Organization : registers >
+
+ExternalPasswordGeneratorAlgorithm "1" - - "*" User : generates password to >
+@enduml
+
+PlantUML version 1.2018.14(Fri Dec 21 16:33:16 GMT 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) Client VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+-->
+    </g>
+</svg>

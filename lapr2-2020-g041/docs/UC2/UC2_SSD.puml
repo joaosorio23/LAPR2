@@ -1,0 +1,23 @@
+@startuml
+autonumber
+actor "Collaborator of the Organization" as CO
+
+activate CO
+CO -> ":System" : Starts the registration of a Freelancer
+activate ":System"
+":System" --> CO : Requests the data that characterizes the freelancer (id, name, level of \nexpertise, e­mail, NIF, bank account (IBAN), address and country)
+deactivate ":System"
+
+
+CO -> ":System" : Enters the requested data
+activate ":System"
+":System" --> CO : Displays the data, asking you to confirm it
+deactivate ":System"
+
+CO -> ":System" : Confirms
+activate ":System"
+":System" --> CO : Success of the operation
+deactivate ":System"
+
+deactivate CO
+@enduml

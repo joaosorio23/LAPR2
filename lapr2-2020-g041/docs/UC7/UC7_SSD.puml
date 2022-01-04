@@ -1,0 +1,16 @@
+@startuml
+autonumber
+actor "Collaborator" as COLAB
+
+activate COLAB
+COLAB -> ":System" : Starts the loading file process.
+activate ":System"
+":System" --> COLAB : Asks the collaborator for the file name.
+deactivate ":System"
+COLAB -> ":System" : Enters the file name.
+activate ":System"
+":System" --> COLAB : Finds the file**, **saves its content and informs \nthe collaborator of the success of the operation.
+deactivate ":System"
+
+deactivate COLAB
+@enduml

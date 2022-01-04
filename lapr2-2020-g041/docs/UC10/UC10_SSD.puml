@@ -1,0 +1,14 @@
+@startuml
+autonumber
+actor "Manager/Collaborator" as MC
+
+activate MC
+MC -> ":System" : starts the process of Analyse Freelancer Payments
+activate ":System"
+":System" --> MC : shows the statistics related to freelancer payments
+deactivate ":System"
+
+
+
+deactivate MC
+@enduml

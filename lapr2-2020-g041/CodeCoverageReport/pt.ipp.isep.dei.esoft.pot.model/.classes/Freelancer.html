@@ -1,0 +1,345 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Freelancer</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.model</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Freelancer (pt.ipp.isep.dei.esoft.pot.model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Freelancer</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    44,4%
+  </span>
+  <span class="absValue">
+    (8/ 18)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    49,2%
+  </span>
+  <span class="absValue">
+    (29/ 59)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.model;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.enun.Country;
+<i>4</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.enun.LevelOfExpertise;
+<i>5</i>&nbsp;
+<i>6</i>&nbsp;import java.io.Serializable;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;/**
+<i>9</i>&nbsp; * The type Freelancer.
+<i>10</i>&nbsp; *
+<i>11</i>&nbsp; * @author Berkelios
+<i>12</i>&nbsp; */
+<i>13</i>&nbsp;public class Freelancer implements Serializable {
+<i>14</i>&nbsp;
+<i>15</i>&nbsp;    /**
+<i>16</i>&nbsp;     * The Freelancer&#39;s ID.
+<i>17</i>&nbsp;     */
+<i>18</i>&nbsp;    private String m_strId;
+<i>19</i>&nbsp;    /**
+<i>20</i>&nbsp;     * The Freelancer&#39;s Name.
+<i>21</i>&nbsp;     */
+<i>22</i>&nbsp;    private String m_strName;
+<i>23</i>&nbsp;    /**
+<i>24</i>&nbsp;     * The Freelancer&#39;s Email.
+<i>25</i>&nbsp;     */
+<i>26</i>&nbsp;    private String m_strEmail;
+<i>27</i>&nbsp;    /**
+<i>28</i>&nbsp;     * The Freelancer&#39;s NIF.
+<i>29</i>&nbsp;     */
+<i>30</i>&nbsp;    private double m_intNif;
+<i>31</i>&nbsp;    /**
+<i>32</i>&nbsp;     * The Freelancer&#39;s IBAN.
+<i>33</i>&nbsp;     */
+<i>34</i>&nbsp;    private String m_douIban;
+<i>35</i>&nbsp;    /**
+<i>36</i>&nbsp;     * The Freelancer&#39;s Location.
+<i>37</i>&nbsp;     */
+<i>38</i>&nbsp;    private Location m_oLocal;
+<i>39</i>&nbsp;    /**
+<i>40</i>&nbsp;     * The Freelancer&#39;s Level of Expertise.
+<i>41</i>&nbsp;     */
+<i>42</i>&nbsp;    private LevelOfExpertise m_oLevel;
+<i>43</i>&nbsp;    private double m_douOverallPayments;
+<i>44</i>&nbsp;
+<i>45</i>&nbsp;    /**
+<i>46</i>&nbsp;     * Instantiates a new Freelancer.
+<i>47</i>&nbsp;     *
+<i>48</i>&nbsp;     * @param m_strId the ID
+<i>49</i>&nbsp;     * @param m_strName the Name
+<i>50</i>&nbsp;     * @param m_strEmail the Email
+<i>51</i>&nbsp;     * @param m_intNif the NIF
+<i>52</i>&nbsp;     * @param m_intIban the IBAN
+<i>53</i>&nbsp;     * @param m_oLocal the Location
+<i>54</i>&nbsp;     * @param m_oLevel the Level Of Expertise
+<i>55</i>&nbsp;     */
+<b class="fc"><i>56</i>&nbsp;    public Freelancer(String m_strId, String m_strName, String m_strEmail, String m_intNif, String m_intIban, Location m_oLocal, LevelOfExpertise m_oLevel) {</b>
+<b class="fc"><i>57</i>&nbsp;        this.m_oLocal = m_oLocal;</b>
+<b class="fc"><i>58</i>&nbsp;        this.m_oLevel = m_oLevel;</b>
+<b class="fc"><i>59</i>&nbsp;        setId(m_strId);</b>
+<b class="fc"><i>60</i>&nbsp;        setName(m_strName);</b>
+<b class="fc"><i>61</i>&nbsp;        setEmail(m_strEmail);</b>
+<b class="fc"><i>62</i>&nbsp;        setNif(m_intNif);</b>
+<b class="fc"><i>63</i>&nbsp;        setIban(m_intIban);</b>
+<b class="fc"><i>64</i>&nbsp;    }</b>
+<i>65</i>&nbsp;
+<i>66</i>&nbsp;    /**
+<i>67</i>&nbsp;     * New location.
+<i>68</i>&nbsp;     *
+<i>69</i>&nbsp;     * @param address the Address
+<i>70</i>&nbsp;     * @param country the Country
+<i>71</i>&nbsp;     * @return the Location
+<i>72</i>&nbsp;     */
+<i>73</i>&nbsp;    public static Location newLocation(String address, Country country) {
+<b class="nc"><i>74</i>&nbsp;        return new Location(address, country);</b>
+<i>75</i>&nbsp;    }
+<i>76</i>&nbsp;
+<i>77</i>&nbsp;    /**
+<i>78</i>&nbsp;     * Gets Level Of Expertise.
+<i>79</i>&nbsp;     *
+<i>80</i>&nbsp;     * @return the Level Of Expertise
+<i>81</i>&nbsp;     */
+<i>82</i>&nbsp;    public LevelOfExpertise getLevel() {
+<b class="fc"><i>83</i>&nbsp;        return this.m_oLevel;</b>
+<i>84</i>&nbsp;    }
+<i>85</i>&nbsp;
+<i>86</i>&nbsp;    /**
+<i>87</i>&nbsp;     * Gets ID.
+<i>88</i>&nbsp;     *
+<i>89</i>&nbsp;     * @return the ID
+<i>90</i>&nbsp;     */
+<i>91</i>&nbsp;    public String getId() {
+<b class="fc"><i>92</i>&nbsp;        return this.m_strId;</b>
+<i>93</i>&nbsp;    }
+<i>94</i>&nbsp;
+<i>95</i>&nbsp;    /**
+<i>96</i>&nbsp;     * Sets ID.
+<i>97</i>&nbsp;     *
+<i>98</i>&nbsp;     * @param m_strId the ID
+<i>99</i>&nbsp;     */
+<i>100</i>&nbsp;    public void setId(String m_strId) {
+<b class="fc"><i>101</i>&nbsp;        if (m_strId == null || m_strId.trim().isEmpty()) {</b>
+<b class="nc"><i>102</i>&nbsp;            throw new IllegalArgumentException(&quot;Invalid ID!&quot;);</b>
+<i>103</i>&nbsp;        }
+<b class="fc"><i>104</i>&nbsp;        this.m_strId = m_strId;</b>
+<b class="fc"><i>105</i>&nbsp;    }</b>
+<i>106</i>&nbsp;
+<i>107</i>&nbsp;    /**
+<i>108</i>&nbsp;     * Gets Name.
+<i>109</i>&nbsp;     *
+<i>110</i>&nbsp;     * @return the Name
+<i>111</i>&nbsp;     */
+<i>112</i>&nbsp;    public String getName() {
+<b class="nc"><i>113</i>&nbsp;        return this.m_strName;</b>
+<i>114</i>&nbsp;    }
+<i>115</i>&nbsp;
+<i>116</i>&nbsp;    /**
+<i>117</i>&nbsp;     * Sets Name.
+<i>118</i>&nbsp;     *
+<i>119</i>&nbsp;     * @param m_strName the Name
+<i>120</i>&nbsp;     */
+<i>121</i>&nbsp;    public void setName(String m_strName) {
+<b class="fc"><i>122</i>&nbsp;        if (m_strName == null || m_strName.trim().isEmpty()) {</b>
+<b class="nc"><i>123</i>&nbsp;            throw new IllegalArgumentException(&quot;Invalid Name!&quot;);</b>
+<i>124</i>&nbsp;        }
+<b class="fc"><i>125</i>&nbsp;        this.m_strName = m_strName;</b>
+<b class="fc"><i>126</i>&nbsp;    }</b>
+<i>127</i>&nbsp;
+<i>128</i>&nbsp;    /**
+<i>129</i>&nbsp;     * Gets Email.
+<i>130</i>&nbsp;     *
+<i>131</i>&nbsp;     * @return the Email
+<i>132</i>&nbsp;     */
+<i>133</i>&nbsp;    public String getEmail() {
+<b class="nc"><i>134</i>&nbsp;        return this.m_strEmail;</b>
+<i>135</i>&nbsp;    }
+<i>136</i>&nbsp;
+<i>137</i>&nbsp;    /**
+<i>138</i>&nbsp;     * Sets Email.
+<i>139</i>&nbsp;     *
+<i>140</i>&nbsp;     * @param m_strEmail the Email
+<i>141</i>&nbsp;     */
+<i>142</i>&nbsp;    public void setEmail(String m_strEmail) {
+<b class="fc"><i>143</i>&nbsp;        if (m_strEmail == null || m_strEmail.trim().isEmpty()) {</b>
+<b class="nc"><i>144</i>&nbsp;            throw new IllegalArgumentException(&quot;Invalid Email!&quot;);</b>
+<i>145</i>&nbsp;        }
+<b class="fc"><i>146</i>&nbsp;        this.m_strEmail = m_strEmail;</b>
+<b class="fc"><i>147</i>&nbsp;    }</b>
+<i>148</i>&nbsp;
+<i>149</i>&nbsp;    /**
+<i>150</i>&nbsp;     * Gets NIF.
+<i>151</i>&nbsp;     *
+<i>152</i>&nbsp;     * @return the NIF
+<i>153</i>&nbsp;     */
+<i>154</i>&nbsp;    public Double getNif() {
+<b class="nc"><i>155</i>&nbsp;        return this.m_intNif;</b>
+<i>156</i>&nbsp;    }
+<i>157</i>&nbsp;
+<i>158</i>&nbsp;    /**
+<i>159</i>&nbsp;     * Sets NIF.
+<i>160</i>&nbsp;     *
+<i>161</i>&nbsp;     * @param m_intNif the NIF
+<i>162</i>&nbsp;     */
+<i>163</i>&nbsp;    public void setNif(String m_intNif) {
+<b class="fc"><i>164</i>&nbsp;        if (!m_intNif.trim().isEmpty() &amp;&amp; !m_intNif.contains(&quot;.&quot;)) {</b>
+<i>165</i>&nbsp;            try {
+<b class="fc"><i>166</i>&nbsp;                this.m_intNif = Double.parseDouble(m_intNif);</b>
+<b class="nc"><i>167</i>&nbsp;            } catch (NumberFormatException nfe) {</b>
+<b class="nc"><i>168</i>&nbsp;                throw new IllegalArgumentException(&quot;Invalid NIF!&quot;);</b>
+<b class="fc"><i>169</i>&nbsp;            }</b>
+<i>170</i>&nbsp;        } else {
+<b class="nc"><i>171</i>&nbsp;            throw new IllegalArgumentException(&quot;Invalid NIF!&quot;);</b>
+<i>172</i>&nbsp;        }
+<b class="fc"><i>173</i>&nbsp;    }</b>
+<i>174</i>&nbsp;
+<i>175</i>&nbsp;    /**
+<i>176</i>&nbsp;     * Gets IBAN.
+<i>177</i>&nbsp;     *
+<i>178</i>&nbsp;     * @return the IBAN
+<i>179</i>&nbsp;     */
+<i>180</i>&nbsp;    public String getIban() {
+<b class="nc"><i>181</i>&nbsp;        return this.m_oLocal.getCountry().initialIBAN + this.m_douIban;</b>
+<i>182</i>&nbsp;    }
+<i>183</i>&nbsp;
+<i>184</i>&nbsp;    /**
+<i>185</i>&nbsp;     * Sets IBAN.
+<i>186</i>&nbsp;     *
+<i>187</i>&nbsp;     * @param m_douIban the IBAN
+<i>188</i>&nbsp;     */
+<i>189</i>&nbsp;    public void setIban(String m_douIban) {
+<b class="fc"><i>190</i>&nbsp;        if (!(m_douIban.trim().isEmpty()) &amp;&amp; !(m_douIban.contains(&quot;.&quot;))) {</b>
+<i>191</i>&nbsp;            try {
+<b class="fc"><i>192</i>&nbsp;                double verification = Double.parseDouble(m_douIban);</b>
+<b class="fc"><i>193</i>&nbsp;                this.m_douIban = m_douIban;</b>
+<b class="nc"><i>194</i>&nbsp;            } catch (NumberFormatException nfe) {</b>
+<b class="nc"><i>195</i>&nbsp;                throw new IllegalArgumentException(&quot;Invalid IBAN!&quot;);</b>
+<b class="fc"><i>196</i>&nbsp;            }</b>
+<i>197</i>&nbsp;        } else {
+<b class="nc"><i>198</i>&nbsp;            throw new IllegalArgumentException(&quot;Invalid IBAN!&quot;);</b>
+<i>199</i>&nbsp;        }
+<b class="fc"><i>200</i>&nbsp;    }</b>
+<i>201</i>&nbsp;
+<i>202</i>&nbsp;    /**
+<i>203</i>&nbsp;     * Gets IBAN.
+<i>204</i>&nbsp;     *
+<i>205</i>&nbsp;     * @return the IBAN
+<i>206</i>&nbsp;     */
+<i>207</i>&nbsp;    public Location getLocal() {
+<b class="nc"><i>208</i>&nbsp;        return m_oLocal;</b>
+<i>209</i>&nbsp;    }
+<i>210</i>&nbsp;
+<i>211</i>&nbsp;    /**
+<i>212</i>&nbsp;     * Gets Overall Payments.
+<i>213</i>&nbsp;     *
+<i>214</i>&nbsp;     * @return the Overall Payments
+<i>215</i>&nbsp;     */
+<i>216</i>&nbsp;    public Double getOverallPayments() {
+<b class="nc"><i>217</i>&nbsp;        return this.m_douOverallPayments;</b>
+<i>218</i>&nbsp;    }
+<i>219</i>&nbsp;
+<i>220</i>&nbsp;    /**
+<i>221</i>&nbsp;     * Sets Payment.
+<i>222</i>&nbsp;     *
+<i>223</i>&nbsp;     * @param m_douPayment the Payment
+<i>224</i>&nbsp;     */
+<i>225</i>&nbsp;    public void setPayment(double m_douPayment) {
+<i>226</i>&nbsp;        try {
+<b class="nc"><i>227</i>&nbsp;            this.m_douOverallPayments = this.m_douOverallPayments + m_douPayment;</b>
+<b class="nc"><i>228</i>&nbsp;        } catch (NumberFormatException nfe) {</b>
+<b class="nc"><i>229</i>&nbsp;            throw new IllegalArgumentException(&quot;Invalid Overall Payment!&quot;);</b>
+<b class="nc"><i>230</i>&nbsp;        }</b>
+<b class="nc"><i>231</i>&nbsp;    }</b>
+<i>232</i>&nbsp;
+<i>233</i>&nbsp;    /**
+<i>234</i>&nbsp;     * Checks if two Freelancers objects are equal.
+<i>235</i>&nbsp;     *
+<i>236</i>&nbsp;     * @param o object
+<i>237</i>&nbsp;     * @return boolean
+<i>238</i>&nbsp;     */
+<i>239</i>&nbsp;    @Override
+<i>240</i>&nbsp;    public boolean equals(Object o) {
+<b class="nc"><i>241</i>&nbsp;        if (this == o) {</b>
+<b class="nc"><i>242</i>&nbsp;            return true;</b>
+<i>243</i>&nbsp;        }
+<b class="nc"><i>244</i>&nbsp;        if (!(o instanceof Freelancer)) {</b>
+<b class="nc"><i>245</i>&nbsp;            return false;</b>
+<i>246</i>&nbsp;        }
+<b class="nc"><i>247</i>&nbsp;        Freelancer that = (Freelancer) o;</b>
+<b class="nc"><i>248</i>&nbsp;        return m_intNif == that.m_intNif</b>
+<b class="nc"><i>249</i>&nbsp;                &amp;&amp; m_douIban.equals(that.m_douIban)</b>
+<b class="nc"><i>250</i>&nbsp;                &amp;&amp; m_strId.equals(that.m_strId) &amp;&amp; m_strEmail.equals(that.m_strEmail);</b>
+<i>251</i>&nbsp;    }
+<i>252</i>&nbsp;
+<i>253</i>&nbsp;    /**
+<i>254</i>&nbsp;     * Textual Freelancer&#39;s Description.
+<i>255</i>&nbsp;     *
+<i>256</i>&nbsp;     * @return Textual Freelancer&#39;s Description
+<i>257</i>&nbsp;     */
+<i>258</i>&nbsp;    @Override
+<i>259</i>&nbsp;    public String toString() {
+<b class="nc"><i>260</i>&nbsp;        return String.format(&quot;ID: %s , Name: %s , Email: %s , NIF: %.0f , IBAN: %s - Local: %s - Level of Expertise: %s&quot;, this.m_strId, this.m_strName, this.m_strEmail, this.m_intNif, this.getIban(), this.m_oLocal.toString(), this.m_oLevel);</b>
+<i>261</i>&nbsp;    }
+<i>262</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+@startuml
+autonumber
+actor "Timer" as TM
+
+activate TM
+
+TM -> ":System" : starts the process of automatically sending the email to all the freelancers who have \n a mean task delay time (during the current year) that is higher than 3 hours and \n have a percentage of delays (during the current year) that is higher than the overall \n percentage of delays in the last day of every year
+activate ":System"
+deactivate ":System"
+
+deactivate TM
+
+
+@enduml

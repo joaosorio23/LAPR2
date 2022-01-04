@@ -1,0 +1,23 @@
+@startuml
+autonumber
+actor "Collaborator of the Organization" as COL
+
+activate COL
+COL -> ":System" : Starts the process of creating a Task
+activate ":System"
+":System" --> COL : Asks for the necessary data (i.e. id, brief description, time \nduration (in hours), cost per hour (in euros) and task category)
+deactivate ":System"
+
+COL -> ":System" : Enters the requested data.
+activate ":System"
+":System" --> COL : Displays the data, asking him to confirm it
+deactivate ":System"
+
+COL -> ":System" :  Confirms
+activate ":System"
+":System" --> COL :  Informs about the success of the operation
+deactivate ":System"
+
+deactivate COL
+
+@enduml

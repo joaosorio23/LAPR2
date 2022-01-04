@@ -1,0 +1,196 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: MenuCollaboratorOrganizationUI</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.ui.console.menus</a> ]
+</div>
+
+<h1>Coverage Summary for Class: MenuCollaboratorOrganizationUI (pt.ipp.isep.dei.esoft.pot.ui.console.menus)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">MenuCollaboratorOrganizationUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 19)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.ui.console.menus;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import javafx.event.ActionEvent;
+<i>4</i>&nbsp;import javafx.fxml.FXML;
+<i>5</i>&nbsp;import javafx.fxml.Initializable;
+<i>6</i>&nbsp;import javafx.scene.control.Label;
+<i>7</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.ApplicationPOT;
+<i>8</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.Alerts;
+<i>9</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.Stages;
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;import java.net.URL;
+<i>12</i>&nbsp;import java.util.ResourceBundle;
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;/**
+<i>15</i>&nbsp; * The type Menu Collaborator Organization UI.
+<i>16</i>&nbsp; *
+<i>17</i>&nbsp; * @author Berkelios
+<i>18</i>&nbsp; */
+<b class="nc"><i>19</i>&nbsp;public class MenuCollaboratorOrganizationUI implements Initializable {</b>
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;    /**
+<i>22</i>&nbsp;     * The Organization label.
+<i>23</i>&nbsp;     */
+<i>24</i>&nbsp;    @FXML
+<i>25</i>&nbsp;    public Label orgLabel;
+<i>26</i>&nbsp;    /**
+<i>27</i>&nbsp;     * The Name label.
+<i>28</i>&nbsp;     */
+<i>29</i>&nbsp;    @FXML
+<i>30</i>&nbsp;    public Label nameLabel;
+<i>31</i>&nbsp;
+<i>32</i>&nbsp;    /**
+<i>33</i>&nbsp;     * Initialize.
+<i>34</i>&nbsp;     *
+<i>35</i>&nbsp;     * @param location local
+<i>36</i>&nbsp;     * @param resources resources
+<i>37</i>&nbsp;     */
+<i>38</i>&nbsp;    @Override
+<i>39</i>&nbsp;    public void initialize(URL location, ResourceBundle resources) {
+<b class="nc"><i>40</i>&nbsp;        orgLabel.setText(&quot;Organization: &quot; + ApplicationPOT.getInstance().getPlatform().getOrganizationsRegister().getOrganizationByUserEmail((ApplicationPOT.getInstance().getCurrentSession().getUserEmail())).getDesignation());</b>
+<b class="nc"><i>41</i>&nbsp;        nameLabel.setText(&quot;Name: &quot; + ApplicationPOT.getInstance().getCurrentSession().getUserName());</b>
+<b class="nc"><i>42</i>&nbsp;    }</b>
+<i>43</i>&nbsp;
+<i>44</i>&nbsp;    /**
+<i>45</i>&nbsp;     * Register Freelancer Action.
+<i>46</i>&nbsp;     *
+<i>47</i>&nbsp;     * @param actionEvent the Action Event
+<i>48</i>&nbsp;     */
+<i>49</i>&nbsp;    @FXML
+<i>50</i>&nbsp;    public void registerFreelancerAction(ActionEvent actionEvent) {
+<b class="nc"><i>51</i>&nbsp;        Stages.newWindow(&quot;/fxml/useCases/RegisterFreelancerWindow.fxml&quot;, &quot;Register Freelancer&quot;, false);</b>
+<b class="nc"><i>52</i>&nbsp;    }</b>
+<i>53</i>&nbsp;
+<i>54</i>&nbsp;    /**
+<i>55</i>&nbsp;     * Create Task Action.
+<i>56</i>&nbsp;     *
+<i>57</i>&nbsp;     * @param actionEvent the Action Event
+<i>58</i>&nbsp;     */
+<i>59</i>&nbsp;    @FXML
+<i>60</i>&nbsp;    public void createTaskAction(ActionEvent actionEvent) {
+<b class="nc"><i>61</i>&nbsp;        Stages.newWindow(&quot;/fxml/useCases/CreateTaskWindow.fxml&quot;, &quot;Create Task&quot;, false);</b>
+<b class="nc"><i>62</i>&nbsp;    }</b>
+<i>63</i>&nbsp;
+<i>64</i>&nbsp;    /**
+<i>65</i>&nbsp;     * Freelancers Payments Action.
+<i>66</i>&nbsp;     *
+<i>67</i>&nbsp;     * @param event the Event
+<i>68</i>&nbsp;     */
+<i>69</i>&nbsp;    @FXML
+<i>70</i>&nbsp;    public void FreelancersPaymentsAction(ActionEvent event) {
+<b class="nc"><i>71</i>&nbsp;        Stages.newWindow(&quot;/fxml/useCases/AnalyseFreelancerPaymentsWindow.fxml&quot;, &quot;Analyse Freelancer Payments Statistics&quot;, false);</b>
+<b class="nc"><i>72</i>&nbsp;    }</b>
+<i>73</i>&nbsp;
+<i>74</i>&nbsp;    /**
+<i>75</i>&nbsp;     * Tasks Stats Action.
+<i>76</i>&nbsp;     *
+<i>77</i>&nbsp;     * @param event the Event
+<i>78</i>&nbsp;     */
+<i>79</i>&nbsp;    @FXML
+<i>80</i>&nbsp;    public void TasksStatsAction(ActionEvent event) {
+<b class="nc"><i>81</i>&nbsp;        Stages.newWindow(&quot;/fxml/useCases/AnalyseTasksStatisticsWindow.fxml&quot;, &quot;Analyse Tasks Statistics&quot;, false);</b>
+<b class="nc"><i>82</i>&nbsp;    }</b>
+<i>83</i>&nbsp;
+<i>84</i>&nbsp;    /**
+<i>85</i>&nbsp;     * Create Payment Transaction Action.
+<i>86</i>&nbsp;     *
+<i>87</i>&nbsp;     * @param actionEvent the Action Event
+<i>88</i>&nbsp;     */
+<i>89</i>&nbsp;    @FXML
+<i>90</i>&nbsp;    public void createPaymentTransactionAction(ActionEvent actionEvent) {
+<b class="nc"><i>91</i>&nbsp;        Stages.newWindow(&quot;/fxml/useCases/PaymentTransactionWindow.fxml&quot;, &quot;Create Payment Transaction&quot;, false);</b>
+<i>92</i>&nbsp;
+<b class="nc"><i>93</i>&nbsp;    }</b>
+<i>94</i>&nbsp;
+<i>95</i>&nbsp;    /**
+<i>96</i>&nbsp;     * Load Transactions File Action.
+<i>97</i>&nbsp;     *
+<i>98</i>&nbsp;     * @param actionEvent the Action Event
+<i>99</i>&nbsp;     */
+<i>100</i>&nbsp;    public void LoadTransactionsFileAction(ActionEvent actionEvent) {
+<b class="nc"><i>101</i>&nbsp;        Stages.newWindow(&quot;/fxml/useCases/LoadTransactionsFileWindow.fxml&quot;, &quot;Load File&quot;, false);</b>
+<b class="nc"><i>102</i>&nbsp;    }</b>
+<i>103</i>&nbsp;
+<i>104</i>&nbsp;    /**
+<i>105</i>&nbsp;     * Exit Action.
+<i>106</i>&nbsp;     *
+<i>107</i>&nbsp;     * @param actionEvent the Action Event
+<i>108</i>&nbsp;     */
+<i>109</i>&nbsp;    public void exitAction(ActionEvent actionEvent) {
+<b class="nc"><i>110</i>&nbsp;        Alerts.back(actionEvent, &quot;Do you really want to Log Out?&quot;);</b>
+<b class="nc"><i>111</i>&nbsp;        ApplicationPOT.getInstance().doLogout();</b>
+<b class="nc"><i>112</i>&nbsp;    }</b>
+<i>113</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

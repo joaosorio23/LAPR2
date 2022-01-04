@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1102px" preserveAspectRatio="none" style="width:589px;height:1102px;" version="1.1" viewBox="0 0 589 1102" width="589px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="fzkhn4j7ieibl" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0" />
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" />
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" />
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal" />
+        </filter>
+    </defs>
+    <g>
+        <ellipse cx="422.8449" cy="615.269" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="101.8449" ry="22.769" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="177" x="334.3449" y="620.5737">UC1 - Register Organization</text>
+        <ellipse cx="422.9525" cy="30.2905" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="96.9525" ry="21.7905" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="166" x="339.9525" y="35.5952">UC2 - Register Freelancer</text>
+        <ellipse cx="423.1143" cy="105.7229" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="76.6143" ry="17.7229" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="364.1143" y="111.0275">UC3 - Create Task</text>
+        <ellipse cx="423.205" cy="267.441" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="125.205" ry="27.441" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="228" x="309.205" y="272.7457">UC4 - Create Payment Transactions</text>
+        <ellipse cx="423.035" cy="536.307" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="89.535" ry="20.307" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="149" x="348.535" y="541.6117">UC5 - Set Payment Day</text>
+        <ellipse cx="423.0183" cy="1064.6037" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="121.0183" ry="26.6037" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="219" x="313.5183" y="1069.9083">UC6 - Make an Automatic Payment</text>
+        <ellipse cx="422.9418" cy="181.4884" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="105.4418" ry="23.4884" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="185" x="330.4418" y="186.793">UC7 - Load Transactions File</text>
+        <ellipse cx="423.2255" cy="704.5451" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="140.7255" ry="30.5451" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="261" x="292.7255" y="709.8498">UC8 - Freelancers Performance Statistics</text>
+        <ellipse cx="422.79" cy="452.658" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="131.29" ry="28.658" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="241" x="302.29" y="457.9627">UC9 - Task's Execution Time Statistics</text>
+        <ellipse cx="423.1999" cy="359.44" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="132.6999" ry="28.94" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="244" x="301.1999" y="364.7447">UC10 - Analyse Freelancers Payments</text>
+        <ellipse cx="423.0142" cy="891.4028" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="155.0142" ry="33.4028" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="291" x="277.5142" y="896.7075">UC11 - Notify delays to Freelancers (By email)</text>
+        <ellipse cx="422.9823" cy="796.6965" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="121.4823" ry="26.6965" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="220" x="312.9823" y="802.0012">UC12 - Send Email To Freelancers</text>
+        <!--entity ADM-->
+        <ellipse cx="107" cy="672" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;" />
+        <path d="M107,680 L107,707 M94,688 L120,688 M107,707 L94,722 M107,707 L120,722 " fill="none" filter="url(#fzkhn4j7ieibl)" style="stroke: #A80036; stroke-width: 2.0;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="83" x="65.5" y="743.5332">Administrator</text>
+        <!--entity MO-->
+        <ellipse cx="107" cy="420" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;" />
+        <path d="M107,428 L107,455 M94,436 L120,436 M107,455 L94,470 M107,455 L120,470 " fill="none" filter="url(#fzkhn4j7ieibl)" style="stroke: #A80036; stroke-width: 2.0;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="180" x="17" y="491.5332">Manager of the Organization</text>
+        <!--entity CO-->
+        <ellipse cx="107" cy="192" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;" />
+        <path d="M107,200 L107,227 M94,208 L120,208 M107,227 L94,242 M107,227 L120,242 " fill="none" filter="url(#fzkhn4j7ieibl)" style="stroke: #A80036; stroke-width: 2.0;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="202" x="6" y="263.5332">Collaborator of the Organization</text>
+        <!--entity TM-->
+        <ellipse cx="107" cy="946" fill="#FEFECE" filter="url(#fzkhn4j7ieibl)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;" />
+        <path d="M107,954 L107,981 M94,962 L120,962 M107,981 L94,996 M107,981 L120,996 " fill="none" filter="url(#fzkhn4j7ieibl)" style="stroke: #A80036; stroke-width: 2.0;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="36" x="89" y="1017.5332">Timer</text>
+        <path d="M295.5,960 L295.5,1002.7031 A0,0 0 0 0 295.5,1002.7031 L550.5,1002.7031 A0,0 0 0 0 550.5,1002.7031 L550.5,970 L540.5,960 L427,960 L423,925.069 L419,960 L295.5,960 A0,0 0 0 0 295.5,960 " fill="#FBFB77" filter="url(#fzkhn4j7ieibl)" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M540.5,960 L540.5,970 L550.5,970 L540.5,960 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="234" x="301.5" y="978.4951">This use case will be done automatically</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="167" x="301.5" y="994.8467">on the last day of every year.</text>
+        <!--link ADM to UC1-->
+        <path d="M148.67,691.916 C180.947,682.022 227.259,668.031 268,656.5 C294.705,648.941 324.127,641.011 350.036,634.161 " fill="none" id="ADM-UC1" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="355.17,632.806,345.4473,631.2348,350.3355,634.0818,347.4885,638.97,355.17,632.806" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link ADM to UC8-->
+        <path d="M148.728,704.5 C181.71,704.5 230.266,704.5 277.335,704.5 " fill="none" id="ADM-UC8" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="282.473,704.5,273.473,700.5,277.473,704.5,273.473,708.5,282.473,704.5" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link ADM to UC12-->
+        <path d="M148.729,716.88 C181.039,726.661 227.365,740.6 268,752.5 C292.29,759.613 318.777,767.231 342.827,774.095 " fill="none" id="ADM-UC12" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="347.92,775.548,340.3622,769.233,343.1117,774.1767,338.168,776.9262,347.92,775.548" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link MO to UC5-->
+        <path d="M197.114,478.77 C220.156,485.384 244.962,492.348 268,498.5 C296.428,506.091 327.954,513.965 355.038,520.564 " fill="none" id="MO-UC5" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="360.042,521.781,352.2419,515.7678,355.1836,520.5996,350.3517,523.5412,360.042,521.781" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link MO to UC9-->
+        <path d="M197.14,452.5 C224.821,452.5 255.986,452.5 286.097,452.5 " fill="none" id="MO-UC9" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="291.312,452.5,282.312,448.5,286.312,452.5,282.312,456.5,291.312,452.5" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link MO to UC10-->
+        <path d="M197.14,426.099 C241.572,412.939 294.982,397.12 338.599,384.202 " fill="none" id="MO-UC10" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="343.597,382.721,333.8316,381.4416,338.8029,384.141,336.1035,389.1122,343.597,382.721" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link CO to UC2-->
+        <path d="M141.621,181.682 C171.276,146.76 217.534,98.742 268,70.5 C289.267,58.6 314.166,50.15 337.667,44.19 " fill="none" id="CO-UC2" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="342.659,42.95,332.9618,41.2281,337.8053,44.1506,334.8828,48.994,342.659,42.95" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link CO to UC3-->
+        <path d="M179.446,181.905 C206.479,167.162 237.978,151.577 268,140.5 C295.969,130.181 327.961,122.313 355.513,116.677 " fill="none" id="CO-UC3" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="360.604,115.65,350.9908,113.5083,355.7027,116.6385,352.5725,121.3504,360.604,115.65" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link CO to UC4-->
+        <path d="M208.215,238.224 C241.01,242.715 277.627,247.729 311.159,252.321 " fill="none" id="CO-UC4" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="316.514,253.054,308.14,247.8697,311.5602,252.3755,307.0545,255.7957,316.514,253.054" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link CO to UC7-->
+        <path d="M208.215,210.776 C246.519,205.531 290.036,199.572 327.764,194.405 " fill="none" id="CO-UC7" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="332.809,193.714,323.3493,190.9727,327.8553,194.3927,324.4352,198.8986,332.809,193.714" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link CO to UC9-->
+        <path d="M134.982,267.151 C163.297,308.552 211.504,370.291 268,406.5 C284.105,416.822 302.629,424.914 321.12,431.231 " fill="none" id="CO-UC9" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="326.332,432.966,319.0558,426.3285,321.5879,431.387,316.5294,433.9191,326.332,432.966" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link CO to UC10-->
+        <path d="M178.113,267.166 C205.525,282.747 237.627,299.675 268,312.5 C288.59,321.194 311.34,329.042 332.892,335.724 " fill="none" id="CO-UC10" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="337.76,337.22,330.3316,330.7532,332.9805,335.7516,327.9821,338.4005,337.76,337.22" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link TM to UC6-->
+        <path d="M125.329,983.246 C165.695,994.3018 268.112,1022.3524 341.301,1042.3976 " fill="none" id="TM-UC6" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="346.518,1043.8267,338.8934,1037.5925,341.6954,1042.5067,336.7813,1045.3087,346.518,1043.8267" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link TM to UC11-->
+        <path d="M125.329,973.699 C162.242,963.471 251.045,938.866 321.935,919.225 " fill="none" id="TM-UC11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="327.008,917.82,317.2669,916.3668,322.1893,919.1543,319.4018,924.0767,327.008,917.82" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--
+@startuml
+
+usecase UC1 as "UC1 - Register Organization"
+usecase UC2 as "UC2 - Register Freelancer"
+usecase UC3 as "UC3 - Create Task"
+usecase UC4 as "UC4 - Create Payment Transactions"
+usecase UC5 as "UC5 - Set Payment Day"
+usecase UC6 as "UC6 - Make an Automatic Payment"
+usecase UC7 as "UC7 - Load Transactions File"
+usecase UC8 as "UC8 - Freelancers Performance Statistics"
+usecase UC9 as "UC9 - Task's Execution Time Statistics"
+usecase UC10 as "UC10 - Analyse Freelancers Payments"
+usecase UC11 as "UC11 - Notify delays to Freelancers (By email)"
+usecase UC12 as "UC12 - Send Email To Freelancers"
+
+actor "Administrator" as ADM
+actor "Manager of the Organization" as MO
+actor "Collaborator of the Organization" as CO
+actor "Timer" as TM
+
+note right of UC11
+This use case will be done automatically
+on the last day of every year.
+end note
+
+left to right direction
+ADM - ->(UC1)
+ADM - ->(UC8)
+ADM - ->(UC12)
+
+MO - ->(UC5)
+MO - ->(UC9)
+MO - ->(UC10)
+
+CO - ->(UC2)
+CO - ->(UC3)
+CO - ->(UC4)
+CO - ->(UC7)
+CO - ->(UC9)
+CO - ->(UC10)
+
+TM - ->(UC6)
+TM - ->(UC11)
+
+@enduml
+
+PlantUML version 1.2018.14(Fri Dec 21 16:33:16 GMT 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) Client VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+-->
+    </g>
+</svg>

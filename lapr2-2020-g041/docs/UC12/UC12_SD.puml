@@ -1,0 +1,20 @@
+@startuml
+
+autonumber
+
+participant ":MenuAdministratorUI" as UI
+participant "ctrl:SendEmailAutomaticallyTask" as T
+
+
+[o-> UI : SendEmailAction(event)
+activate UI
+
+UI -> T** : create()
+
+UI -> T : getFreelancerToSendEmailTo()
+activate T
+ref over T : SD_getFreelancerToSendEmailTo
+deactivate T
+
+
+@enduml

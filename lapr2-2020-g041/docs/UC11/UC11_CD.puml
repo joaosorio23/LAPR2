@@ -1,0 +1,130 @@
+@startuml
+
+abstract class TimerTask {
+  +run()
+  +schedule(task,d)
+}
+
+class SendEmailAutomaticallyTask {
+  +run()
+  +getFreelancerToSendEmailTo()
+  +reschedule()
+  +SendEmailAutomaticallyTask(timer, cal)
+}
+
+class Platform {
+  -String designation
+
+  +scheduleTimer()
+  +getOrganizationsRegister()
+  +getFreelancersRegister()
+  +getExternalEmailSenderAlgorithm()
+}
+
+class Organization {
+  -String designation
+
+  +getPaymentTransactionList()
+}
+
+class OrganizationsRegister{
+  +getOrganizationsList()
+  +calculateOverallPercentageOfDelays()
+  +getMean(id)
+  +getPercentage(id)
+}
+
+
+class PaymentTransaction {
+  -String id
+
+  +getFreelancer()
+  +getTask()
+}
+
+class Date{
+  +getYear()
+}
+
+class Calendar{
+  +get(Calendar.YEAR)
+  +getInstance()
+  +getTime()
+  +setTime(date)
+}
+
+class PaymentTransactionList{
+  +getPaymentTransactions()
+}
+
+
+class Task {
+  -String id
+  -String briefDescription
+  -Double timeDuration
+  -Double costPerHour
+  -String category
+
+  +getTaskExecution()
+}
+
+class TaskExecution {
+  -Date deadline
+  -Double delay
+  -String descQualityWork
+
+  +getDelay()
+  +getDate()
+}
+
+
+class FreelancerRegister {
+  +getFreelancers()
+}
+
+interface ExternalEmailSenderAlgorithm {
+  +sendEmail( EmailSender, email, Subject, Message)
+}
+
+
+class Freelancer {
+    -String id
+    -String name
+    -String email
+    -Integer NIF
+    -String IBAN
+    -double OverallPayments
+
+    +getEmail()
+    +getId()
+}
+
+
+
+TimerTask <|-- SendEmailAutomaticallyTask
+
+SendEmailAutomaticallyTask ..> Platform
+SendEmailAutomaticallyTask ..> Date
+SendEmailAutomaticallyTask ..> Calendar
+Platform ..> Date
+Platform ..> Calendar
+
+Platform "1" --> "1" ExternalEmailSenderAlgorithm: resort to
+Platform "1" --> "1" OrganizationsRegister: has
+OrganizationsRegister "1" --> "*" Organization: has registered
+Platform "1" --> "1" FreelancerRegister : has
+
+
+Organization "1" --> "1" PaymentTransactionList: has
+
+Freelancer "1" --> "*" Task: does
+PaymentTransaction "1" --> "1" Freelancer: related to
+PaymentTransaction "1" --> "1" Task: related to
+
+FreelancerRegister "1" --> "*" Freelancer: has
+PaymentTransactionList "1" --> "*" PaymentTransaction: has
+
+ExternalEmailSenderAlgorithm "1" --> "*" Freelancer: sends email
+
+Task "1" --> "0..1" TaskExecution : has
+@enduml

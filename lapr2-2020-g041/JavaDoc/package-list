@@ -1,0 +1,16 @@
+pt.ipp.isep.dei.esoft.apis.converter
+pt.ipp.isep.dei.esoft.apis.emails
+pt.ipp.isep.dei.esoft.apis.passwords
+pt.ipp.isep.dei.esoft.autorizacao
+pt.ipp.isep.dei.esoft.autorizacao.model
+pt.ipp.isep.dei.esoft.pot.controller
+pt.ipp.isep.dei.esoft.pot.controller.useCases
+pt.ipp.isep.dei.esoft.pot.model
+pt.ipp.isep.dei.esoft.pot.model.enun
+pt.ipp.isep.dei.esoft.pot.model.list
+pt.ipp.isep.dei.esoft.pot.model.load
+pt.ipp.isep.dei.esoft.pot.model.register
+pt.ipp.isep.dei.esoft.pot.ui
+pt.ipp.isep.dei.esoft.pot.ui.console
+pt.ipp.isep.dei.esoft.pot.ui.console.menus
+pt.ipp.isep.dei.esoft.pot.ui.console.useCases

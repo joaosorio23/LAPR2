@@ -1,0 +1,61 @@
+@startuml
+
+hide methods
+left to right direction
+
+class Platform {
+  -String designation
+}
+
+class Freelancer {
+  -String id
+  -String name
+  -String email
+  -Integer NIF
+  -String IBAN
+  -double OverallPayments
+}
+
+class Organization {
+  -String designation
+}
+
+class ExternalEmailSenderAlgorithm {
+
+}
+
+class Task {
+  -String id
+  -String briefDescription
+  -Double timeDuration
+  -Double costPerHour
+  -String category
+}
+
+class PaymentTransaction {
+  -String id
+}
+
+class TaskExecution{
+  -Date deadline
+  -Double delay
+  -String descQualityWork
+}
+
+Platform "1" -- "*" Organization : has registered >
+Platform "1" -- "*" Freelancer : has registered >
+Platform "1" -- "1" ExternalEmailSenderAlgorithm : resort to >
+
+Organization "1" -- "*" Task : has >
+Organization "1" -- "*" PaymentTransaction : has >
+
+ExternalEmailSenderAlgorithm "1" -- "*" Freelancer : sends email to >
+
+Task"1" -- "0..1" TaskExecution : has >
+
+Freelancer "1" -- "*" Task : does >
+
+PaymentTransaction "*" -- "1" Freelancer : to >
+PaymentTransaction "1" -- "1" Task : referent >
+
+@enduml

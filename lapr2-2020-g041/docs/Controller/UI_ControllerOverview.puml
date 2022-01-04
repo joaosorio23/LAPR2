@@ -1,0 +1,84 @@
+@startuml
+autonumber
+'hide footbox
+actor "User" as USER
+
+participant ":{MenuX}UI" as MUI
+participant ":{NameUC}UI" as NUI
+participant ":{NameUC}Controller" as NCTRL
+participant ":ApplicationPOT" as POT
+participant "app: ApplicationPOT" as _POT
+participant "plat: Platform" as PLAT
+
+note right of MUI
+Represents an instance of a UI class that
+presents various menu/functionality options
+to the user.
+end note
+
+note right of NUI
+Represents an instance of a specific UI class
+for the realization of a concrete use case.
+end note
+
+note right of NCTRL
+Represents an instance of a controller class
+responsible for decoupling a UI from the model.
+end note
+
+
+activate USER
+
+USER -> MUI : Select desired option
+activate MUI
+MUI --> NUI** : create()
+activate NUI
+NUI -> NCTRL** : create()
+activate NCTRL
+NCTRL -> POT : app = getInstance()
+note right
+Statistical method (singleton standard).
+end note
+activate POT
+deactivate POT
+NCTRL -> _POT : plat = getPlatform()
+activate _POT
+deactivate _POT
+deactivate NCTRL
+deactivate NUI
+MUI -> NUI : run()
+deactivate MUI
+activate NUI
+NUI --> USER : Request something
+deactivate NUI
+
+loop
+USER -> NUI : Do something
+activate NUI
+NUI -> NCTRL : methodX(...)
+note right
+Abstraction that represents the invocation of
+any method made available by the instances of
+{NomeUC} Controller
+end note
+activate NCTRL
+NCTRL -> POT : methodY(...)
+note right
+Abstraction that represents the invocation of
+any method made available by the application
+and/or model classes
+ end note 
+activate POT
+deactivate POT
+ref over POT,_POT,PLAT
+
+
+end ref
+deactivate NUI
+deactivate NCTRL
+end loop
+
+deactivate USER
+
+
+@enduml

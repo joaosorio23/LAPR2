@@ -1,0 +1,46 @@
+@startuml
+title UC1_SD_RegisterManagerAsUser
+autonumber
+
+participant "or:OrganizationsRegister" as ORGS
+participant "man:Manager" as MAN
+participant ":Platform" as PLAT
+participant "alg:ExternalPasswordGeneratorAlgorithm" as ALG << interface >>
+participant "aut:FacadeAuthorization" as AUT
+
+note over of ALG
+It is an instance of any class
+that implements this interface.
+end note
+
+ORGS -> ORGS: registerManagerAsUser(man)
+activate ORGS
+
+ORGS -> MAN: nameM = getName()
+activate MAN
+deactivate MAN
+ORGS -> MAN: emailM = getEmail()
+activate MAN
+deactivate MAN
+
+ORGS -> PLAT : alg=getExternalPasswordGeneratorAlgorithm()
+activate PLAT
+deactivate PLAT
+
+ORGS -> ALG: pwd = genaratePassword(nomeM, emailM)
+activate ALG
+deactivate ALG
+
+ORGS -> PLAT : aut = getFacadeAuthorization()
+activate PLAT
+deactivate PLAT
+
+ORGS -> AUT: registersUserWithRole(nameM,emailM,pwd,["MANAGER"])
+activate AUT
+deactivate AUT
+
+
+ORGS -> ORGS: sendEmail(String EmailSender, String EmailReceiver, String Subject, String message)
+
+deactivate ORGS
+@enduml

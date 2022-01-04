@@ -1,0 +1,50 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+hide attributes
+
+note left of ExternalPasswordGeneratorAlgorithm
+This interface will be targeted
+of multiple implementations,
+one for each external algorithm
+that has to be supported.
+end note
+
+interface ExternalPasswordGeneratorAlgorithm << interface >>
+{
+ +String genaratePassword(String name, String email)
+}
+
+
+class ExternalPasswordGeneratorAlgorithmAdapter1
+{
++String genaratePassword(String name, String email)
+}
+
+class ExternalPasswordGeneratorAlgorithm1API
+{
+    +String randomPassword()
+    +String randomPassword(Integer minChars, Integer maxChars)
+}
+
+ExternalPasswordGeneratorAlgorithm <|.. ExternalPasswordGeneratorAlgorithmAdapter1
+ExternalPasswordGeneratorAlgorithmAdapter1 -d->  ExternalPasswordGeneratorAlgorithm1API
+
+class ExternalPasswordGeneratorAlgorithmAdapter2
+{
++String genaratePassword(String name, String email)
+}
+
+class ExternalPasswordGeneratorAlgorithm2API
+{
+    +Password generatePassword()
+    +Password generatePassword(String feedChars)
+    +Paswword generatePassword(Integer strength)
+    +Paswword generatePassword(Integer strength, String feedChars)
+}
+
+ExternalPasswordGeneratorAlgorithm <|.. ExternalPasswordGeneratorAlgorithmAdapter2
+ExternalPasswordGeneratorAlgorithmAdapter2 -d->  ExternalPasswordGeneratorAlgorithm2API
+
+
+@enduml

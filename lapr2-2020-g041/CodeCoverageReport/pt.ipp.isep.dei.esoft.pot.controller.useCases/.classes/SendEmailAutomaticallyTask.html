@@ -1,0 +1,173 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: SendEmailAutomaticallyTask</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.controller.useCases</a> ]
+</div>
+
+<h1>Coverage Summary for Class: SendEmailAutomaticallyTask (pt.ipp.isep.dei.esoft.pot.controller.useCases)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">SendEmailAutomaticallyTask</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 37)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.controller.useCases;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.ApplicationPOT;
+<i>4</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.*;
+<i>5</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.register.FreelancersRegister;
+<i>6</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.register.OrganizationsRegister;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;import java.io.IOException;
+<i>9</i>&nbsp;import java.util.*;
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;/**
+<i>12</i>&nbsp; * The type Send email automatically task.
+<i>13</i>&nbsp; */
+<i>14</i>&nbsp;public class SendEmailAutomaticallyTask extends TimerTask {
+<i>15</i>&nbsp;
+<i>16</i>&nbsp;    private ApplicationPOT m_oApp;
+<i>17</i>&nbsp;    private Platform m_oPlatform;
+<i>18</i>&nbsp;    private Calendar cal;
+<i>19</i>&nbsp;    private Timer timer;
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;    /**
+<i>22</i>&nbsp;     * Instantiates a new Send email automatically task.
+<i>23</i>&nbsp;     *
+<i>24</i>&nbsp;     * @param timer the timer
+<i>25</i>&nbsp;     * @param cal the cal
+<i>26</i>&nbsp;     */
+<b class="nc"><i>27</i>&nbsp;    public SendEmailAutomaticallyTask(Timer timer, Calendar cal) {</b>
+<b class="nc"><i>28</i>&nbsp;        this.m_oApp = ApplicationPOT.getInstance();</b>
+<b class="nc"><i>29</i>&nbsp;        this.m_oPlatform = this.m_oApp.getPlatform();</b>
+<b class="nc"><i>30</i>&nbsp;        this.cal = cal;</b>
+<b class="nc"><i>31</i>&nbsp;        this.timer = timer;</b>
+<b class="nc"><i>32</i>&nbsp;    }</b>
+<i>33</i>&nbsp;
+<i>34</i>&nbsp;    /**
+<i>35</i>&nbsp;     * Instantiates a new Send email automatically task.
+<i>36</i>&nbsp;     */
+<b class="nc"><i>37</i>&nbsp;    public SendEmailAutomaticallyTask() {</b>
+<b class="nc"><i>38</i>&nbsp;        this.m_oApp = ApplicationPOT.getInstance();</b>
+<b class="nc"><i>39</i>&nbsp;        this.m_oPlatform = this.m_oApp.getPlatform();</b>
+<b class="nc"><i>40</i>&nbsp;    }</b>
+<i>41</i>&nbsp;
+<i>42</i>&nbsp;    /**
+<i>43</i>&nbsp;     * Gets freelancer to send email to.
+<i>44</i>&nbsp;     *
+<i>45</i>&nbsp;     * @return the freelancer to send email to
+<i>46</i>&nbsp;     * @throws IOException the io exception
+<i>47</i>&nbsp;     */
+<i>48</i>&nbsp;    public int getFreelancerToSendEmailTo() throws IOException {
+<b class="nc"><i>49</i>&nbsp;        FreelancersRegister rfr = this.m_oPlatform.getFreelancersRegister();</b>
+<b class="nc"><i>50</i>&nbsp;        OrganizationsRegister ro = this.m_oPlatform.getOrganizationsRegister();</b>
+<b class="nc"><i>51</i>&nbsp;        List&lt;Freelancer&gt; freeList = rfr.getFreelancers();</b>
+<b class="nc"><i>52</i>&nbsp;        double overallPercentage = ro.calculateOverallPercentageOfDelays();</b>
+<b class="nc"><i>53</i>&nbsp;        int numberOfFreelancer = 0;</b>
+<b class="nc"><i>54</i>&nbsp;        for (Freelancer free : freeList) {</b>
+<b class="nc"><i>55</i>&nbsp;            String id = free.getId();</b>
+<b class="nc"><i>56</i>&nbsp;            double median = ro.getMean(id);</b>
+<b class="nc"><i>57</i>&nbsp;            double percentage = ro.getPercentage(id);</b>
+<b class="nc"><i>58</i>&nbsp;            if (median &gt; 3 &amp;&amp; percentage &gt; overallPercentage) {</b>
+<b class="nc"><i>59</i>&nbsp;                numberOfFreelancer++;</b>
+<b class="nc"><i>60</i>&nbsp;                this.m_oPlatform.getEmailSender().sendEmail(Constants.T4J_NOTIFY_EMAIL, free.getEmail(), &quot;Notify freelancers because of delays&quot;, String.format(&quot;Hello %s,%nYour percentage of delays this year is: %.2f%% and you have a mean task delay time of%n%.2f Hours.%nBest Regards,%nT4J&quot;, free.getName(), percentage, median));</b>
+<i>61</i>&nbsp;            }
+<b class="nc"><i>62</i>&nbsp;        }</b>
+<b class="nc"><i>63</i>&nbsp;        return numberOfFreelancer;</b>
+<i>64</i>&nbsp;    }
+<i>65</i>&nbsp;
+<i>66</i>&nbsp;    /**
+<i>67</i>&nbsp;     * Reschedule.
+<i>68</i>&nbsp;     */
+<i>69</i>&nbsp;    public void reschedule() {
+<b class="nc"><i>70</i>&nbsp;        cal.set(cal.get(Calendar.YEAR) + 1, cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH));</b>
+<b class="nc"><i>71</i>&nbsp;        Date date = cal.getTime();</b>
+<i>72</i>&nbsp;
+<b class="nc"><i>73</i>&nbsp;        timer.cancel();</b>
+<b class="nc"><i>74</i>&nbsp;        timer = new Timer();</b>
+<b class="nc"><i>75</i>&nbsp;        SendEmailAutomaticallyTask newTask = new SendEmailAutomaticallyTask(timer, cal);</b>
+<b class="nc"><i>76</i>&nbsp;        timer.schedule(newTask, date);</b>
+<b class="nc"><i>77</i>&nbsp;    }</b>
+<i>78</i>&nbsp;
+<i>79</i>&nbsp;    @Override
+<i>80</i>&nbsp;    public void run() {
+<i>81</i>&nbsp;
+<i>82</i>&nbsp;        try {
+<b class="nc"><i>83</i>&nbsp;            getFreelancerToSendEmailTo();</b>
+<b class="nc"><i>84</i>&nbsp;        } catch (IOException e) {</b>
+<b class="nc"><i>85</i>&nbsp;            e.printStackTrace();</b>
+<b class="nc"><i>86</i>&nbsp;        }</b>
+<i>87</i>&nbsp;
+<b class="nc"><i>88</i>&nbsp;        reschedule();</b>
+<b class="nc"><i>89</i>&nbsp;    }</b>
+<i>90</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

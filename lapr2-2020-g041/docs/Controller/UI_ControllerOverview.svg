@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1000px" preserveAspectRatio="none" style="width:996px;height:1000px;" version="1.1" viewBox="0 0 996 1000" width="996px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1uffi3cjf290a" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0" />
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" />
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" />
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal" />
+        </filter>
+    </defs>
+    <g>
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="804.3047" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="35.5" y="97.6094" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="254.2734" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="197.5" y="306.4219" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="183.5703" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="331" y="346.7734" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="331" y="560.6953" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="154.7578" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="331" y="646.75" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="136.9609" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="489.5" y="393.3828" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="103.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="489.5" y="698.4531" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="641.5" y="434.9922" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="641.5" y="771.5078" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="785.5" y="500.3438" />
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="95" x="286.5" y="314.4219" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="81" x="293.5" y="335.9551">:{NameUC}UI</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="145" x="420" y="361.0313" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="131" x="427" y="382.5645">:{NameUC}Controller</text>
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="288.8672" style="stroke: #000000; stroke-width: 2.0;" width="972.5" x="13" y="606.0469" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="40" x2="40" y1="87.6094" y2="911.9141" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="202" x2="202" y1="87.6094" y2="911.9141" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="335.5" x2="335.5" y1="347.7266" y2="911.9141" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="494" x2="494" y1="394.3359" y2="911.9141" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="646.5" x2="646.5" y1="87.6094" y2="911.9141" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="790.5" x2="790.5" y1="87.6094" y2="911.9141" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="924.5" x2="924.5" y1="87.6094" y2="911.9141" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="23" y="84.5332">User</text>
+        <ellipse cx="40.5" cy="13" fill="#FEFECE" filter="url(#f1uffi3cjf290a)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;" />
+        <path d="M40.5,21 L40.5,48 M27.5,29 L53.5,29 M40.5,48 L27.5,63 M40.5,48 L53.5,63 " fill="none" filter="url(#f1uffi3cjf290a)" style="stroke: #A80036; stroke-width: 2.0;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="23" y="925.4473">User</text>
+        <ellipse cx="40.5" cy="938.5234" fill="#FEFECE" filter="url(#f1uffi3cjf290a)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;" />
+        <path d="M40.5,946.5234 L40.5,973.5234 M27.5,954.5234 L53.5,954.5234 M40.5,973.5234 L27.5,988.5234 M40.5,973.5234 L53.5,988.5234 " fill="none" filter="url(#f1uffi3cjf290a)" style="stroke: #A80036; stroke-width: 2.0;" />
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="83" x="159" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="69" x="166" y="72.5332">:{MenuX}UI</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="83" x="159" y="910.9141" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="69" x="166" y="932.4473">:{MenuX}UI</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="95" x="286.5" y="910.9141" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="81" x="293.5" y="932.4473">:{NameUC}UI</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="145" x="420" y="910.9141" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="131" x="427" y="932.4473">:{NameUC}Controller</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="116" x="586.5" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="593.5" y="72.5332">:ApplicationPOT</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="116" x="586.5" y="910.9141" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="593.5" y="932.4473">:ApplicationPOT</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="144" x="716.5" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="130" x="723.5" y="72.5332">app: ApplicationPOT</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="144" x="716.5" y="910.9141" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="130" x="723.5" y="932.4473">app: ApplicationPOT</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="97" x="874.5" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="83" x="881.5" y="72.5332">plat: Platform</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="97" x="874.5" y="910.9141" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="83" x="881.5" y="932.4473">plat: Platform</text>
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="804.3047" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="35.5" y="97.6094" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="254.2734" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="197.5" y="306.4219" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="183.5703" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="331" y="346.7734" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="331" y="560.6953" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="154.7578" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="331" y="646.75" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="136.9609" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="489.5" y="393.3828" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="103.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="489.5" y="698.4531" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="641.5" y="434.9922" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="641.5" y="771.5078" />
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="785.5" y="500.3438" />
+        <path d="M207,102.6094 L207,161.6094 L477,161.6094 L477,112.6094 L467,102.6094 L207,102.6094 " fill="#FBFB77" filter="url(#f1uffi3cjf290a)" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M467,102.6094 L467,112.6094 L477,112.6094 L467,102.6094 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="239" x="213" y="121.1045">Represents an instance of a UI class that</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="249" x="213" y="137.4561">presents various menu/functionality options</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="66" x="213" y="153.8076">to the user.</text>
+        <path d="M341,175.6641 L341,217.6641 L623,217.6641 L623,185.6641 L613,175.6641 L341,175.6641 " fill="#FBFB77" filter="url(#f1uffi3cjf290a)" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M613,175.6641 L613,185.6641 L623,185.6641 L613,175.6641 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="261" x="347" y="194.1592">Represents an instance of a specific UI class</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="239" x="347" y="210.5107">for the realization of a concrete use case.</text>
+        <path d="M499,232.3672 L499,274.3672 L791,274.3672 L791,242.3672 L781,232.3672 L499,232.3672 " fill="#FBFB77" filter="url(#f1uffi3cjf290a)" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M781,232.3672 L781,242.3672 L791,242.3672 L781,232.3672 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="254" x="505" y="250.8623">Represents an instance of a controller class</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="271" x="505" y="267.2139">responsible for decoupling a UI from the model.</text>
+        <polygon fill="#A80036" points="185.5,302.4219,195.5,306.4219,185.5,310.4219,189.5,306.4219" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="45.5" x2="191.5" y1="306.4219" y2="306.4219" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="52.5" y="301.5654">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="122" x="63.5" y="301.5654">Select desired option</text>
+        <polygon fill="#A80036" points="274.5,332.7734,284.5,336.7734,274.5,340.7734,278.5,336.7734" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="207.5" x2="280.5" y1="336.7734" y2="336.7734" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="214.5" y="331.917">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="44" x="225.5" y="331.917">create()</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="95" x="286.5" y="314.4219" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="81" x="293.5" y="335.9551">:{NameUC}UI</text>
+        <polygon fill="#A80036" points="408,379.3828,418,383.3828,408,387.3828,412,383.3828" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="341" x2="414" y1="383.3828" y2="383.3828" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="348" y="378.5264">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="44" x="359" y="378.5264">create()</text>
+        <rect fill="#FEFECE" filter="url(#f1uffi3cjf290a)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="145" x="420" y="361.0313" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="131" x="427" y="382.5645">:{NameUC}Controller</text>
+        <polygon fill="#A80036" points="629.5,430.9922,639.5,434.9922,629.5,438.9922,633.5,434.9922" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="499.5" x2="635.5" y1="434.9922" y2="434.9922" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="506.5" y="430.1357">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="112" x="517.5" y="430.1357">app = getInstance()</text>
+        <path d="M656,412.6406 L656,438.6406 L904,438.6406 L904,422.6406 L894,412.6406 L656,412.6406 " fill="#FBFB77" filter="url(#f1uffi3cjf290a)" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M894,412.6406 L894,422.6406 L904,422.6406 L894,412.6406 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="227" x="662" y="431.1357">Statistical method (singleton standard).</text>
+        <polygon fill="#A80036" points="773.5,496.3438,783.5,500.3438,773.5,504.3438,777.5,500.3438" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="499.5" x2="779.5" y1="500.3438" y2="500.3438" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="506.5" y="495.4873">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="111" x="517.5" y="495.4873">plat = getPlatform()</text>
+        <polygon fill="#A80036" points="319,556.6953,329,560.6953,319,564.6953,323,560.6953" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="202.5" x2="325" y1="560.6953" y2="560.6953" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="209.5" y="555.8389">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="26" x="220.5" y="555.8389">run()</text>
+        <polygon fill="#A80036" points="56.5,587.0469,46.5,591.0469,56.5,595.0469,52.5,591.0469" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="50.5" x2="335" y1="591.0469" y2="591.0469" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="62.5" y="586.1904">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="112" x="73.5" y="586.1904">Request something</text>
+        <path d="M13,606.0469 L86,606.0469 L86,614.0469 L76,624.0469 L13,624.0469 L13,606.0469 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;" />
+        <rect fill="none" height="288.8672" style="stroke: #000000; stroke-width: 2.0;" width="972.5" x="13" y="606.0469" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="28" x="28" y="620.542">loop</text>
+        <polygon fill="#A80036" points="319,642.75,329,646.75,319,650.75,323,646.75" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="45.5" x2="325" y1="646.75" y2="646.75" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="52.5" y="641.8936">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="80" x="63.5" y="641.8936">Do something</text>
+        <polygon fill="#A80036" points="477.5,694.4531,487.5,698.4531,477.5,702.4531,481.5,698.4531" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="341" x2="483.5" y1="698.4531" y2="698.4531" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="348" y="693.5967">9</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="359" y="693.5967">methodX(...)</text>
+        <path d="M504,659.75 L504,718.75 L796,718.75 L796,669.75 L786,659.75 L504,659.75 " fill="#FBFB77" filter="url(#f1uffi3cjf290a)" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M786,659.75 L786,669.75 L796,669.75 L786,659.75 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="254" x="510" y="678.2451">Abstraction that represents the invocation of</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="271" x="510" y="694.5967">any method made available by the instances of</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="119" x="510" y="710.9482">{NomeUC} Controller</text>
+        <polygon fill="#A80036" points="629.5,767.5078,639.5,771.5078,629.5,775.5078,633.5,771.5078" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="499.5" x2="635.5" y1="771.5078" y2="771.5078" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="506.5" y="766.6514">10</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="524.5" y="766.6514">methodY(...)</text>
+        <path d="M656,732.8047 L656,791.8047 L940,791.8047 L940,742.8047 L930,732.8047 L656,732.8047 " fill="#FBFB77" filter="url(#f1uffi3cjf290a)" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M930,732.8047 L930,742.8047 L940,742.8047 L930,732.8047 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="254" x="662" y="751.2998">Abstraction that represents the invocation of</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="263" x="662" y="767.6514">any method made available by the application</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="124" x="662" y="784.0029">and/or model classes</text>
+        <rect fill="#FFFFFF" filter="url(#f1uffi3cjf290a)" height="59.0547" style="stroke: #000000; stroke-width: 2.0;" width="391" x="583.5" y="830.8594" />
+        <polygon fill="#EEEEEE" points="583.5,830.8594,645.5,830.8594,645.5,838.8594,635.5,848.8594,583.5,848.8594,583.5,830.8594" style="stroke: #000000; stroke-width: 2.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="17" x="596.5" y="846.3545">ref</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="783" y="866.3545" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="783" y="882.7061" />
+        <!--
+@startuml
+autonumber
+actor "User" as USER
+
+participant ":{MenuX}UI" as MUI
+participant ":{NameUC}UI" as NUI
+participant ":{NameUC}Controller" as NCTRL
+participant ":ApplicationPOT" as POT
+participant "app: ApplicationPOT" as _POT
+participant "plat: Platform" as PLAT
+
+note right of MUI
+Represents an instance of a UI class that
+presents various menu/functionality options
+to the user.
+end note
+
+note right of NUI
+Represents an instance of a specific UI class
+for the realization of a concrete use case.
+end note
+
+note right of NCTRL
+Represents an instance of a controller class
+responsible for decoupling a UI from the model.
+end note
+
+
+activate USER
+
+USER -> MUI : Select desired option
+activate MUI
+MUI - -> NUI** : create()
+activate NUI
+NUI -> NCTRL** : create()
+activate NCTRL
+NCTRL -> POT : app = getInstance()
+note right
+Statistical method (singleton standard).
+end note
+activate POT
+deactivate POT
+NCTRL -> _POT : plat = getPlatform()
+activate _POT
+deactivate _POT
+deactivate NCTRL
+deactivate NUI
+MUI -> NUI : run()
+deactivate MUI
+activate NUI
+NUI - -> USER : Request something
+deactivate NUI
+
+loop
+USER -> NUI : Do something
+activate NUI
+NUI -> NCTRL : methodX(...)
+note right
+Abstraction that represents the invocation of
+any method made available by the instances of
+{NomeUC} Controller
+end note
+activate NCTRL
+NCTRL -> POT : methodY(...)
+note right
+Abstraction that represents the invocation of
+any method made available by the application
+and/or model classes
+ end note 
+activate POT
+deactivate POT
+ref over POT,_POT,PLAT
+
+
+end ref
+deactivate NUI
+deactivate NCTRL
+end loop
+
+deactivate USER
+
+
+@enduml
+
+PlantUML version 1.2018.14(Fri Dec 21 16:33:16 GMT 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) Client VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+-->
+    </g>
+</svg>

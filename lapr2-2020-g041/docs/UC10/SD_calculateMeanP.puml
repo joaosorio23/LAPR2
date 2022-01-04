@@ -1,0 +1,59 @@
+@startuml
+autonumber
+
+participant "org:Organization" as OR
+participant "trans:PaymentTransactionList" as TLIST
+participant "m_ListPay:List<PaymentTransaction>" as LIST
+participant "transaction:PaymentTransaction" as TRA
+participant "freel:Freelancer" as FREEL
+participant "free:Freelancer" as FREE
+
+
+[o-> OR: calculateMeanP(free)
+activate OR
+
+OR -> OR : paymentSum = 0
+OR -> OR : cont = 0
+OR -> OR : trans = getPaymentTransactionList()
+OR -> TLIST : m_ListPay = getPaymentTransactions()
+activate TLIST
+deactivate TLIST
+
+loop [ For each Transaction ]
+
+OR -> LIST : transaction = get(i)
+activate  LIST
+deactivate LIST
+
+OR -> TRA : freel = getFreelancer()
+activate  TRA
+deactivate TRA
+
+
+OR -> FREEL : idFreel = getId()
+activate  FREEL
+deactivate FREEL
+
+OR -> FREE : idFree = getId()
+activate  FREE
+deactivate FREE
+
+opt [ idFree.equals(idFreel) ]
+
+OR -> TRA : value = getValue()
+activate  TRA
+deactivate TRA
+
+OR -> OR : paymentSum = paymentSum + value
+OR -> OR : sum++
+
+end
+end loop
+
+OR -> OR : mean = paymentSum / cont
+
+
+<-- OR : mean
+deactivate OR
+
+@enduml

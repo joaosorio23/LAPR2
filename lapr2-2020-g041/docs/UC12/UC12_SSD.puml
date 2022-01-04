@@ -1,0 +1,19 @@
+@startuml
+autonumber
+actor "Administrator" as ADM
+
+activate ADM
+
+ADM -> ":System" : starts the process of sending the email to all the freelancers who have a mean task delay time \n (during the current year) that is higher than 3 hours and have a percentage of delays\n (during the current year) that is higher than the overall percentage of delays
+activate ":System"
+":System" --> ADM : informs the administrator about the success of the operation
+deactivate ":System"
+
+
+
+deactivate ADM
+
+
+
+
+@enduml

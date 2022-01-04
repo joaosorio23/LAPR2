@@ -1,0 +1,15 @@
+TransID;TaskID;TaskDescription;TaskAssignDuration(h);TaskCostPerHour(euros);TaskCategory;ExecutionFinishDate;ExecutionDelay (hours);ExecutionBriefDescription;FreelancerID;FreelancerName;FreelancerExpertise;FreelancerEMail;FreelancerNIF;FreelancerBanckAccout;FreelancerAddress;FreeLancerCountry
+101;1;Web Development;48;20;Software Development;24-01-20;1;High Quality Work;JW1;John Wayne;Junior;jw@gmail.com;921654987;US120010001234567891;Street 92, 90, New York;USA
+102;2;Network Administration;20;40;Network Administration;25-01-20;3;Non-expert, problem unsolved;MA1;Marion Antoine;Senior;Marion190@hotmail.com;223654587;LU120010001234567891;Boulevard Royal, 100;Luxembourg
+103;3;Web Development;30;30;Software Development;25-01-20;0;High Quality Work;JW1;John Wayne;Junior;jw@gmail.com;921654987;US120010001234567891;Street 92, 90, New York;USA
+104;4;Mobile Application Development;60;50;Software Development;25-01-20;-2;High Quality Work;MS3;Maria Sousa;Senior;ms10@isep.ipp.pt;213456789;PT120010001234567891;Rua SÃÂ£o TomÃÂ©, 54, Porto;Portugal
+105;5;Mobile Application Development;60;50;Software Development;25-01-20;0;High Quality Work;MS3;Maria Sousa;Senior;ms10@isep.ipp.pt;213456789;PT120010001234567891;Rua SÃÂ£o TomÃÂ©, 54, Porto;Portugal
+106;6;Mobile Application Development;60;50;Software Development;25-02-20;0;High Quality Work;MS3;Maria Sousa;Senior;ms10@isep.ipp.pt;213456789;PT120010001234567891;Rua SÃÂ£o TomÃÂ©, 54, Porto;Portugal
+107;7;Mobile Application Development;60;50;Software Development;25-02-20;0;High Quality Work;MS3;Maria Sousa;Senior;ms10@isep.ipp.pt;213456789;PT120010001234567891;Rua SÃÂ£o TomÃÂ©, 54, Porto;Portugal
+108;15;Mobile Application Development;60;50;Software Development;25-02-20;1;High Quality Work;MS3;Maria Sousa;Senior;ms10@isep.ipp.pt;213456789;PT120010001234567891;Rua SÃÂ£o TomÃÂ©, 54, Porto;Portugal
+109;16;Mobile Application Development;60;50;Software Development;25-02-20;1;High Quality Work;MS3;Maria Sousa;Senior;ms10@isep.ipp.pt;213456789;PT120010001234567891;Rua SÃÂ£o TomÃÂ©, 54, Porto;Portugal
+110;10;Mobile Application Development;60;50;Software Development;25-02-20;1;High Quality Work;MS3;Maria Sousa;Senior;ms10@isep.ipp.pt;213456789;PT120010001234567891;Rua SÃÂ£o TomÃÂ©, 54, Porto;Portugal
+111;11;Mobile Application Development;60;50;Software Development;25-02-20;-2;High Quality Work;MS3;Maria Sousa;Senior;ms10@isep.ipp.pt;213456789;PT120010001234567891;Rua SÃÂ£o TomÃÂ©, 54, Porto;Portugal
+112;12;Web Development;30;30;Software Development;25-03-20;4;Medium Quality Work, not an expert in Web development;MS3;Maria Sousa;Senior;ms10@isep.ipp.pt;213456789;PT120010001234567891;Rua SÃÂ£o TomÃÂ©, 54, Porto;Portugal
+113;13;Web Development;30;30;Software Development;25-03-20;4;Medium Quality Work, not an expert in Web development;MS3;Maria Sousa;Senior;ms10@isep.ipp.pt;213456789;PT120010001234567891;Rua SÃÂ£o TomÃÂ©, 54, Porto;Portugal
+114;14;Web Development;30;30;Software Development;25-03-20;4;Medium Quality Work, not an expert in Web development;MS3;Maria Sousa;Senior;ms10@isep.ipp.pt;213456789;PT120010001234567891;Rua SÃÂ£o TomÃÂ©, 54, Porto;Portugal

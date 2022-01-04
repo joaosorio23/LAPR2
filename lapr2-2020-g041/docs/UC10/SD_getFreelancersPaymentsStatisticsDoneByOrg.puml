@@ -1,0 +1,49 @@
+@startuml
+autonumber
+
+participant "org:Organization" as OR
+participant "fl:List<Freelancer>" as FL
+participant "payments:List<String>" as FP
+participant "free:Freelancer" as FREEL
+
+
+
+[o-> OR: getFreelancersPaymentsStatisticsDoneByOrg(fl)
+activate OR
+
+OR -> FP**: create()
+
+loop [ For each Freelancer ]
+
+OR -> FL : free = get(i)
+activate  FL
+deactivate FL
+
+OR -> OR : mean = calculateMeanP(free)
+activate  OR
+ref over OR : SD_calculateMeanP
+deactivate OR
+
+OR -> OR : deviation = calculateDeviationP(free, mean)
+activate  OR
+ref over OR : SD_calculateDeviationP
+deactivate OR
+
+OR -> FREEL : name = getName()
+activate  FREEL
+deactivate FREEL
+
+OR -> FREEL : id = getId()
+activate  FREEL
+deactivate FREEL
+
+OR -> FP : payments.add("Freelancer: " + name + " - ID: " + id + " - Mean of the Payments: " + mean + " - Standard Deviation of the Payments: " + deviation)
+activate  FP
+deactivate FP
+
+end loop
+
+<-- OR : payments
+deactivate OR
+
+@enduml

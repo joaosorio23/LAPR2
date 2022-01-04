@@ -1,0 +1,22 @@
+@startuml
+autonumber
+actor "Collaborator of the Organization" as CO
+
+activate CO
+CO -> ":System" : Starts the creation of a payment transaction
+activate ":System"
+":System" --> CO : Requests a brief description of the task (id, brief description,\ntime duration (in hours), cost per hour (in euros) and task category),\ndetails about the execution of the task (end date, delay, brief\ndescription of the quality of the work) and the information about\nthe freelancer that worked in the task (id, name, level of expertise,\ne­mail, NIF, bank account (IBAN), address and country)
+deactivate ":System"
+
+CO -> ":System" : Enters the requested data
+activate ":System"
+":System" --> CO : Displays the data and the amount to pay the freelancer, asking to confirm it
+deactivate ":System"
+
+CO -> ":System" : Confirms
+activate ":System"
+":System" --> CO : Success of the operation
+deactivate ":System"
+
+deactivate CO
+@enduml

@@ -1,0 +1,75 @@
+@startuml
+
+hide methods
+left to right direction
+
+class Platform {
+  -String designation
+}
+
+
+class Organization {
+  -String designation
+}
+
+class User {
+  -String name
+  -String email
+  -String password
+}
+
+class Collaborator {
+  -String name
+  -String email
+}
+
+class Manager {
+  -String name
+  -String email
+}
+
+class Freelancer {
+  -String id
+  -String name
+  -String email
+  -Integer NIF
+  -String IBAN
+  -double OverallPayments
+}
+
+
+class PaymentTransaction {
+  -String id
+}
+
+class Task {
+  -String id
+  -String briefDescription
+  -Double timeDuration
+  -Double costPerHour
+  -String category
+}
+
+
+
+
+Platform "1" -- "*" Organization : has registered >
+Platform "1" -- "*" Freelancer : has registered >
+Platform "1" -- "*" User : has registered >
+
+
+Organization "1" -- "1" Collaborator: has >
+Organization "1" -- "1" Manager: has >
+Organization "1" -- "*" Task : has >
+Organization "1" -- "*" PaymentTransaction : has >
+
+
+Collaborator "0..1" -- "1" User : act as >
+
+Manager "0..1" -- "1" User : act as >
+
+PaymentTransaction "*" -- "1" Freelancer : to >
+PaymentTransaction "1" -- "1" Task : referent >
+
+Freelancer "1" -- "*" Task : does >
+@enduml

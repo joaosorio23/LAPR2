@@ -1,0 +1,29 @@
+@startuml
+autonumber
+'hide footbox
+actor "Collaborator of the Organization" as COL
+
+participant ":LoadTransactionsFileUI" as UI
+participant ":LoadTransactionsFileController" as CTRL
+participant ":loadFromCsv/Txt" as L
+
+activate COL
+COL -> UI : Starts the loading file process.
+activate UI
+UI --> COL : Asks the collaborator for the file name.
+deactivate UI
+COL -> UI : Enters the file name.
+activate UI
+UI -> CTRL : loadFileCsv/Txt(file)
+activate CTRL
+CTRL -> CSV: loadFile(file)
+activate CSV
+deactivate CSV
+ref over CSV: UC7_SD_ReadFile
+
+deactivate CTRL
+
+
+deactivate COL
+
+@enduml

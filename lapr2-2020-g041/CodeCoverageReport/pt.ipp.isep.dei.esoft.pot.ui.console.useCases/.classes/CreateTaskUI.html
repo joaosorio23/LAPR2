@@ -1,0 +1,193 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: CreateTaskUI</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.ui.console.useCases</a> ]
+</div>
+
+<h1>Coverage Summary for Class: CreateTaskUI (pt.ipp.isep.dei.esoft.pot.ui.console.useCases)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CreateTaskUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 19)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.ui.console.useCases;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import javafx.event.ActionEvent;
+<i>4</i>&nbsp;import javafx.fxml.FXML;
+<i>5</i>&nbsp;import javafx.fxml.Initializable;
+<i>6</i>&nbsp;import javafx.scene.control.Alert;
+<i>7</i>&nbsp;import javafx.scene.control.TextField;
+<i>8</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.useCases.CreateTaskController;
+<i>9</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.Alerts;
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;import java.net.URL;
+<i>12</i>&nbsp;import java.util.ResourceBundle;
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;/**
+<i>15</i>&nbsp; * The type Create Task UI.
+<i>16</i>&nbsp; *
+<i>17</i>&nbsp; * @author Berkelios
+<i>18</i>&nbsp; */
+<b class="nc"><i>19</i>&nbsp;public class CreateTaskUI implements Initializable {</b>
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;    /**
+<i>22</i>&nbsp;     * The ID.
+<i>23</i>&nbsp;     */
+<i>24</i>&nbsp;    @FXML
+<i>25</i>&nbsp;    public TextField id;
+<i>26</i>&nbsp;    /**
+<i>27</i>&nbsp;     * The Category.
+<i>28</i>&nbsp;     */
+<i>29</i>&nbsp;    @FXML
+<i>30</i>&nbsp;    public TextField category;
+<i>31</i>&nbsp;    /**
+<i>32</i>&nbsp;     * The Brief Description.
+<i>33</i>&nbsp;     */
+<i>34</i>&nbsp;    @FXML
+<i>35</i>&nbsp;    public TextField bDescription;
+<i>36</i>&nbsp;    /**
+<i>37</i>&nbsp;     * The Duration.
+<i>38</i>&nbsp;     */
+<i>39</i>&nbsp;    @FXML
+<i>40</i>&nbsp;    public TextField duration;
+<i>41</i>&nbsp;    /**
+<i>42</i>&nbsp;     * The Cost per Hour.
+<i>43</i>&nbsp;     */
+<i>44</i>&nbsp;    @FXML
+<i>45</i>&nbsp;    public TextField cost;
+<i>46</i>&nbsp;    /**
+<i>47</i>&nbsp;     * The App Controller.
+<i>48</i>&nbsp;     */
+<i>49</i>&nbsp;    private CreateTaskController appController;
+<i>50</i>&nbsp;
+<i>51</i>&nbsp;    /**
+<i>52</i>&nbsp;     * Initialize.
+<i>53</i>&nbsp;     *
+<i>54</i>&nbsp;     * @param location local
+<i>55</i>&nbsp;     * @param resources resources
+<i>56</i>&nbsp;     */
+<i>57</i>&nbsp;    @Override
+<i>58</i>&nbsp;    public void initialize(URL location, ResourceBundle resources) {
+<b class="nc"><i>59</i>&nbsp;        appController = new CreateTaskController();</b>
+<b class="nc"><i>60</i>&nbsp;    }</b>
+<i>61</i>&nbsp;
+<i>62</i>&nbsp;    /**
+<i>63</i>&nbsp;     * Create Task Action.
+<i>64</i>&nbsp;     *
+<i>65</i>&nbsp;     * @param actionEvent the Action event
+<i>66</i>&nbsp;     */
+<i>67</i>&nbsp;    @FXML
+<i>68</i>&nbsp;    public void createTaskAction(ActionEvent actionEvent) {
+<b class="nc"><i>69</i>&nbsp;        if (appController.newTask(this.id.getText().trim(), this.bDescription.getText().trim(), this.duration.getText().trim(), this.cost.getText().trim(), this.category.getText().trim())) {</b>
+<b class="nc"><i>70</i>&nbsp;            if (showDataAndConfirmation()) {</b>
+<b class="nc"><i>71</i>&nbsp;                if (appController.registerTask()) {</b>
+<b class="nc"><i>72</i>&nbsp;                    Alerts.createAlert(Alert.AlertType.INFORMATION, &quot;Success...&quot;, &quot;Successfully creating the Task!&quot;).show();</b>
+<i>73</i>&nbsp;                } else {
+<b class="nc"><i>74</i>&nbsp;                    Alerts.createAlert(Alert.AlertType.INFORMATION, &quot;Error...&quot;, &quot;Error creating the Task!&quot;).show();</b>
+<i>75</i>&nbsp;                }
+<b class="nc"><i>76</i>&nbsp;                clearData();</b>
+<i>77</i>&nbsp;            }
+<i>78</i>&nbsp;        }
+<b class="nc"><i>79</i>&nbsp;    }</b>
+<i>80</i>&nbsp;
+<i>81</i>&nbsp;    /**
+<i>82</i>&nbsp;     * Show Data And Confirmation
+<i>83</i>&nbsp;     *
+<i>84</i>&nbsp;     * @return boolean
+<i>85</i>&nbsp;     */
+<i>86</i>&nbsp;    private boolean showDataAndConfirmation() {
+<b class="nc"><i>87</i>&nbsp;        return Alerts.showDataAndConfirmation(appController.getTaskString());</b>
+<i>88</i>&nbsp;    }
+<i>89</i>&nbsp;
+<i>90</i>&nbsp;    /**
+<i>91</i>&nbsp;     * Back To Menu Action
+<i>92</i>&nbsp;     *
+<i>93</i>&nbsp;     * @param event event
+<i>94</i>&nbsp;     */
+<i>95</i>&nbsp;    @FXML
+<i>96</i>&nbsp;    private void backToMenuAction(ActionEvent event) {
+<b class="nc"><i>97</i>&nbsp;        Alerts.back(event, &quot;Do you really want to go back to the Menu?&quot;);</b>
+<b class="nc"><i>98</i>&nbsp;    }</b>
+<i>99</i>&nbsp;
+<i>100</i>&nbsp;    /**
+<i>101</i>&nbsp;     * Clear Data.
+<i>102</i>&nbsp;     */
+<i>103</i>&nbsp;    private void clearData() {
+<b class="nc"><i>104</i>&nbsp;        this.id.clear();</b>
+<b class="nc"><i>105</i>&nbsp;        this.category.clear();</b>
+<b class="nc"><i>106</i>&nbsp;        this.bDescription.clear();</b>
+<b class="nc"><i>107</i>&nbsp;        this.duration.clear();</b>
+<b class="nc"><i>108</i>&nbsp;        this.cost.clear();</b>
+<b class="nc"><i>109</i>&nbsp;    }</b>
+<i>110</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

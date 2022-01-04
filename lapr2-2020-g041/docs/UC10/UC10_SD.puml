@@ -1,0 +1,96 @@
+@startuml
+autonumber
+
+actor ":Manager/Collaborator" as MAN
+participant ":AnalyseFreelancerPaymentsUI" as UI
+participant ":AnalyseFreelancerPaymentsController" as CTRL
+participant ":ApplicationPOT" as _APP
+participant "app\n:ApplicationPOT" as APP
+participant "session\n:UserSession" as SESSAO
+participant ":Plataform" as PLAT
+participant "rorg\n:OrganizationsRegister" as RORGS
+participant "org\n:Organization" as ORG
+participant "fp\n:List<String>"
+participant "fl\n:List<Freelancer>"
+participant "list\n:List<String>"
+participant "listP\n:List<String>"
+participant "lstFree\n:List<Freelancer>"
+participant "lfs\n:List<Freelancer>"
+
+activate MAN
+MAN -> UI :  starts the process of Analyse Freelancer Payments
+activate UI
+
+UI -> CTRL : fp=getListStats()
+activate CTRL
+
+CTRL -> _APP: app = getInstance()
+activate _APP
+deactivate _APP
+
+CTRL -> APP: session = getCurrentSession()
+activate APP
+deactivate APP
+
+CTRL -> SESSAO: email = getUserEmail()
+activate SESSAO
+deactivate SESSAO
+
+CTRL -> PLAT: rorg = getOrganizationsRegister()
+activate PLAT
+deactivate PLAT
+
+CTRL -> RORGS: org = getOrganizationByUserEmail(email)
+activate RORGS
+deactivate RORGS
+
+CTRL -> ORG: fl=getListOfFreeTrans()
+activate ORG
+deactivate ORG
+
+
+CTRL -> ORG: fp=getFreelancersPaymentsStatisticsDoneByOrg(fl)
+activate ORG
+deactivate ORG
+ref over ORG :SD_getFreelancersPaymentsStatisticsDoneByOrg
+deactivate CTRL
+
+
+UI --> MAN: shows the statistics related to freelancer payments
+deactivate UI
+
+MAN -> UI : If the Manager/Collaborator wants to sort the freelancers, \n he selects the type of sorting he wants.
+activate UI
+alt Name
+
+UI -> CTRL : list = getListStats()
+activate CTRL
+
+CTRL -> CTRL : lstFree = sortByName(fl)
+activate CTRL
+deactivate CTRL
+
+CTRL -> ORG : list = getFreelancersPaymentsStatisticsDoneByOrg(lstFree)
+activate ORG
+deactivate ORG
+deactivate CTRL
+
+else Payments
+
+UI -> CTRL : listP = getFreeSortedByPayment()
+activate CTRL
+CTRL -> ORG : lfs = getListSortedByPayments(fl)
+activate ORG
+deactivate ORG
+
+CTRL -> ORG : listP = getFreelancersPaymentsStatisticsDoneByOrg(lfs)
+activate ORG
+deactivate ORG
+
+end
+
+deactivate CTRL
+UI --> MAN : shows the freelancers sorted according to the selected option
+deactivate MAN
+
+@enduml

@@ -1,0 +1,106 @@
+@startuml
+autonumber
+
+participant "ro:OrganizationRegistration" as OR
+participant "orgList:List<Organization>" as LSTORG
+participant "org:Organization" as ORG
+participant "trans:PaymentTransactionList" as TLIST
+participant "ListTransactions:List<PaymentTransaction>" as LIST
+participant "transaction:PaymentTransaction" as TRA
+participant "task:Task" as T
+participant "taskExec:TaskExecution" as TE
+participant "free:Freelancer" as FREEL
+participant ":Calendar" as CAL
+participant "date: Date " as DT
+participant "calendar:Calendar" as CALD
+participant "now:Calendar" as CALN
+
+
+[o-> OR: getPercentage(id)
+activate OR
+
+OR -> OR: orgList=getOrganizationsList()
+OR -> OR : totalDelays = 0
+OR -> OR : totalTasks = 0
+
+OR -> CAL : now=getInstance()
+activate CAL
+deactivate CAL
+
+OR -> CAL : calendar=getInstance()
+activate CAL
+deactivate CAL
+
+loop [ For each Organization ]
+
+OR -> LSTORG : org = get(z)
+activate  LSTORG
+deactivate LSTORG
+
+OR -> ORG : trans = getPaymentTransactionsList()
+
+activate  ORG
+deactivate ORG
+
+OR ->TLIST : ListTransactions = getListOfTransactions()
+
+activate  TLIST
+deactivate TLIST
+
+loop [ For each transaction ]
+
+OR -> LIST : transaction = get(y)
+
+activate  LIST
+deactivate LIST
+
+OR -> TRA : free=getFreelancer()
+activate  TRA
+deactivate TRA
+
+OR -> FREEL: idFree=getId()
+activate  FREEL
+deactivate FREEL
+
+opt [ id == idFree ]
+
+OR -> TRA : task = getTask()
+activate TRA
+deactivate TRA
+
+OR -> T : taskExec = getTaskExecution()
+activate T
+deactivate T
+
+OR -> TE : delay=getDelay()
+activate TE
+deactivate TE
+
+OR -> TE : date=getDate()
+activate TE
+deactivate TE
+
+OR -> CALD : setTime(date)
+activate CALD
+deactivate CALD
+
+opt [ (calendar.get(Calendar.YEAR)) == (now.get(Calendar.YEAR))  ]
+
+OR -> OR : totalTasks++
+
+opt [ delay > 0  ]
+
+OR -> OR : totalDelays++
+
+end loop
+end loop
+end loop
+end loop
+end loop
+
+OR -> OR : percentage = (totalDelays/totalTasks)*100
+
+<-- OR : percentage
+deactivate OR
+
+@enduml

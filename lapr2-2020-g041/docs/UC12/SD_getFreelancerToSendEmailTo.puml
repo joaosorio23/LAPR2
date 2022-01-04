@@ -1,0 +1,80 @@
+  @startuml
+autonumber
+
+title SD_getFreelancersToSendEmailTo
+
+participant "task: \nSendEmailAutomaticallyTask" as TASK
+participant ":Plataforma" as PLAT
+participant "ro:OrganizationsRegister" as RO
+participant "fr:\nFreelancerRegister" as RANU
+participant "freeList:\nList<Freelancer>" as LA
+participant "free:\nFreelancer" as FREEL
+participant "<<interface>>\nalg:ExternalEmailSenderAlgorithm" as SE
+
+
+[o-> TASK : getFreelancerToSendEmailTo()
+activate TASK
+
+TASK -> PLAT : rfr=getFreelancersRegister()
+activate PLAT
+deactivate PLAT
+
+TASK -> PLAT : ro=getOrganizationsRegister()
+activate PLAT
+deactivate PLAT
+
+TASK -> PLAT : alg=getExternalEmailSenderAlgorithm()
+activate PLAT
+deactivate PLAT
+
+TASK -> RANU : freeList=getFreelancers()
+activate RANU
+deactivate RANU
+
+
+TASK -> RO: overallPercentage=calculateOverallPercentageOfDelays()
+activate RO
+ref over RO: SD_calculateOverallPercentageOfDelays
+RO --> TASK: overallPercentage
+deactivate RO
+
+
+loop [ For each freelancer registered ]
+
+TASK -> LA : free = get(i)
+activate LA
+deactivate LA
+
+TASK -> FREEL: id=getId()
+activate FREEL
+deactivate FREEL
+
+TASK -> RO: mean=getMean(id)
+activate RO
+ref over RO: SD_getMean
+RO --> TASK: mean
+deactivate RO
+
+TASK -> RO: percentage=getPercentage(id)
+activate RO
+ref over RO: SD_getPercentage
+RO --> TASK: percentage
+deactivate RO
+
+OPT [ mean > 3 && percentage > overallPercentage ]
+
+TASK -> FREEL: email = getEmail()
+activate FREEL
+deactivate FREEL
+
+TASK -> SE : sendEmail(EmailSender, email, Subject, Message)
+activate SE
+deactivate SE
+
+
+end OPT
+
+end loop
+
+deactivate RANU
+@enduml

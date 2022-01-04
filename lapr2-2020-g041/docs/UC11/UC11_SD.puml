@@ -1,0 +1,50 @@
+@startuml
+
+autonumber
+
+participant ": Plataforma" as PLAT
+participant "t: Timer" as TIMER
+participant "task: SendEmailAutomaticallyTask" as TASK
+participant ":Calendar" as CA
+participant "cal:Calendar" as CA1
+participant "d:Date" as DT
+
+
+
+[o-> PLAT : scheduleTimer()
+activate PLAT
+
+
+PLAT --> TIMER** : create()
+
+PLAT -> CA: cal=getInstance()
+activate CA
+deactivate CA
+
+PLAT --> TASK** : create(t, cal)
+
+PLAT -> CA1: d=getTime()
+activate CA1
+deactivate CA1
+
+PLAT -> TIMER : schedule(task, d)
+activate TIMER
+
+deactivate PLAT
+deactivate TIMER
+
+TIMER -> TASK : run()
+activate TIMER
+activate TASK
+
+TASK -> TASK : getFreelancerToSendEmailTo()
+
+ref over TASK : SD_getFreelancerToSendEmailTo
+
+TASK -> TASK : reschedule()
+activate TASK
+deactivate TASK
+
+deactivate TIMER
+deactivate TASK
+@enduml

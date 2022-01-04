@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1056px" preserveAspectRatio="none" style="width:2285px;height:1056px;" version="1.1" viewBox="0 0 2285 1056" width="2285px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="fenln2hw14368" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0" />
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" />
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" />
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal" />
+        </filter>
+    </defs>
+    <g>
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="851.8984" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="107" y="97.6094" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="853" y="119.9609" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="560.7344" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="853" y="180.6641" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="177.7578" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="853" y="771.75" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="530.3828" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1095" y="211.0156" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="147.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1095" y="802.1016" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1247" y="241.3672" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1367" y="301.7188" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1483.5" y="362.0703" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1581" y="422.4219" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1725.5" y="482.7734" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1884" y="543.125" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="137.9219" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1986" y="603.4766" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="117.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1986" y="832.4531" />
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="49" x="2225" y="611.4766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="26" x="2236.5" y="633.0098">task</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="2232" y="650.6191">:Task</text>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="112" x2="112" y1="87.6094" y2="967.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="858" x2="858" y1="87.6094" y2="967.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1100" x2="1100" y1="87.6094" y2="967.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1252" x2="1252" y1="87.6094" y2="967.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1372" x2="1372" y1="87.6094" y2="967.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1488" x2="1488" y1="87.6094" y2="967.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1586" x2="1586" y1="87.6094" y2="967.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1730" x2="1730" y1="87.6094" y2="967.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1889" x2="1889" y1="87.6094" y2="967.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1991" x2="1991" y1="87.6094" y2="967.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="2251" x2="2251" y1="653.5859" y2="967.5078" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="202" x="8" y="84.5332">Collaborator of the Organization</text>
+        <ellipse cx="112" cy="13" fill="#FEFECE" filter="url(#fenln2hw14368)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;" />
+        <path d="M112,21 L112,48 M99,29 L125,29 M112,48 L99,63 M112,48 L125,63 " fill="none" filter="url(#fenln2hw14368)" style="stroke: #A80036; stroke-width: 2.0;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="202" x="8" y="981.041">Collaborator of the Organization</text>
+        <ellipse cx="112" cy="994.1172" fill="#FEFECE" filter="url(#fenln2hw14368)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;" />
+        <path d="M112,1002.1172 L112,1029.1172 M99,1010.1172 L125,1010.1172 M112,1029.1172 L99,1044.1172 M112,1029.1172 L125,1044.1172 " fill="none" filter="url(#fenln2hw14368)" style="stroke: #A80036; stroke-width: 2.0;" />
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="104" x="804" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="90" x="811" y="72.5332">:CreateTaskUI</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="104" x="804" y="966.5078" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="90" x="811" y="988.041">:CreateTaskUI</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="154" x="1021" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="140" x="1028" y="72.5332">:CreateTaskController</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="154" x="1021" y="966.5078" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="140" x="1028" y="988.041">:CreateTaskController</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="104" x="1198" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="90" x="1205" y="72.5332">AplicacaoPOT</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="104" x="1198" y="966.5078" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="90" x="1205" y="988.041">AplicacaoPOT</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="108" x="1316" y="33.3906" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="24" x="1358" y="54.9238">app</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="94" x="1323" y="72.5332">:AplicacaoPOT</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="108" x="1316" y="966.5078" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="24" x="1358" y="988.041">app</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="94" x="1323" y="1005.6504">:AplicacaoPOT</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="97" x="1438" y="33.3906" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="1462.5" y="54.9238">session</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="83" x="1445" y="72.5332">:UserSession</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="97" x="1438" y="966.5078" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="1462.5" y="988.041">session</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="83" x="1445" y="1005.6504">:UserSession</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="70" x="1549" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="1556" y="72.5332">:Platform</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="70" x="1549" y="966.5078" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="1556" y="988.041">:Platform</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="191" x="1633" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="177" x="1640" y="72.5332">rorgs:OrganizationsRegister</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="191" x="1633" y="966.5078" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="177" x="1640" y="988.041">rorgs:OrganizationsRegister</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="98" x="1838" y="33.3906" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="21" x="1876.5" y="54.9238">org</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="84" x="1845" y="72.5332">:Organization</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="98" x="1838" y="966.5078" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="21" x="1876.5" y="988.041">org</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="84" x="1845" y="1005.6504">:Organization</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="78" x="1950" y="33.3906" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="7" x="1985.5" y="54.9238">tl</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="64" x="1957" y="72.5332">:TasksList</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="78" x="1950" y="966.5078" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="7" x="1985.5" y="988.041">tl</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="64" x="1957" y="1005.6504">:TasksList</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="49" x="2225" y="966.5078" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="26" x="2236.5" y="988.041">task</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="2232" y="1005.6504">:Task</text>
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="851.8984" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="107" y="97.6094" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="853" y="119.9609" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="560.7344" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="853" y="180.6641" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="177.7578" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="853" y="771.75" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="530.3828" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1095" y="211.0156" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="147.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1095" y="802.1016" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1247" y="241.3672" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1367" y="301.7188" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1483.5" y="362.0703" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1581" y="422.4219" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1725.5" y="482.7734" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1884" y="543.125" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="137.9219" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1986" y="603.4766" />
+        <rect fill="#FFFFFF" filter="url(#fenln2hw14368)" height="117.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1986" y="832.4531" />
+        <polygon fill="#A80036" points="841,115.9609,851,119.9609,841,123.9609,845,119.9609" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="117" x2="847" y1="119.9609" y2="119.9609" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="124" y="115.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="218" x="135" y="115.1045">Starts the process of creating a Task.</text>
+        <polygon fill="#A80036" points="128,146.3125,118,150.3125,128,154.3125,124,150.3125" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="122" x2="857" y1="150.3125" y2="150.3125" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="134" y="145.4561">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="701" x="145" y="145.4561">Asks for the necessary data (i.e. id, brief description, time duration (in hours), cost per hour (in euros) and task category).</text>
+        <polygon fill="#A80036" points="841,176.6641,851,180.6641,841,184.6641,845,180.6641" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="117" x2="847" y1="180.6641" y2="180.6641" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="124" y="175.8076">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="154" x="135" y="175.8076">Enters the requested data.</text>
+        <polygon fill="#A80036" points="1083,207.0156,1093,211.0156,1083,215.0156,1087,211.0156" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="863" x2="1089" y1="211.0156" y2="211.0156" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="870" y="206.1592">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="202" x="881" y="206.1592">newTask(id,desc,duration,cost,cat)</text>
+        <polygon fill="#A80036" points="1235,237.3672,1245,241.3672,1235,245.3672,1239,241.3672" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1105" x2="1241" y1="241.3672" y2="241.3672" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="1112" y="236.5107">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="112" x="1123" y="236.5107">app = getInstance()</text>
+        <polygon fill="#A80036" points="1355,297.7188,1365,301.7188,1355,305.7188,1359,301.7188" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1105" x2="1361" y1="301.7188" y2="301.7188" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="1112" y="296.8623">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="176" x="1123" y="296.8623">session = getCurrentSession()</text>
+        <polygon fill="#A80036" points="1471.5,358.0703,1481.5,362.0703,1471.5,366.0703,1475.5,362.0703" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1105" x2="1477.5" y1="362.0703" y2="362.0703" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="1112" y="357.2139">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="133" x="1123" y="357.2139">email = getUserEmail()</text>
+        <polygon fill="#A80036" points="1569,418.4219,1579,422.4219,1569,426.4219,1573,422.4219" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1105" x2="1575" y1="422.4219" y2="422.4219" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="1112" y="417.5654">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="1123" y="417.5654">rorgs = getOrganizationsRegister()</text>
+        <polygon fill="#A80036" points="1713.5,478.7734,1723.5,482.7734,1713.5,486.7734,1717.5,482.7734" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1105" x2="1719.5" y1="482.7734" y2="482.7734" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="1112" y="477.917">9</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="240" x="1123" y="477.917">org = getOrganizationByUserEmail(email)</text>
+        <polygon fill="#A80036" points="1872,539.125,1882,543.125,1872,547.125,1876,543.125" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1105" x2="1878" y1="543.125" y2="543.125" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1112" y="538.2686">10</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="105" x="1130" y="538.2686">tl = getTasksList()</text>
+        <polygon fill="#A80036" points="1974,599.4766,1984,603.4766,1974,607.4766,1978,603.4766" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1105" x2="1980" y1="603.4766" y2="603.4766" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1112" y="598.6201">11</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="235" x="1130" y="598.6201">task=newTask(id,desc,duration,cost,cat)</text>
+        <polygon fill="#A80036" points="2213,629.8281,2223,633.8281,2213,637.8281,2217,633.8281" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="1996" x2="2219" y1="633.8281" y2="633.8281" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="2003" y="628.9717">12</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="187" x="2021" y="628.9717">create(id,desc,duration,cost,cat)</text>
+        <rect fill="#FEFECE" filter="url(#fenln2hw14368)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="49" x="2225" y="611.4766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="26" x="2236.5" y="633.0098">task</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="2232" y="650.6191">:Task</text>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1996" x2="2038" y1="698.0469" y2="698.0469" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2038" x2="2038" y1="698.0469" y2="711.0469" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1997" x2="2038" y1="711.0469" y2="711.0469" />
+        <polygon fill="#A80036" points="2007,707.0469,1997,711.0469,2007,715.0469,2003,711.0469" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="2003" y="693.1904">13</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="2021" y="693.1904">validateTask(task)</text>
+        <polygon fill="#A80036" points="128,737.3984,118,741.3984,128,745.3984,124,741.3984" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="122" x2="857" y1="741.3984" y2="741.3984" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="134" y="736.542">14</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="248" x="152" y="736.542">Displays the data, asking him to confirm it.</text>
+        <polygon fill="#A80036" points="841,767.75,851,771.75,841,775.75,845,771.75" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="117" x2="847" y1="771.75" y2="771.75" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="124" y="766.8936">15</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="51" x="142" y="766.8936">Confirms</text>
+        <polygon fill="#A80036" points="1083,798.1016,1093,802.1016,1083,806.1016,1087,802.1016" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="863" x2="1089" y1="802.1016" y2="802.1016" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="870" y="797.2451">16</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="888" y="797.2451">registerTask()</text>
+        <polygon fill="#A80036" points="1974,828.4531,1984,832.4531,1974,836.4531,1978,832.4531" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1105" x2="1980" y1="832.4531" y2="832.4531" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1112" y="827.5967">17</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="1130" y="827.5967">registerTask(task)</text>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1996" x2="2038" y1="862.8047" y2="862.8047" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2038" x2="2038" y1="862.8047" y2="875.8047" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1997" x2="2038" y1="875.8047" y2="875.8047" />
+        <polygon fill="#A80036" points="2007,871.8047,1997,875.8047,2007,879.8047,2003,875.8047" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="2003" y="857.9482">18</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="2021" y="857.9482">validateTask(task)</text>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1996" x2="2038" y1="906.1563" y2="906.1563" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="2038" x2="2038" y1="906.1563" y2="919.1563" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1997" x2="2038" y1="919.1563" y2="919.1563" />
+        <polygon fill="#A80036" points="2007,915.1563,1997,919.1563,2007,923.1563,2003,919.1563" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="2003" y="901.2998">19</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82" x="2021" y="901.2998">addTask(task)</text>
+        <polygon fill="#A80036" points="123,945.5078,113,949.5078,123,953.5078,119,949.5078" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="117" x2="857" y1="949.5078" y2="949.5078" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="129" y="944.6514">20</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="246" x="147" y="944.6514">Informs about the success of the operation</text>
+        <!--
+@startuml
+autonumber
+actor "Collaborator of the Organization" as COL
+
+participant ":CreateTaskUI" as UI
+participant ":CreateTaskController" as CTRL
+participant "AplicacaoPOT" as _APP
+participant "app\n:AplicacaoPOT" as APP
+participant "session\n:UserSession" as SESSAO
+participant ":Platform" as PLAT
+participant "rorgs:OrganizationsRegister" as RORGS
+participant "org\n:Organization" as ORG
+participant "tl\n:TasksList" as LTASKS
+participant "task\n:Task" as TAREFA
+
+activate COL
+COL -> UI : Starts the process of creating a Task.
+activate UI
+UI - -> COL : Asks for the necessary data (i.e. id, brief description, time duration (in hours), cost per hour (in euros) and task category).
+deactivate UI
+
+COL -> UI : Enters the requested data.
+activate UI
+
+UI -> CTRL : newTask(id,desc,duration,cost,cat)
+activate CTRL
+
+CTRL -> _APP: app = getInstance()
+activate _APP
+deactivate _APP
+
+CTRL -> APP: session = getCurrentSession()
+activate APP
+deactivate APP
+
+CTRL -> SESSAO: email = getUserEmail()
+activate SESSAO
+deactivate SESSAO
+
+CTRL -> PLAT: rorgs = getOrganizationsRegister()
+activate PLAT
+deactivate PLAT
+
+CTRL -> RORGS: org = getOrganizationByUserEmail(email)
+activate RORGS
+deactivate RORGS
+
+CTRL -> ORG: tl = getTasksList()
+activate ORG
+deactivate ORG
+
+CTRL -> LTASKS: task=newTask(id,desc,duration,cost,cat)
+activate LTASKS
+
+LTASKS - -> TAREFA**: create(id,desc,duration,cost,cat)
+LTASKS -> LTASKS: validateTask(task)
+
+UI - -> COL:  Displays the data, asking him to confirm it.
+deactivate LTASKS
+deactivate CTRL
+deactivate UI
+
+COL -> UI : Confirms
+activate UI
+UI -> CTRL : registerTask()
+activate CTRL
+
+CTRL -> LTASKS : registerTask(task)
+activate LTASKS
+
+LTASKS -> LTASKS: validateTask(task)
+LTASKS -> LTASKS: addTask(task)
+
+UI - -> COL : Informs about the success of the operation
+deactivate LTASKS
+deactivate CTRL
+deactivate UI
+
+deactivate COL
+
+@enduml
+
+PlantUML version 1.2018.14(Fri Dec 21 16:33:16 GMT 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) Client VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+-->
+    </g>
+</svg>

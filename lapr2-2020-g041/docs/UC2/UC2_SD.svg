@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1042px" preserveAspectRatio="none" style="width:2473px;height:1042px;" version="1.1" viewBox="0 0 2473 1042" width="2473px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1jl69lwvm18ab" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0" />
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" />
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" />
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal" />
+        </filter>
+    </defs>
+    <g>
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="838.25" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="107" y="97.6094" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="119.9609" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="121.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="180.6641" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="395.6797" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="332.0703" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="177.7578" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="758.1016" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="60.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1270" y="211.0156" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="334.9766" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1270" y="362.4219" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="147.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1270" y="788.4531" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1486" y="530.0859" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1669" y="590.4375" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1669" y="667.3984" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="117.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1669" y="818.8047" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1844" y="241.3672" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1844" y="392.7734" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1973.5" y="453.125" />
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="105" x="2162.5" y="461.125" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="91" x="2169.5" y="482.6582">local: Location</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="116" x="2032" y="598.4375" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="2039" y="619.9707">free: Freelancer</text>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="112" x2="112" y1="87.6094" y2="953.8594" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="840" x2="840" y1="87.6094" y2="953.8594" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1275" x2="1275" y1="87.6094" y2="953.8594" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1491" x2="1491" y1="87.6094" y2="953.8594" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1673.5" x2="1673.5" y1="87.6094" y2="953.8594" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1849" x2="1849" y1="87.6094" y2="953.8594" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1978" x2="1978" y1="87.6094" y2="953.8594" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="2092" x2="2092" y1="631.7422" y2="953.8594" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="2216.5" x2="2216.5" y1="494.4297" y2="953.8594" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="2373.5" x2="2373.5" y1="87.6094" y2="953.8594" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="202" x="8" y="84.5332">Collaborator of the Organization</text>
+        <ellipse cx="112" cy="13" fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;" />
+        <path d="M112,21 L112,48 M99,29 L125,29 M112,48 L99,63 M112,48 L125,63 " fill="none" filter="url(#f1jl69lwvm18ab)" style="stroke: #A80036; stroke-width: 2.0;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="202" x="8" y="967.3926">Collaborator of the Organization</text>
+        <ellipse cx="112" cy="980.4688" fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;" />
+        <path d="M112,988.4688 L112,1015.4688 M99,996.4688 L125,996.4688 M112,1015.4688 L99,1030.4688 M112,1015.4688 L125,1030.4688 " fill="none" filter="url(#f1jl69lwvm18ab)" style="stroke: #A80036; stroke-width: 2.0;" />
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="152" x="762" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="138" x="769" y="72.5332">:RegisterFreelancerUI</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="152" x="762" y="952.8594" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="138" x="769" y="974.3926">:RegisterFreelancerUI</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="202" x="1172" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="188" x="1179" y="72.5332">:RegisterFreelancerController</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="202" x="1172" y="952.8594" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="188" x="1179" y="974.3926">:RegisterFreelancerController</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="70" x="1454" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="1461" y="72.5332">:Platform</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="70" x="1454" y="952.8594" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="1461" y="974.3926">:Platform</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="165" x="1589.5" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="151" x="1596.5" y="72.5332">rfr: FreelancersRegister</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="165" x="1589.5" y="952.8594" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="151" x="1596.5" y="974.3926">rfr: FreelancersRegister</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="148" x="1773" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="134" x="1780" y="72.5332">loe :LevelOfExpertise</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="148" x="1773" y="952.8594" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="134" x="1780" y="974.3926">loe :LevelOfExpertise</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="83" x="1935" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="69" x="1942" y="72.5332">Freelancer</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="83" x="1935" y="952.8594" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="69" x="1942" y="974.3926">Freelancer</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="116" x="2032" y="952.8594" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="2039" y="974.3926">free: Freelancer</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="105" x="2162.5" y="952.8594" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="91" x="2169.5" y="974.3926">local: Location</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="181" x="2281.5" y="51" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="167" x="2288.5" y="72.5332">lle: List&lt;LevelOfExpertise&gt;</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="181" x="2281.5" y="952.8594" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="167" x="2288.5" y="974.3926">lle: List&lt;LevelOfExpertise&gt;</text>
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="838.25" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="107" y="97.6094" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="119.9609" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="121.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="180.6641" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="395.6797" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="332.0703" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="177.7578" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="835" y="758.1016" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="60.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1270" y="211.0156" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="334.9766" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1270" y="362.4219" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="147.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1270" y="788.4531" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1486" y="530.0859" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1669" y="590.4375" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1669" y="667.3984" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="117.0547" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1669" y="818.8047" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1844" y="241.3672" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1844" y="392.7734" />
+        <rect fill="#FFFFFF" filter="url(#f1jl69lwvm18ab)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1973.5" y="453.125" />
+        <polygon fill="#A80036" points="823,115.9609,833,119.9609,823,123.9609,827,119.9609" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="117" x2="829" y1="119.9609" y2="119.9609" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="124" y="115.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="174" x="135" y="115.1045">Starts registering a freelancer.</text>
+        <polygon fill="#A80036" points="128,146.3125,118,150.3125,128,154.3125,124,150.3125" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="122" x2="839" y1="150.3125" y2="150.3125" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="134" y="145.4561">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="683" x="145" y="145.4561">Requests the data that characterizes the freelancer (id, name, e­mail, NIF, bank account (IBAN), address and country)</text>
+        <polygon fill="#A80036" points="823,176.6641,833,180.6641,823,184.6641,827,180.6641" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="117" x2="829" y1="180.6641" y2="180.6641" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="124" y="175.8076">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="150" x="135" y="175.8076">Enters the requested data</text>
+        <polygon fill="#A80036" points="1258,207.0156,1268,211.0156,1258,215.0156,1262,211.0156" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1264" y1="211.0156" y2="211.0156" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="852" y="206.1592">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="163" x="863" y="206.1592">lle = getLevelsOfExpertise()</text>
+        <polygon fill="#A80036" points="1832,237.3672,1842,241.3672,1832,245.3672,1836,241.3672" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1280" x2="1838" y1="241.3672" y2="241.3672" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="1287" y="236.5107">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="73" x="1298" y="236.5107">lle = values()</text>
+        <polygon fill="#A80036" points="128,297.7188,118,301.7188,128,305.7188,124,301.7188" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="122" x2="839" y1="301.7188" y2="301.7188" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="134" y="296.8623">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="564" x="145" y="296.8623">Displays a list with levels of expertise and asks the Collaborator of the Organization to select one</text>
+        <polygon fill="#A80036" points="823,328.0703,833,332.0703,823,336.0703,827,332.0703" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="117" x2="829" y1="332.0703" y2="332.0703" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="124" y="327.2139">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="73" x="135" y="327.2139">Selects one.</text>
+        <polygon fill="#A80036" points="1258,358.4219,1268,362.4219,1258,366.4219,1262,362.4219" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1264" y1="362.4219" y2="362.4219" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="852" y="357.5654">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="395" x="863" y="357.5654">newFreelancer(id, name, email, NIF, IBAN, address, country, levelId)</text>
+        <polygon fill="#A80036" points="1832,388.7734,1842,392.7734,1832,396.7734,1836,392.7734" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1280" x2="1838" y1="392.7734" y2="392.7734" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="1287" y="387.917">9</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="122" x="1298" y="387.917">level = getLevelById()</text>
+        <polygon fill="#A80036" points="1961.5,449.125,1971.5,453.125,1961.5,457.125,1965.5,453.125" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1280" x2="1967.5" y1="453.125" y2="453.125" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1287" y="448.2686">10</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="216" x="1305" y="448.2686">local = newLocation(address,country)</text>
+        <polygon fill="#A80036" points="2150.5,479.4766,2160.5,483.4766,2150.5,487.4766,2154.5,483.4766" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1978.5" x2="2156.5" y1="483.4766" y2="483.4766" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1985.5" y="478.6201">11</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="137" x="2003.5" y="478.6201">create(address,country)</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="105" x="2162.5" y="461.125" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="91" x="2169.5" y="482.6582">local: Location</text>
+        <polygon fill="#A80036" points="1474,526.0859,1484,530.0859,1474,534.0859,1478,530.0859" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1280" x2="1480" y1="530.0859" y2="530.0859" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1287" y="525.2295">12</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="169" x="1305" y="525.2295">rfr = getFreelancersRegister()</text>
+        <polygon fill="#A80036" points="1657,586.4375,1667,590.4375,1657,594.4375,1661,590.4375" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1280" x2="1663" y1="590.4375" y2="590.4375" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1287" y="585.5811">13</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="352" x="1305" y="585.5811">free = newFreelancer(id, name, email, NIF, IBAN, level, local)</text>
+        <polygon fill="#A80036" points="2020,616.7891,2030,620.7891,2020,624.7891,2024,620.7891" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="1674" x2="2026" y1="620.7891" y2="620.7891" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1681" y="615.9326">14</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="267" x="1699" y="615.9326">create(id, name, email, NIF, IBAN, level, local)</text>
+        <rect fill="#FEFECE" filter="url(#f1jl69lwvm18ab)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="116" x="2032" y="598.4375" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="2039" y="619.9707">free: Freelancer</text>
+        <polygon fill="#A80036" points="1657,663.3984,1667,667.3984,1657,671.3984,1661,667.3984" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1280" x2="1663" y1="667.3984" y2="667.3984" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1287" y="662.542">15</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="133" x="1305" y="662.542">validateFreelancer(free)</text>
+        <polygon fill="#A80036" points="128,723.75,118,727.75,128,731.75,124,727.75" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="122" x2="839" y1="727.75" y2="727.75" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="134" y="722.8936">16</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="244" x="152" y="722.8936">Displays the data, asking you to confirm it</text>
+        <polygon fill="#A80036" points="823,754.1016,833,758.1016,823,762.1016,827,758.1016" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="117" x2="829" y1="758.1016" y2="758.1016" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="124" y="753.2451">17</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="142" y="753.2451">confirm</text>
+        <polygon fill="#A80036" points="1258,784.4531,1268,788.4531,1258,792.4531,1262,788.4531" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="845" x2="1264" y1="788.4531" y2="788.4531" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="852" y="783.5967">18</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="112" x="870" y="783.5967">registerFreelancer()</text>
+        <polygon fill="#A80036" points="1657,814.8047,1667,818.8047,1657,822.8047,1661,818.8047" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1280" x2="1663" y1="818.8047" y2="818.8047" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1287" y="813.9482">19</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="133" x="1305" y="813.9482">registerFreelancer(free)</text>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1679" x2="1721" y1="849.1563" y2="849.1563" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1721" x2="1721" y1="849.1563" y2="862.1563" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1680" x2="1721" y1="862.1563" y2="862.1563" />
+        <polygon fill="#A80036" points="1690,858.1563,1680,862.1563,1690,866.1563,1686,862.1563" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1686" y="844.2998">20</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="133" x="1704" y="844.2998">validateFreelancer(free)</text>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1679" x2="1721" y1="892.5078" y2="892.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1721" x2="1721" y1="892.5078" y2="905.5078" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1680" x2="1721" y1="905.5078" y2="905.5078" />
+        <polygon fill="#A80036" points="1690,901.5078,1680,905.5078,1690,909.5078,1686,905.5078" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="1686" y="887.6514">21</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="111" x="1704" y="887.6514">addFreelancer(free)</text>
+        <polygon fill="#A80036" points="123,931.8594,113,935.8594,123,939.8594,119,935.8594" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="117" x2="839" y1="935.8594" y2="935.8594" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="14" x="129" y="931.0029">22</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="246" x="147" y="931.0029">Informs about the success of the operation</text>
+        <!--
+@startuml
+autonumber
+actor "Collaborator of the Organization" as CO
+
+participant ":RegisterFreelancerUI" as UI
+participant ":RegisterFreelancerController" as CTRL
+participant ":Platform" as PLAT
+participant "rfr: FreelancersRegister" as RF
+participant "loe :LevelOfExpertise" as LE
+participant "Freelancer" as FREE
+participant "free: Freelancer" as FR
+participant "local: Location" as LOC
+participant "lle: List<LevelOfExpertise>" as LLE
+
+
+activate CO
+
+CO -> UI : Starts registering a freelancer.
+activate UI
+UI - -> CO : Requests the data that characterizes the freelancer (id, name, e­mail, NIF, bank account (IBAN), address and country)
+deactivate UI
+
+CO -> UI : Enters the requested data
+activate UI
+
+UI -> CTRL : lle =  getLevelsOfExpertise()
+activate CTRL
+CTRL -> LE : lle = values()
+activate LE
+deactivate LE
+deactivate CTRL
+
+UI -> CO : Displays a list with  levels of expertise and asks the Collaborator of the Organization to select one
+deactivate UI
+CO -> UI : Selects one.
+activate UI
+
+UI -> CTRL : newFreelancer(id, name, email, NIF, IBAN, address, country, levelId)
+activate CTRL
+CTRL -> LE : level = getLevelById()
+activate LE
+deactivate LE
+CTRL -> FREE : local = newLocation(address,country)
+activate FREE
+FREE -> LOC** : create(address,country)
+deactivate FREE
+CTRL -> PLAT : rfr = getFreelancersRegister()
+activate PLAT
+deactivate PLAT
+CTRL -> RF : free = newFreelancer(id, name, email, NIF, IBAN, level, local)
+activate RF
+RF - -> FR** : create(id, name, email, NIF, IBAN, level, local)
+deactivate RF
+CTRL -> RF : validateFreelancer(free)
+activate RF
+deactivate RF
+deactivate CTRL
+
+UI - -> CO : Displays the data, asking you to confirm it
+deactivate UI
+
+CO -> UI : confirm
+activate UI
+UI -> CTRL : registerFreelancer()
+activate CTRL
+CTRL -> RF : registerFreelancer(free)
+activate RF
+RF -> RF : validateFreelancer(free)
+RF -> RF : addFreelancer(free)
+UI - -> CO : Informs about the success of the operation
+deactivate RF
+deactivate CTRL
+deactivate UI
+
+deactivate CO
+
+@enduml
+
+PlantUML version 1.2018.14(Fri Dec 21 16:33:16 GMT 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) Client VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+-->
+    </g>
+</svg>

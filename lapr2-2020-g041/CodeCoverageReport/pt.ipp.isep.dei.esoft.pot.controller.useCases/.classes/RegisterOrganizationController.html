@@ -1,0 +1,167 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: RegisterOrganizationController</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.controller.useCases</a> ]
+</div>
+
+<h1>Coverage Summary for Class: RegisterOrganizationController (pt.ipp.isep.dei.esoft.pot.controller.useCases)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">RegisterOrganizationController</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 15)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.controller.useCases;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import javafx.scene.control.Alert;
+<i>4</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.ApplicationPOT;
+<i>5</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.*;
+<i>6</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.register.OrganizationsRegister;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;import java.io.IOException;
+<i>9</i>&nbsp;
+<i>10</i>&nbsp;/**
+<i>11</i>&nbsp; * The type Register Organization Controller.
+<i>12</i>&nbsp; *
+<i>13</i>&nbsp; * @author Berkelios
+<i>14</i>&nbsp; */
+<i>15</i>&nbsp;public class RegisterOrganizationController {
+<i>16</i>&nbsp;
+<i>17</i>&nbsp;    /**
+<i>18</i>&nbsp;     * The App.
+<i>19</i>&nbsp;     */
+<i>20</i>&nbsp;    private ApplicationPOT m_oApp;
+<i>21</i>&nbsp;    /**
+<i>22</i>&nbsp;     * The Platform.
+<i>23</i>&nbsp;     */
+<i>24</i>&nbsp;    private Platform m_oPlatform;
+<i>25</i>&nbsp;    /**
+<i>26</i>&nbsp;     * The Organization.
+<i>27</i>&nbsp;     */
+<i>28</i>&nbsp;    private Organization m_oOrganization;
+<i>29</i>&nbsp;    /**
+<i>30</i>&nbsp;     * The Organizations Register.
+<i>31</i>&nbsp;     */
+<i>32</i>&nbsp;    private OrganizationsRegister or;
+<i>33</i>&nbsp;
+<i>34</i>&nbsp;    /**
+<i>35</i>&nbsp;     * Instantiates a new Register Organization Controller.
+<i>36</i>&nbsp;     */
+<b class="nc"><i>37</i>&nbsp;    public RegisterOrganizationController() {</b>
+<b class="nc"><i>38</i>&nbsp;        this.m_oApp = ApplicationPOT.getInstance();</b>
+<b class="nc"><i>39</i>&nbsp;        this.m_oPlatform = this.m_oApp.getPlatform();</b>
+<b class="nc"><i>40</i>&nbsp;        this.or = this.m_oPlatform.getOrganizationsRegister();</b>
+<b class="nc"><i>41</i>&nbsp;    }</b>
+<i>42</i>&nbsp;
+<i>43</i>&nbsp;    /**
+<i>44</i>&nbsp;     * New Organization.
+<i>45</i>&nbsp;     *
+<i>46</i>&nbsp;     * @param strDesig the Designation
+<i>47</i>&nbsp;     * @param strNameM the Manager&#39;s Name
+<i>48</i>&nbsp;     * @param strEmailM the Manager&#39;s Email
+<i>49</i>&nbsp;     * @param strNameC the Collaborator&#39;s Name
+<i>50</i>&nbsp;     * @param strEmailC the Collaborator&#39;s Email
+<i>51</i>&nbsp;     * @return boolean boolean
+<i>52</i>&nbsp;     */
+<i>53</i>&nbsp;    public boolean newOrganization(String strDesig, String strNameM, String strEmailM, String strNameC, String strEmailC) {
+<i>54</i>&nbsp;        try {
+<b class="nc"><i>55</i>&nbsp;            Manager oMan = Organization.newManager(strNameM, strEmailM);</b>
+<b class="nc"><i>56</i>&nbsp;            Collaborator oColab = Organization.newCollaborator(strNameC, strEmailC);</b>
+<b class="nc"><i>57</i>&nbsp;            this.m_oOrganization = this.or.newOrganization(strDesig, oMan, oColab);</b>
+<b class="nc"><i>58</i>&nbsp;            return this.or.validateOrganization(this.m_oOrganization);</b>
+<b class="nc"><i>59</i>&nbsp;        } catch (IllegalArgumentException iae) {</b>
+<b class="nc"><i>60</i>&nbsp;            Alerts.createAlert(Alert.AlertType.ERROR, &quot;Data Error...&quot;, iae.getMessage()).show();</b>
+<b class="nc"><i>61</i>&nbsp;            this.m_oOrganization = null;</b>
+<b class="nc"><i>62</i>&nbsp;            return false;</b>
+<i>63</i>&nbsp;        }
+<i>64</i>&nbsp;    }
+<i>65</i>&nbsp;
+<i>66</i>&nbsp;    /**
+<i>67</i>&nbsp;     * Register Organization.
+<i>68</i>&nbsp;     *
+<i>69</i>&nbsp;     * @return boolean boolean
+<i>70</i>&nbsp;     * @throws IOException the IO Exception
+<i>71</i>&nbsp;     */
+<i>72</i>&nbsp;    public boolean registerOrganization() throws IOException {
+<b class="nc"><i>73</i>&nbsp;        return this.or.registerOrganization(this.m_oOrganization);</b>
+<i>74</i>&nbsp;    }
+<i>75</i>&nbsp;
+<i>76</i>&nbsp;    /**
+<i>77</i>&nbsp;     * Gets Organization String.
+<i>78</i>&nbsp;     *
+<i>79</i>&nbsp;     * @return the Organization String
+<i>80</i>&nbsp;     */
+<i>81</i>&nbsp;    public String getOrganizationString() {
+<b class="nc"><i>82</i>&nbsp;        return this.m_oOrganization.toString();</b>
+<i>83</i>&nbsp;    }
+<i>84</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

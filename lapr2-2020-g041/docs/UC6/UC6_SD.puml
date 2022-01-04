@@ -1,0 +1,18 @@
+@startuml
+ autonumber
+
+ participant "t\n:Timer" as T
+ participant "payment\n:MakeAutomaticPaymentTask" as MAPS
+
+
+ T -> MAPS : run()
+ activate T
+ deactivate T
+ activate MAPS
+ MAPS -> MAPS : makeAutomaticPayment()
+ ref over MAPS : UC13_SD_MakeAutomaticPayment
+ activate MAPS
+ deactivate MAPS
+ deactivate MAPS
+
+ @enduml

@@ -1,0 +1,69 @@
+@startuml
+
+class SetPaymentDayUI {
+
+}
+
+class SetPaymentDayController {
+  +setData(day, hour)
+}
+
+class AplicacaoPOT {
+  +static getInstance()
+  +getCurrentSession()
+}
+
+class UserSession {
+  +getUserEmail()
+}
+
+class Platform {
+  -String designation
+  +RegisterOrganizations getRegisterOrganizations()
+}
+
+class OrganizationsRegister {
+  +getOrganizationByUserEmail(email)
+}
+
+class Organization {
+  -String designation
+  +setPaymentSchedule(day, hour)
+  +getInterval()
+}
+
+class Manager {
+  -String name
+  -String email
+}
+
+class MakeAutomaticPaymentTask {
+  +create()
+}
+
+abstract Timer {
+  +create()
+  +setPaymentSchedule(day, hour)
+}
+
+
+SetPaymentDayUI ..> SetPaymentDayController
+SetPaymentDayController ..> Platform
+SetPaymentDayController ..> OrganizationsRegister
+SetPaymentDayController ..> Organization
+SetPaymentDayController ..> AplicacaoPOT
+SetPaymentDayController ..> UserSession
+SetPaymentDayController ..> Manager
+
+Platform "1" --> "1" OrganizationsRegister : has
+
+OrganizationsRegister "1" --> "*" Organization : has registered
+
+Organization "1" --> "1" Manager : has
+Organization "1" -- "1" MakeAutomaticPaymentTask: has >
+
+MakeAutomaticPaymentTask "1" -- "*" Timer: resort to >
+
+Timer "*" ..> "1" Organization :  prompts >
+
+@enduml

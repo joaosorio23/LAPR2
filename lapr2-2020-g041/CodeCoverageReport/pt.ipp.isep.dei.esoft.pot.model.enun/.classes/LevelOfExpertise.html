@@ -1,0 +1,186 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: LevelOfExpertise</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.model.enun</a> ]
+</div>
+
+<h1>Coverage Summary for Class: LevelOfExpertise (pt.ipp.isep.dei.esoft.pot.model.enun)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">LevelOfExpertise</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/ 4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    60%
+  </span>
+  <span class="absValue">
+    (6/ 10)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">LevelOfExpertise$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/ 2)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">LevelOfExpertise$2</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/ 2)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    62,5%
+  </span>
+  <span class="absValue">
+    (5/ 8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    57,1%
+  </span>
+  <span class="absValue">
+    (8/ 14)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.model.enun;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.io.Serializable;
+<i>4</i>&nbsp;
+<i>5</i>&nbsp;/**
+<i>6</i>&nbsp; * The enum Level of Expertise.
+<i>7</i>&nbsp; *
+<i>8</i>&nbsp; * @author Berkelios
+<i>9</i>&nbsp; */
+<b class="fc"><i>10</i>&nbsp;public enum LevelOfExpertise implements Serializable {</b>
+<i>11</i>&nbsp;    /**
+<i>12</i>&nbsp;     * The Junior.
+<i>13</i>&nbsp;     */
+<b class="fc"><i>14</i>&nbsp;    JUNIOR(1) {</b>
+<i>15</i>&nbsp;        @Override
+<i>16</i>&nbsp;        public String toString() {
+<b class="nc"><i>17</i>&nbsp;            return &quot;Junior&quot;;</b>
+<i>18</i>&nbsp;        }
+<i>19</i>&nbsp;    },
+<i>20</i>&nbsp;    /**
+<i>21</i>&nbsp;     * The Senior.
+<i>22</i>&nbsp;     */
+<b class="fc"><i>23</i>&nbsp;    SENIOR(2) {</b>
+<i>24</i>&nbsp;        @Override
+<i>25</i>&nbsp;        public String toString() {
+<b class="nc"><i>26</i>&nbsp;            return &quot;Senior&quot;;</b>
+<i>27</i>&nbsp;        }
+<i>28</i>&nbsp;    };
+<i>29</i>&nbsp;
+<i>30</i>&nbsp;    /**
+<i>31</i>&nbsp;     * The Bonus.
+<i>32</i>&nbsp;     */
+<i>33</i>&nbsp;    public int bonus;
+<i>34</i>&nbsp;
+<i>35</i>&nbsp;    /**
+<i>36</i>&nbsp;     * Instantiates a new Level Of Expertise.
+<i>37</i>&nbsp;     *
+<i>38</i>&nbsp;     * @param bonus the Bonus.
+<i>39</i>&nbsp;     */
+<b class="fc"><i>40</i>&nbsp;    LevelOfExpertise(int bonus) {</b>
+<b class="fc"><i>41</i>&nbsp;        this.bonus = bonus;</b>
+<b class="fc"><i>42</i>&nbsp;    }</b>
+<i>43</i>&nbsp;
+<i>44</i>&nbsp;    /**
+<i>45</i>&nbsp;     * Sets level.
+<i>46</i>&nbsp;     *
+<i>47</i>&nbsp;     * @param level the level
+<i>48</i>&nbsp;     * @return the level
+<i>49</i>&nbsp;     */
+<i>50</i>&nbsp;    public static LevelOfExpertise setLevel(String level) {
+<b class="nc"><i>51</i>&nbsp;        for (LevelOfExpertise l : LevelOfExpertise.values()) {</b>
+<b class="nc"><i>52</i>&nbsp;            if (l.toString().equals(level)) {</b>
+<b class="nc"><i>53</i>&nbsp;                return l;</b>
+<i>54</i>&nbsp;            }
+<i>55</i>&nbsp;        }
+<b class="nc"><i>56</i>&nbsp;        return null;</b>
+<i>57</i>&nbsp;    }
+<i>58</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

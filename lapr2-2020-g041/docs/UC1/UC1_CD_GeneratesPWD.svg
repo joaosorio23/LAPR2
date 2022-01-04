@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="363px" preserveAspectRatio="none" style="width:737px;height:363px;" version="1.1" viewBox="0 0 737 363" width="737px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="fuhz1689fls0q" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0" />
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" />
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" />
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal" />
+        </filter>
+    </defs>
+    <g>
+        <!--class ExternalPasswordGeneratorAlgorithm-->
+        <rect fill="#FEFECE" filter="url(#fuhz1689fls0q)" height="62.0234" id="ExternalPasswordGeneratorAlgorithm" style="stroke: #A80036; stroke-width: 1.5;" width="268" x="240.5" y="14.5" />
+        <ellipse cx="269" cy="34.5938" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M269.9531,31.2344 L269.9531,37.8906 L271.6719,37.8906 Q272.2813,37.8906 272.5469,38.125 Q272.8125,38.3594 272.8125,38.75 Q272.8125,39.125 272.5469,39.3594 Q272.2813,39.5938 271.6719,39.5938 L266.5313,39.5938 Q265.9219,39.5938 265.6563,39.3594 Q265.3906,39.125 265.3906,38.7344 Q265.3906,38.3594 265.6563,38.125 Q265.9219,37.8906 266.5313,37.8906 L268.25,37.8906 L268.25,31.2344 L266.5313,31.2344 Q265.9219,31.2344 265.6563,31 Q265.3906,30.7656 265.3906,30.375 Q265.3906,30 265.6563,29.7656 Q265.9219,29.5313 266.5313,29.5313 L271.6719,29.5313 Q272.2813,29.5313 272.5469,29.7656 Q272.8125,30 272.8125,30.375 Q272.8125,30.7656 272.5469,31 Q272.2813,31.2344 271.6719,31.2344 L269.9531,31.2344 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="61" x="358.5" y="31.957">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="206" x="286" y="47.0508">ExternalPasswordGeneratorAlgorithm</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="241.5" x2="507.5" y1="54.6875" y2="54.6875" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="256" x="246.5" y="70.1064">+String genaratePassword(String name, String email)</text>
+        <path d="M6,8 L6,83.4063 A0,0 0 0 0 6,83.4063 L205,83.4063 A0,0 0 0 0 205,83.4063 L205,49.5 L240.472,45.5 L205,41.5 L205,18 L195,8 L6,8 A0,0 0 0 0 6,8 " fill="#FBFB77" filter="url(#fuhz1689fls0q)" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M195,8 L195,18 L205,18 L195,8 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="168" x="12" y="26.4951">This interface will be targeted</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="162" x="12" y="42.8467">of multiple implementations,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="178" x="12" y="59.1982">one for each external algorithm</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="145" x="12" y="75.5498">that has to be supported.</text>
+        <!--class ExternalPasswordGeneratorAlgorithmAdapter1-->
+        <rect fill="#FEFECE" filter="url(#fuhz1689fls0q)" height="53.8359" id="ExternalPasswordGeneratorAlgorithmAdapter1" style="stroke: #A80036; stroke-width: 1.5;" width="288" x="59.5" y="143" />
+        <ellipse cx="74.5" cy="159" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M77.2656,154.875 Q77.4219,154.6563 77.6094,154.5469 Q77.7969,154.4375 78.0156,154.4375 Q78.3906,154.4375 78.625,154.6953 Q78.8594,154.9531 78.8594,155.5625 L78.8594,157.0156 Q78.8594,157.625 78.625,157.8906 Q78.3906,158.1563 78.0156,158.1563 Q77.6719,158.1563 77.4688,157.9531 Q77.2656,157.7656 77.1563,157.25 Q77.1094,156.8906 76.9219,156.7031 Q76.5938,156.3281 75.9844,156.1094 Q75.375,155.8906 74.75,155.8906 Q73.9844,155.8906 73.3516,156.2188 Q72.7188,156.5469 72.2266,157.2969 Q71.7344,158.0469 71.7344,159.0781 L71.7344,160.1719 Q71.7344,161.4063 72.625,162.2266 Q73.5156,163.0469 75.1094,163.0469 Q76.0469,163.0469 76.7031,162.7969 Q77.0938,162.6406 77.5156,162.2031 Q77.7813,161.9375 77.9297,161.8594 Q78.0781,161.7813 78.2813,161.7813 Q78.6094,161.7813 78.8672,162.0391 Q79.125,162.2969 79.125,162.6406 Q79.125,162.9844 78.7813,163.3906 Q78.2813,163.9688 77.4844,164.2969 Q76.4063,164.75 75.1094,164.75 Q73.5938,164.75 72.3906,164.125 Q71.4063,163.625 70.7188,162.5547 Q70.0313,161.4844 70.0313,160.2031 L70.0313,159.0469 Q70.0313,157.7188 70.6484,156.5703 Q71.2656,155.4219 72.3594,154.8047 Q73.4531,154.1875 74.6875,154.1875 Q75.4219,154.1875 76.0703,154.3516 Q76.7188,154.5156 77.2656,154.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="256" x="88.5" y="163.9102">ExternalPasswordGeneratorAlgorithmAdapter1</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="60.5" x2="346.5" y1="175" y2="175" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="256" x="65.5" y="190.4189">+String genaratePassword(String name, String email)</text>
+        <!--class ExternalPasswordGeneratorAlgorithm1API-->
+        <rect fill="#FEFECE" filter="url(#fuhz1689fls0q)" height="67.6719" id="ExternalPasswordGeneratorAlgorithm1API" style="stroke: #A80036; stroke-width: 1.5;" width="315" x="36" y="270.5" />
+        <ellipse cx="73.95" cy="286.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M76.7156,282.375 Q76.8719,282.1563 77.0594,282.0469 Q77.2469,281.9375 77.4656,281.9375 Q77.8406,281.9375 78.075,282.1953 Q78.3094,282.4531 78.3094,283.0625 L78.3094,284.5156 Q78.3094,285.125 78.075,285.3906 Q77.8406,285.6563 77.4656,285.6563 Q77.1219,285.6563 76.9188,285.4531 Q76.7156,285.2656 76.6063,284.75 Q76.5594,284.3906 76.3719,284.2031 Q76.0438,283.8281 75.4344,283.6094 Q74.825,283.3906 74.2,283.3906 Q73.4344,283.3906 72.8016,283.7188 Q72.1688,284.0469 71.6766,284.7969 Q71.1844,285.5469 71.1844,286.5781 L71.1844,287.6719 Q71.1844,288.9063 72.075,289.7266 Q72.9656,290.5469 74.5594,290.5469 Q75.4969,290.5469 76.1531,290.2969 Q76.5438,290.1406 76.9656,289.7031 Q77.2313,289.4375 77.3797,289.3594 Q77.5281,289.2813 77.7313,289.2813 Q78.0594,289.2813 78.3172,289.5391 Q78.575,289.7969 78.575,290.1406 Q78.575,290.4844 78.2313,290.8906 Q77.7313,291.4688 76.9344,291.7969 Q75.8563,292.25 74.5594,292.25 Q73.0438,292.25 71.8406,291.625 Q70.8563,291.125 70.1688,290.0547 Q69.4813,288.9844 69.4813,287.7031 L69.4813,286.5469 Q69.4813,285.2188 70.0984,284.0703 Q70.7156,282.9219 71.8094,282.3047 Q72.9031,281.6875 74.1375,281.6875 Q74.8719,281.6875 75.5203,281.8516 Q76.1688,282.0156 76.7156,282.375 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="232" x="93.05" y="291.4102">ExternalPasswordGeneratorAlgorithm1API</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="37" x2="350" y1="302.5" y2="302.5" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="131" x="42" y="317.9189">+String randomPassword()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="303" x="42" y="331.7549">+String randomPassword(Integer minChars, Integer maxChars)</text>
+        <!--class ExternalPasswordGeneratorAlgorithmAdapter2-->
+        <rect fill="#FEFECE" filter="url(#fuhz1689fls0q)" height="53.8359" id="ExternalPasswordGeneratorAlgorithmAdapter2" style="stroke: #A80036; stroke-width: 1.5;" width="288" x="402.5" y="143" />
+        <ellipse cx="417.5" cy="159" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M420.2656,154.875 Q420.4219,154.6563 420.6094,154.5469 Q420.7969,154.4375 421.0156,154.4375 Q421.3906,154.4375 421.625,154.6953 Q421.8594,154.9531 421.8594,155.5625 L421.8594,157.0156 Q421.8594,157.625 421.625,157.8906 Q421.3906,158.1563 421.0156,158.1563 Q420.6719,158.1563 420.4688,157.9531 Q420.2656,157.7656 420.1563,157.25 Q420.1094,156.8906 419.9219,156.7031 Q419.5938,156.3281 418.9844,156.1094 Q418.375,155.8906 417.75,155.8906 Q416.9844,155.8906 416.3516,156.2188 Q415.7188,156.5469 415.2266,157.2969 Q414.7344,158.0469 414.7344,159.0781 L414.7344,160.1719 Q414.7344,161.4063 415.625,162.2266 Q416.5156,163.0469 418.1094,163.0469 Q419.0469,163.0469 419.7031,162.7969 Q420.0938,162.6406 420.5156,162.2031 Q420.7813,161.9375 420.9297,161.8594 Q421.0781,161.7813 421.2813,161.7813 Q421.6094,161.7813 421.8672,162.0391 Q422.125,162.2969 422.125,162.6406 Q422.125,162.9844 421.7813,163.3906 Q421.2813,163.9688 420.4844,164.2969 Q419.4063,164.75 418.1094,164.75 Q416.5938,164.75 415.3906,164.125 Q414.4063,163.625 413.7188,162.5547 Q413.0313,161.4844 413.0313,160.2031 L413.0313,159.0469 Q413.0313,157.7188 413.6484,156.5703 Q414.2656,155.4219 415.3594,154.8047 Q416.4531,154.1875 417.6875,154.1875 Q418.4219,154.1875 419.0703,154.3516 Q419.7188,154.5156 420.2656,154.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="256" x="431.5" y="163.9102">ExternalPasswordGeneratorAlgorithmAdapter2</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="403.5" x2="689.5" y1="175" y2="175" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="256" x="408.5" y="190.4189">+String genaratePassword(String name, String email)</text>
+        <!--class ExternalPasswordGeneratorAlgorithm2API-->
+        <rect fill="#FEFECE" filter="url(#fuhz1689fls0q)" height="95.3438" id="ExternalPasswordGeneratorAlgorithm2API" style="stroke: #A80036; stroke-width: 1.5;" width="340" x="386.5" y="257" />
+        <ellipse cx="436.25" cy="273" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M439.0156,268.875 Q439.1719,268.6563 439.3594,268.5469 Q439.5469,268.4375 439.7656,268.4375 Q440.1406,268.4375 440.375,268.6953 Q440.6094,268.9531 440.6094,269.5625 L440.6094,271.0156 Q440.6094,271.625 440.375,271.8906 Q440.1406,272.1563 439.7656,272.1563 Q439.4219,272.1563 439.2188,271.9531 Q439.0156,271.7656 438.9063,271.25 Q438.8594,270.8906 438.6719,270.7031 Q438.3438,270.3281 437.7344,270.1094 Q437.125,269.8906 436.5,269.8906 Q435.7344,269.8906 435.1016,270.2188 Q434.4688,270.5469 433.9766,271.2969 Q433.4844,272.0469 433.4844,273.0781 L433.4844,274.1719 Q433.4844,275.4063 434.375,276.2266 Q435.2656,277.0469 436.8594,277.0469 Q437.7969,277.0469 438.4531,276.7969 Q438.8438,276.6406 439.2656,276.2031 Q439.5313,275.9375 439.6797,275.8594 Q439.8281,275.7813 440.0313,275.7813 Q440.3594,275.7813 440.6172,276.0391 Q440.875,276.2969 440.875,276.6406 Q440.875,276.9844 440.5313,277.3906 Q440.0313,277.9688 439.2344,278.2969 Q438.1563,278.75 436.8594,278.75 Q435.3438,278.75 434.1406,278.125 Q433.1563,277.625 432.4688,276.5547 Q431.7813,275.4844 431.7813,274.2031 L431.7813,273.0469 Q431.7813,271.7188 432.3984,270.5703 Q433.0156,269.4219 434.1094,268.8047 Q435.2031,268.1875 436.4375,268.1875 Q437.1719,268.1875 437.8203,268.3516 Q438.4688,268.5156 439.0156,268.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="232" x="456.75" y="277.9102">ExternalPasswordGeneratorAlgorithm2API</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="387.5" x2="725.5" y1="289" y2="289" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="160" x="392.5" y="304.4189">+Password generatePassword()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242" x="392.5" y="318.2549">+Password generatePassword(String feedChars)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="240" x="392.5" y="332.0908">+Paswword generatePassword(Integer strength)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="328" x="392.5" y="345.9268">+Paswword generatePassword(Integer strength, String feedChars)</text>
+        <!--link ExternalPasswordGeneratorAlgorithm to ExternalPasswordGeneratorAlgorithmAdapter1-->
+        <path d="M315.898,88.481 C290.744,106.501 262.131,126.999 240.069,142.803 " fill="none" id="ExternalPasswordGeneratorAlgorithm-ExternalPasswordGeneratorAlgorithmAdapter1" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="none" points="311.895,82.738,332.23,76.781,320.048,94.119,311.895,82.738" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link ExternalPasswordGeneratorAlgorithmAdapter1 to ExternalPasswordGeneratorAlgorithm1API-->
+        <path d="M201.524,197.178 C200.059,216.588 198.04,243.35 196.393,265.1674 " fill="none" id="ExternalPasswordGeneratorAlgorithmAdapter1-ExternalPasswordGeneratorAlgorithm1API" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="196.005,270.3131,200.6712,261.6398,196.3814,265.3273,192.6939,261.0375,196.005,270.3131" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link ExternalPasswordGeneratorAlgorithm to ExternalPasswordGeneratorAlgorithmAdapter2-->
+        <path d="M433.444,88.481 C458.746,106.501 487.527,126.999 509.717,142.803 " fill="none" id="ExternalPasswordGeneratorAlgorithm-ExternalPasswordGeneratorAlgorithmAdapter2" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="none" points="429.247,94.085,417.017,76.781,437.368,82.682,429.247,94.085" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link ExternalPasswordGeneratorAlgorithmAdapter2 to ExternalPasswordGeneratorAlgorithm2API-->
+        <path d="M548.476,197.178 C549.652,212.758 551.185,233.074 552.596,251.768 " fill="none" id="ExternalPasswordGeneratorAlgorithmAdapter2-ExternalPasswordGeneratorAlgorithm2API" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="552.99,256.9921,556.3024,247.717,552.6143,252.0062,548.325,248.3181,552.99,256.9921" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--
+@startuml
+
+skinparam classAttributeIconSize 0
+hide attributes
+
+note left of ExternalPasswordGeneratorAlgorithm
+This interface will be targeted
+of multiple implementations,
+one for each external algorithm
+that has to be supported.
+end note
+
+interface ExternalPasswordGeneratorAlgorithm << interface >>
+{
+ +String genaratePassword(String name, String email)
+}
+
+
+class ExternalPasswordGeneratorAlgorithmAdapter1
+{
++String genaratePassword(String name, String email)
+}
+
+class ExternalPasswordGeneratorAlgorithm1API
+{
+    +String randomPassword()
+    +String randomPassword(Integer minChars, Integer maxChars)
+}
+
+ExternalPasswordGeneratorAlgorithm <|.. ExternalPasswordGeneratorAlgorithmAdapter1
+ExternalPasswordGeneratorAlgorithmAdapter1 -d->  ExternalPasswordGeneratorAlgorithm1API
+
+class ExternalPasswordGeneratorAlgorithmAdapter2
+{
++String genaratePassword(String name, String email)
+}
+
+class ExternalPasswordGeneratorAlgorithm2API
+{
+    +Password generatePassword()
+    +Password generatePassword(String feedChars)
+    +Paswword generatePassword(Integer strength)
+    +Paswword generatePassword(Integer strength, String feedChars)
+}
+
+ExternalPasswordGeneratorAlgorithm <|.. ExternalPasswordGeneratorAlgorithmAdapter2
+ExternalPasswordGeneratorAlgorithmAdapter2 -d->  ExternalPasswordGeneratorAlgorithm2API
+
+
+@enduml
+
+PlantUML version 1.2018.14(Fri Dec 21 16:33:16 GMT 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) Client VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+-->
+    </g>
+</svg>

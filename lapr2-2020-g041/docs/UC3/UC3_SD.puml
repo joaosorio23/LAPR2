@@ -1,0 +1,82 @@
+@startuml
+autonumber
+'hide footbox
+actor "Collaborator of the Organization" as COL
+
+participant ":CreateTaskUI" as UI
+participant ":CreateTaskController" as CTRL
+participant "AplicacaoPOT" as _APP
+participant "app\n:AplicacaoPOT" as APP
+participant "session\n:UserSession" as SESSAO
+participant ":Platform" as PLAT
+participant "rorgs:OrganizationsRegister" as RORGS
+participant "org\n:Organization" as ORG
+participant "tl\n:TasksList" as LTASKS
+participant "task\n:Task" as TAREFA
+
+activate COL
+COL -> UI : Starts the process of creating a Task.
+activate UI
+UI --> COL : Asks for the necessary data (i.e. id, brief description, time duration (in hours), cost per hour (in euros) and task category).
+deactivate UI
+
+COL -> UI : Enters the requested data.
+activate UI
+
+UI -> CTRL : newTask(id,desc,duration,cost,cat)
+activate CTRL
+
+CTRL -> _APP: app = getInstance()
+activate _APP
+deactivate _APP
+
+CTRL -> APP: session = getCurrentSession()
+activate APP
+deactivate APP
+
+CTRL -> SESSAO: email = getUserEmail()
+activate SESSAO
+deactivate SESSAO
+
+CTRL -> PLAT: rorgs = getOrganizationsRegister()
+activate PLAT
+deactivate PLAT
+
+CTRL -> RORGS: org = getOrganizationByUserEmail(email)
+activate RORGS
+deactivate RORGS
+
+CTRL -> ORG: tl = getTasksList()
+activate ORG
+deactivate ORG
+
+CTRL -> LTASKS: task=newTask(id,desc,duration,cost,cat)
+activate LTASKS
+
+LTASKS --> TAREFA**: create(id,desc,duration,cost,cat)
+LTASKS -> LTASKS: validateTask(task)
+
+UI --> COL:  Displays the data, asking him to confirm it.
+deactivate LTASKS
+deactivate CTRL
+deactivate UI
+
+COL -> UI : Confirms
+activate UI
+UI -> CTRL : registerTask()
+activate CTRL
+
+CTRL -> LTASKS : registerTask(task)
+activate LTASKS
+
+LTASKS -> LTASKS: validateTask(task)
+LTASKS -> LTASKS: addTask(task)
+
+UI --> COL : Informs about the success of the operation
+deactivate LTASKS
+deactivate CTRL
+deactivate UI
+
+deactivate COL
+
+@enduml

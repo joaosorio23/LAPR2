@@ -1,0 +1,612 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: OrganizationsRegister</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.model.register</a> ]
+</div>
+
+<h1>Coverage Summary for Class: OrganizationsRegister (pt.ipp.isep.dei.esoft.pot.model.register)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">OrganizationsRegister</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    34,8%
+  </span>
+  <span class="absValue">
+    (8/ 23)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    25,2%
+  </span>
+  <span class="absValue">
+    (70/ 278)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.model.register;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import org.apache.commons.math.MathException;
+<i>4</i>&nbsp;import org.apache.commons.math.distribution.NormalDistributionImpl;
+<i>5</i>&nbsp;import pt.ipp.isep.dei.esoft.autorizacao.FacadeAuthorization;
+<i>6</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.ApplicationPOT;
+<i>7</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.*;
+<i>8</i>&nbsp;
+<i>9</i>&nbsp;import java.io.IOException;
+<i>10</i>&nbsp;import java.io.Serializable;
+<i>11</i>&nbsp;import java.util.ArrayList;
+<i>12</i>&nbsp;import java.util.Calendar;
+<i>13</i>&nbsp;import java.util.List;
+<i>14</i>&nbsp;
+<i>15</i>&nbsp;/**
+<i>16</i>&nbsp; * The type Organizations Register.
+<i>17</i>&nbsp; *
+<i>18</i>&nbsp; * @author Berkelios
+<i>19</i>&nbsp; */
+<i>20</i>&nbsp;public class OrganizationsRegister implements Serializable {
+<i>21</i>&nbsp;
+<i>22</i>&nbsp;    /**
+<i>23</i>&nbsp;     * The Facade Authorization.
+<i>24</i>&nbsp;     */
+<i>25</i>&nbsp;    private final FacadeAuthorization m_oAuthorization;
+<i>26</i>&nbsp;    /**
+<i>27</i>&nbsp;     * The Organizations List.
+<i>28</i>&nbsp;     */
+<i>29</i>&nbsp;    private final List&lt;Organization&gt; m_lstOrganizations;
+<i>30</i>&nbsp;
+<i>31</i>&nbsp;    /**
+<i>32</i>&nbsp;     * Instantiates a new Organizations Register.
+<i>33</i>&nbsp;     *
+<i>34</i>&nbsp;     * @param m_oAuthorization the Facade Authorization
+<i>35</i>&nbsp;     */
+<b class="fc"><i>36</i>&nbsp;    public OrganizationsRegister(FacadeAuthorization m_oAuthorization) {</b>
+<b class="fc"><i>37</i>&nbsp;        this.m_oAuthorization = m_oAuthorization;</b>
+<b class="fc"><i>38</i>&nbsp;        this.m_lstOrganizations = new ArrayList&lt;&gt;();</b>
+<b class="fc"><i>39</i>&nbsp;    }</b>
+<i>40</i>&nbsp;
+<i>41</i>&nbsp;    /**
+<i>42</i>&nbsp;     * Gets Organizations List.
+<i>43</i>&nbsp;     *
+<i>44</i>&nbsp;     * @return the Organizations List
+<i>45</i>&nbsp;     */
+<i>46</i>&nbsp;    public List&lt;Organization&gt; getOrganizationsList() {
+<b class="nc"><i>47</i>&nbsp;        return this.m_lstOrganizations;</b>
+<i>48</i>&nbsp;    }
+<i>49</i>&nbsp;
+<i>50</i>&nbsp;    /**
+<i>51</i>&nbsp;     * New Organization.
+<i>52</i>&nbsp;     *
+<i>53</i>&nbsp;     * @param strDesig the Designation
+<i>54</i>&nbsp;     * @param oMan the Manager
+<i>55</i>&nbsp;     * @param oCollab the Collaborator
+<i>56</i>&nbsp;     * @return the Organization
+<i>57</i>&nbsp;     */
+<i>58</i>&nbsp;    public Organization newOrganization(String strDesig, Manager oMan, Collaborator oCollab) {
+<b class="nc"><i>59</i>&nbsp;        return new Organization(strDesig, oMan, oCollab);</b>
+<i>60</i>&nbsp;    }
+<i>61</i>&nbsp;
+<i>62</i>&nbsp;    /**
+<i>63</i>&nbsp;     * Register Organization.
+<i>64</i>&nbsp;     *
+<i>65</i>&nbsp;     * @param oOrganization the Organization
+<i>66</i>&nbsp;     * @return boolean boolean
+<i>67</i>&nbsp;     * @throws IOException the IO Exception
+<i>68</i>&nbsp;     */
+<i>69</i>&nbsp;    public boolean registerOrganization(Organization oOrganization) throws IOException {
+<b class="nc"><i>70</i>&nbsp;        if (this.validateOrganization(oOrganization)) {</b>
+<b class="nc"><i>71</i>&nbsp;            Manager oMan = oOrganization.getManager();</b>
+<b class="nc"><i>72</i>&nbsp;            Collaborator oColLab = oOrganization.getCollaborator();</b>
+<b class="nc"><i>73</i>&nbsp;            String strPwdManager = ApplicationPOT.getInstance().getPlatform().getPasswordGenerator().generatePassword(oMan.getName(), oMan.getEmail());</b>
+<b class="nc"><i>74</i>&nbsp;            String strPwdCollaborator = ApplicationPOT.getInstance().getPlatform().getPasswordGenerator().generatePassword(oColLab.getName(), oColLab.getEmail());</b>
+<b class="nc"><i>75</i>&nbsp;            if (this.m_oAuthorization.recordUserWithPapers(oMan.getName(), oMan.getEmail(), strPwdManager, new String[]{Constants.PAPER_MANAGER_ORGANIZATION}) &amp;&amp; this.m_oAuthorization.recordUserWithPapers(oColLab.getName(), oColLab.getEmail(), strPwdCollaborator, new String[]{Constants.PAPER_COLLABORATOR_ORGANIZATION})) {</b>
+<b class="nc"><i>76</i>&nbsp;                ApplicationPOT.getInstance().getPlatform().getEmailSender().sendEmail(Constants.T4J_SUPPORT_EMAIL, oMan.getEmail(), &quot;Password to Access T4J&#39;s Platform&quot;, String.format(&quot;Hello %s,%nYour password to access T4J&#39;s Platform with the email %s is: %s.%nBest Regards,%nT4J&quot;, oMan.getName(), oMan.getEmail(), strPwdManager));</b>
+<b class="nc"><i>77</i>&nbsp;                ApplicationPOT.getInstance().getPlatform().getEmailSender().sendEmail(Constants.T4J_SUPPORT_EMAIL, oColLab.getEmail(), &quot;Password to Access T4J&#39;s Platform&quot;, String.format(&quot;Hello %s,%nYour password to access T4J&#39;s Platform with the email %s is: %s.%nBest Regards,%nT4J&quot;, oColLab.getName(), oColLab.getEmail(), strPwdCollaborator));</b>
+<i>78</i>&nbsp;
+<b class="nc"><i>79</i>&nbsp;                return addOrganization(oOrganization);</b>
+<i>80</i>&nbsp;            }
+<i>81</i>&nbsp;        }
+<b class="nc"><i>82</i>&nbsp;        return false;</b>
+<i>83</i>&nbsp;    }
+<i>84</i>&nbsp;
+<i>85</i>&nbsp;    /**
+<i>86</i>&nbsp;     * Add Organization.
+<i>87</i>&nbsp;     *
+<i>88</i>&nbsp;     * @param oOrganization the Organization
+<i>89</i>&nbsp;     * @return boolean boolean
+<i>90</i>&nbsp;     */
+<i>91</i>&nbsp;    public boolean addOrganization(Organization oOrganization) {
+<b class="fc"><i>92</i>&nbsp;        return this.m_lstOrganizations.add(oOrganization);</b>
+<i>93</i>&nbsp;    }
+<i>94</i>&nbsp;
+<i>95</i>&nbsp;    /**
+<i>96</i>&nbsp;     * Validate Organization.
+<i>97</i>&nbsp;     *
+<i>98</i>&nbsp;     * @param oOrganization the Organization
+<i>99</i>&nbsp;     * @return boolean boolean
+<i>100</i>&nbsp;     */
+<i>101</i>&nbsp;    public boolean validateOrganization(Organization oOrganization) {
+<b class="nc"><i>102</i>&nbsp;        if (oOrganization.getManager().getEmail().equals(oOrganization.getCollaborator().getEmail())) {</b>
+<b class="nc"><i>103</i>&nbsp;            throw new IllegalArgumentException(&quot;The Manager&#39;s and Collaborator&#39;s email cannot be the same!&quot;);</b>
+<i>104</i>&nbsp;        }
+<i>105</i>&nbsp;
+<b class="nc"><i>106</i>&nbsp;        return true;</b>
+<i>107</i>&nbsp;    }
+<i>108</i>&nbsp;
+<i>109</i>&nbsp;    /**
+<i>110</i>&nbsp;     * Gets Organization by User&#39;s Email.
+<i>111</i>&nbsp;     *
+<i>112</i>&nbsp;     * @param email the Email
+<i>113</i>&nbsp;     * @return the Organization
+<i>114</i>&nbsp;     */
+<i>115</i>&nbsp;    public Organization getOrganizationByUserEmail(String email) {
+<i>116</i>&nbsp;
+<b class="nc"><i>117</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>118</i>&nbsp;            if (org.getCollaborator().getEmail().equals(email) || org.getManager().getEmail().equals(email)) {</b>
+<b class="nc"><i>119</i>&nbsp;                return org;</b>
+<i>120</i>&nbsp;            }
+<b class="nc"><i>121</i>&nbsp;        }</b>
+<b class="nc"><i>122</i>&nbsp;        return null;</b>
+<i>123</i>&nbsp;    }
+<i>124</i>&nbsp;
+<i>125</i>&nbsp;    /**
+<i>126</i>&nbsp;     * Calculate overall percentage of delays.
+<i>127</i>&nbsp;     *
+<i>128</i>&nbsp;     * @return the overall percentage of delays
+<i>129</i>&nbsp;     */
+<i>130</i>&nbsp;    public double calculateOverallPercentageOfDelays() {
+<b class="fc"><i>131</i>&nbsp;        double amountOfOverallTasks = 0;</b>
+<b class="fc"><i>132</i>&nbsp;        double amountOfDelays = 0;</b>
+<b class="fc"><i>133</i>&nbsp;        Calendar now = Calendar.getInstance();</b>
+<b class="fc"><i>134</i>&nbsp;        Calendar calendar = Calendar.getInstance();</b>
+<b class="fc"><i>135</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="fc"><i>136</i>&nbsp;            for (PaymentTransaction pt : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="fc"><i>137</i>&nbsp;                calendar.setTime(pt.getTask().getTaskExecution().getDate());</b>
+<b class="fc"><i>138</i>&nbsp;                if ((calendar.get(Calendar.YEAR)) == (now.get(Calendar.YEAR))) {</b>
+<b class="fc"><i>139</i>&nbsp;                    amountOfOverallTasks++;</b>
+<b class="fc"><i>140</i>&nbsp;                    if (pt.getTask().getTaskExecution().getDelay() &gt; 0) {</b>
+<b class="fc"><i>141</i>&nbsp;                        amountOfDelays++;</b>
+<i>142</i>&nbsp;                    }
+<i>143</i>&nbsp;                }
+<b class="fc"><i>144</i>&nbsp;            }</b>
+<b class="fc"><i>145</i>&nbsp;        }</b>
+<b class="fc"><i>146</i>&nbsp;        return (amountOfDelays / amountOfOverallTasks) * 100;</b>
+<i>147</i>&nbsp;    }
+<i>148</i>&nbsp;
+<i>149</i>&nbsp;    /**
+<i>150</i>&nbsp;     * Gets median.
+<i>151</i>&nbsp;     *
+<i>152</i>&nbsp;     * @param id the ID
+<i>153</i>&nbsp;     * @return the median
+<i>154</i>&nbsp;     */
+<i>155</i>&nbsp;    public double getMean(String id) {
+<b class="fc"><i>156</i>&nbsp;        double cont = 0;</b>
+<b class="fc"><i>157</i>&nbsp;        double delaysSum = 0;</b>
+<b class="fc"><i>158</i>&nbsp;        Calendar now = Calendar.getInstance();</b>
+<b class="fc"><i>159</i>&nbsp;        Calendar calendar = Calendar.getInstance();</b>
+<b class="fc"><i>160</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="fc"><i>161</i>&nbsp;            for (PaymentTransaction pt : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="fc"><i>162</i>&nbsp;                String idFree = pt.getFreelancer().getId();</b>
+<b class="fc"><i>163</i>&nbsp;                if (id.equals(idFree)) {</b>
+<b class="fc"><i>164</i>&nbsp;                    calendar.setTime(pt.getTask().getTaskExecution().getDate());</b>
+<b class="fc"><i>165</i>&nbsp;                    if ((calendar.get(Calendar.YEAR)) == (now.get(Calendar.YEAR))) {</b>
+<b class="fc"><i>166</i>&nbsp;                        delaysSum = delaysSum + pt.getTask().getTaskExecution().getDelay();</b>
+<b class="fc"><i>167</i>&nbsp;                        cont++;</b>
+<i>168</i>&nbsp;                    }
+<i>169</i>&nbsp;                }
+<b class="fc"><i>170</i>&nbsp;            }</b>
+<b class="fc"><i>171</i>&nbsp;        }</b>
+<b class="fc"><i>172</i>&nbsp;        return (delaysSum / cont);</b>
+<i>173</i>&nbsp;    }
+<i>174</i>&nbsp;
+<i>175</i>&nbsp;    /**
+<i>176</i>&nbsp;     * Gets Percentage.
+<i>177</i>&nbsp;     *
+<i>178</i>&nbsp;     * @param id the ID
+<i>179</i>&nbsp;     * @return the Percentage
+<i>180</i>&nbsp;     */
+<i>181</i>&nbsp;    public double getPercentage(String id) {
+<b class="fc"><i>182</i>&nbsp;        double totalDelays = 0;</b>
+<b class="fc"><i>183</i>&nbsp;        double totalTasks = 0;</b>
+<b class="fc"><i>184</i>&nbsp;        Calendar now = Calendar.getInstance();</b>
+<b class="fc"><i>185</i>&nbsp;        Calendar calendar = Calendar.getInstance();</b>
+<b class="fc"><i>186</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="fc"><i>187</i>&nbsp;            for (PaymentTransaction pt : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="fc"><i>188</i>&nbsp;                String idFree = pt.getFreelancer().getId();</b>
+<b class="fc"><i>189</i>&nbsp;                if (id.equals(idFree)) {</b>
+<b class="fc"><i>190</i>&nbsp;                    calendar.setTime(pt.getTask().getTaskExecution().getDate());</b>
+<b class="fc"><i>191</i>&nbsp;                    if ((calendar.get(Calendar.YEAR)) == (now.get(Calendar.YEAR))) {</b>
+<b class="fc"><i>192</i>&nbsp;                        totalTasks++;</b>
+<b class="fc"><i>193</i>&nbsp;                        if (pt.getTask().getTaskExecution().getDelay() &gt; 0) {</b>
+<b class="fc"><i>194</i>&nbsp;                            totalDelays++;</b>
+<i>195</i>&nbsp;                        }
+<i>196</i>&nbsp;                    }
+<i>197</i>&nbsp;                }
+<b class="fc"><i>198</i>&nbsp;            }</b>
+<b class="fc"><i>199</i>&nbsp;        }</b>
+<b class="fc"><i>200</i>&nbsp;        return (totalDelays / totalTasks) * 100;</b>
+<i>201</i>&nbsp;    }
+<i>202</i>&nbsp;
+<i>203</i>&nbsp;    /**
+<i>204</i>&nbsp;     * Gets list freelancers with payments.
+<i>205</i>&nbsp;     *
+<i>206</i>&nbsp;     * @return the list freelancers with payments
+<i>207</i>&nbsp;     */
+<i>208</i>&nbsp;    public List&lt;Freelancer&gt; getListFreelancersWithPayments() {
+<b class="fc"><i>209</i>&nbsp;        List&lt;Freelancer&gt; allFree = new ArrayList&lt;&gt;();</b>
+<b class="fc"><i>210</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="fc"><i>211</i>&nbsp;            for (Freelancer free : org.getListOfFreeTrans()) {</b>
+<b class="fc"><i>212</i>&nbsp;                if (!(allFree.contains(free))) {</b>
+<b class="fc"><i>213</i>&nbsp;                    allFree.add(free);</b>
+<i>214</i>&nbsp;                }
+<b class="fc"><i>215</i>&nbsp;            }</b>
+<b class="fc"><i>216</i>&nbsp;        }</b>
+<b class="fc"><i>217</i>&nbsp;        return allFree;</b>
+<i>218</i>&nbsp;    }
+<i>219</i>&nbsp;
+<i>220</i>&nbsp;    /**
+<i>221</i>&nbsp;     * Gets list freelancers delays.
+<i>222</i>&nbsp;     *
+<i>223</i>&nbsp;     * @param listFreelancersWithPayments the list freelancers with payments
+<i>224</i>&nbsp;     * @return the list freelancers delays
+<i>225</i>&nbsp;     */
+<i>226</i>&nbsp;    public List&lt;String&gt; getListFreelancersDelays(List&lt;Freelancer&gt; listFreelancersWithPayments) {
+<b class="nc"><i>227</i>&nbsp;        List&lt;String&gt; freeDelays = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i>228</i>&nbsp;        double allDelay = 0, allCont = 0, allDeviation = 0;</b>
+<b class="nc"><i>229</i>&nbsp;        for (Freelancer free : listFreelancersWithPayments) {</b>
+<b class="nc"><i>230</i>&nbsp;            double totalDelayFree = 0;</b>
+<b class="nc"><i>231</i>&nbsp;            double contFree = 0;</b>
+<b class="nc"><i>232</i>&nbsp;            double deviationFree = 0;</b>
+<b class="nc"><i>233</i>&nbsp;            for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>234</i>&nbsp;                totalDelayFree = totalDelayFree + (org.getMeanT(free) * org.getAmountOfTransacFree(free));</b>
+<b class="nc"><i>235</i>&nbsp;                contFree = contFree + org.getAmountOfTransacFree(free);</b>
+<b class="nc"><i>236</i>&nbsp;            }</b>
+<b class="nc"><i>237</i>&nbsp;            for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>238</i>&nbsp;                for (PaymentTransaction trans : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="nc"><i>239</i>&nbsp;                    if (free.getId().equals(trans.getFreelancer().getId())) {</b>
+<b class="nc"><i>240</i>&nbsp;                        deviationFree = Math.pow(trans.getTask().getTaskExecution().getDelay() - totalDelayFree / contFree, 2) + deviationFree;</b>
+<i>241</i>&nbsp;                    }
+<b class="nc"><i>242</i>&nbsp;                }</b>
+<b class="nc"><i>243</i>&nbsp;            }</b>
+<b class="nc"><i>244</i>&nbsp;            allDelay = allDelay + totalDelayFree;</b>
+<b class="nc"><i>245</i>&nbsp;            allCont = allCont + contFree;</b>
+<b class="nc"><i>246</i>&nbsp;            freeDelays.add(String.format(&quot;The Freelancer %s - ID: %s has a mean of delays of %.2f and a standard deviation of %.2f&quot;, free.getName(), free.getId(), totalDelayFree / contFree, Math.sqrt(deviationFree / contFree)));</b>
+<b class="nc"><i>247</i>&nbsp;        }</b>
+<b class="nc"><i>248</i>&nbsp;        for (Freelancer freel : listFreelancersWithPayments) {</b>
+<b class="nc"><i>249</i>&nbsp;            for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>250</i>&nbsp;                for (PaymentTransaction trans : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="nc"><i>251</i>&nbsp;                    if (freel.getId().equals(trans.getFreelancer().getId())) {</b>
+<b class="nc"><i>252</i>&nbsp;                        allDeviation = Math.pow(trans.getTask().getTaskExecution().getDelay() - allDelay / allCont, 2) + allDeviation;</b>
+<i>253</i>&nbsp;                    }
+<b class="nc"><i>254</i>&nbsp;                }</b>
+<b class="nc"><i>255</i>&nbsp;            }</b>
+<b class="nc"><i>256</i>&nbsp;        }</b>
+<b class="nc"><i>257</i>&nbsp;        double median = allDelay / allCont;</b>
+<b class="nc"><i>258</i>&nbsp;        double deviation = allDeviation / allCont;</b>
+<b class="nc"><i>259</i>&nbsp;        if (listFreelancersWithPayments.isEmpty()) {</b>
+<b class="nc"><i>260</i>&nbsp;            median = 0;</b>
+<b class="nc"><i>261</i>&nbsp;            deviation = 0;</b>
+<i>262</i>&nbsp;        }
+<b class="nc"><i>263</i>&nbsp;        freeDelays.add(String.valueOf(median));</b>
+<b class="nc"><i>264</i>&nbsp;        freeDelays.add(String.valueOf(Math.sqrt(deviation)));</b>
+<b class="nc"><i>265</i>&nbsp;        return freeDelays;</b>
+<i>266</i>&nbsp;    }
+<i>267</i>&nbsp;
+<i>268</i>&nbsp;    /**
+<i>269</i>&nbsp;     * Gets list freelancers payments.
+<i>270</i>&nbsp;     *
+<i>271</i>&nbsp;     * @param listFreelancersWithPayments the list freelancers with payments
+<i>272</i>&nbsp;     * @return the list freelancers payments
+<i>273</i>&nbsp;     */
+<i>274</i>&nbsp;    public List&lt;String&gt; getListFreelancersPayments(List&lt;Freelancer&gt; listFreelancersWithPayments) {
+<b class="nc"><i>275</i>&nbsp;        List&lt;String&gt; freePayments = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i>276</i>&nbsp;        double allPayments = 0, allCont = 0, allDeviation = 0;</b>
+<b class="nc"><i>277</i>&nbsp;        for (Freelancer free : listFreelancersWithPayments) {</b>
+<b class="nc"><i>278</i>&nbsp;            double totalPaymentsFree = 0;</b>
+<b class="nc"><i>279</i>&nbsp;            double contFree = 0;</b>
+<b class="nc"><i>280</i>&nbsp;            double deviationFree = 0;</b>
+<b class="nc"><i>281</i>&nbsp;            for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>282</i>&nbsp;                totalPaymentsFree = totalPaymentsFree + (org.calculateMeanP(free) * org.getAmountOfTransacFree(free));</b>
+<b class="nc"><i>283</i>&nbsp;                contFree = contFree + org.getAmountOfTransacFree(free);</b>
+<b class="nc"><i>284</i>&nbsp;            }</b>
+<b class="nc"><i>285</i>&nbsp;            for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>286</i>&nbsp;                for (PaymentTransaction trans : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="nc"><i>287</i>&nbsp;                    if (free.getId().equals(trans.getFreelancer().getId())) {</b>
+<b class="nc"><i>288</i>&nbsp;                        deviationFree = Math.pow(trans.getValue() - totalPaymentsFree / contFree, 2) + deviationFree;</b>
+<i>289</i>&nbsp;                    }
+<b class="nc"><i>290</i>&nbsp;                }</b>
+<b class="nc"><i>291</i>&nbsp;            }</b>
+<b class="nc"><i>292</i>&nbsp;            allPayments = allPayments + totalPaymentsFree;</b>
+<b class="nc"><i>293</i>&nbsp;            allCont = allCont + contFree;</b>
+<b class="nc"><i>294</i>&nbsp;            freePayments.add(String.format(&quot;The Freelancer %s - ID: %s has a mean of payments of %.2f€ and a standard deviation of %.2f€&quot;, free.getName(), free.getId(), totalPaymentsFree / contFree, Math.sqrt(deviationFree / contFree)));</b>
+<b class="nc"><i>295</i>&nbsp;        }</b>
+<b class="nc"><i>296</i>&nbsp;        for (Freelancer freel : listFreelancersWithPayments) {</b>
+<b class="nc"><i>297</i>&nbsp;            for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>298</i>&nbsp;                for (PaymentTransaction trans : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="nc"><i>299</i>&nbsp;                    if (freel.getId().equals(trans.getFreelancer().getId())) {</b>
+<b class="nc"><i>300</i>&nbsp;                        allDeviation = Math.pow(trans.getValue() - allPayments / allCont, 2) + allDeviation;</b>
+<i>301</i>&nbsp;                    }
+<b class="nc"><i>302</i>&nbsp;                }</b>
+<b class="nc"><i>303</i>&nbsp;            }</b>
+<b class="nc"><i>304</i>&nbsp;        }</b>
+<b class="nc"><i>305</i>&nbsp;        double median = allPayments / allCont;</b>
+<b class="nc"><i>306</i>&nbsp;        double deviation = allDeviation / allCont;</b>
+<b class="nc"><i>307</i>&nbsp;        if (listFreelancersWithPayments.isEmpty()) {</b>
+<b class="nc"><i>308</i>&nbsp;            median = 0;</b>
+<b class="nc"><i>309</i>&nbsp;            deviation = 0;</b>
+<i>310</i>&nbsp;        }
+<b class="nc"><i>311</i>&nbsp;        freePayments.add(String.valueOf(median));</b>
+<b class="nc"><i>312</i>&nbsp;        freePayments.add(String.valueOf(Math.sqrt(deviation)));</b>
+<b class="nc"><i>313</i>&nbsp;        return freePayments;</b>
+<i>314</i>&nbsp;    }
+<i>315</i>&nbsp;
+<i>316</i>&nbsp;    /**
+<i>317</i>&nbsp;     * Gets delays for each interval.
+<i>318</i>&nbsp;     *
+<i>319</i>&nbsp;     * @param freeDelays the free delays
+<i>320</i>&nbsp;     * @return the delays for each interval
+<i>321</i>&nbsp;     */
+<i>322</i>&nbsp;    public ArrayList&lt;Double&gt; getDelaysForEachInterval(List&lt;String&gt; freeDelays) {
+<b class="nc"><i>323</i>&nbsp;        ArrayList&lt;Double&gt; list = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i>324</i>&nbsp;        double totalMedian = Double.parseDouble(freeDelays.get(freeDelays.size() - 2));</b>
+<b class="nc"><i>325</i>&nbsp;        double totalDeviation = Double.parseDouble(freeDelays.get(freeDelays.size() - 1));</b>
+<b class="nc"><i>326</i>&nbsp;        double cont1 = 0, cont2 = 0, cont3 = 0;</b>
+<b class="nc"><i>327</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>328</i>&nbsp;            for (PaymentTransaction t : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="nc"><i>329</i>&nbsp;                if ((t.getTask().getTaskExecution().getDelay()) &lt;= (totalMedian - totalDeviation)) {</b>
+<b class="nc"><i>330</i>&nbsp;                    cont1++;</b>
+<i>331</i>&nbsp;                }
+<b class="nc"><i>332</i>&nbsp;                if ((t.getTask().getTaskExecution().getDelay()) &gt; (totalMedian - totalDeviation) &amp;&amp; ((t.getTask().getTaskExecution().getDelay()) &lt; (totalMedian + totalDeviation))) {</b>
+<b class="nc"><i>333</i>&nbsp;                    cont2++;</b>
+<i>334</i>&nbsp;                }
+<b class="nc"><i>335</i>&nbsp;                if ((t.getTask().getTaskExecution().getDelay()) &gt;= (totalMedian + totalDeviation)) {</b>
+<b class="nc"><i>336</i>&nbsp;                    cont3++;</b>
+<i>337</i>&nbsp;                }
+<b class="nc"><i>338</i>&nbsp;            }</b>
+<b class="nc"><i>339</i>&nbsp;        }</b>
+<b class="nc"><i>340</i>&nbsp;        list.add(cont1);</b>
+<b class="nc"><i>341</i>&nbsp;        list.add(cont2);</b>
+<b class="nc"><i>342</i>&nbsp;        list.add(cont3);</b>
+<b class="nc"><i>343</i>&nbsp;        list.add(totalMedian - totalDeviation);</b>
+<b class="nc"><i>344</i>&nbsp;        list.add(totalMedian + totalDeviation);</b>
+<i>345</i>&nbsp;
+<b class="nc"><i>346</i>&nbsp;        return list;</b>
+<i>347</i>&nbsp;    }
+<i>348</i>&nbsp;
+<i>349</i>&nbsp;    /**
+<i>350</i>&nbsp;     * Gets payments for each interval.
+<i>351</i>&nbsp;     *
+<i>352</i>&nbsp;     * @param freeDelays the free delays
+<i>353</i>&nbsp;     * @return the payments for each interval
+<i>354</i>&nbsp;     */
+<i>355</i>&nbsp;    public ArrayList&lt;Double&gt; getPaymentsForEachInterval(List&lt;String&gt; freeDelays) {
+<b class="nc"><i>356</i>&nbsp;        ArrayList&lt;Double&gt; list = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i>357</i>&nbsp;        double totalMedian = Double.parseDouble(freeDelays.get(freeDelays.size() - 2));</b>
+<b class="nc"><i>358</i>&nbsp;        double totalDeviation = Double.parseDouble(freeDelays.get(freeDelays.size() - 1));</b>
+<b class="nc"><i>359</i>&nbsp;        double cont1 = 0, cont2 = 0, cont3 = 0;</b>
+<b class="nc"><i>360</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>361</i>&nbsp;            for (PaymentTransaction t : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="nc"><i>362</i>&nbsp;                if ((t.getValue() &lt;= (totalMedian - totalDeviation))) {</b>
+<b class="nc"><i>363</i>&nbsp;                    cont1++;</b>
+<i>364</i>&nbsp;                }
+<b class="nc"><i>365</i>&nbsp;                if ((t.getValue()) &gt; (totalMedian - totalDeviation) &amp;&amp; (t.getValue() &lt; (totalMedian + totalDeviation))) {</b>
+<b class="nc"><i>366</i>&nbsp;                    cont2++;</b>
+<i>367</i>&nbsp;                }
+<b class="nc"><i>368</i>&nbsp;                if (t.getValue() &gt;= (totalMedian + totalDeviation)) {</b>
+<b class="nc"><i>369</i>&nbsp;                    cont3++;</b>
+<i>370</i>&nbsp;                }
+<b class="nc"><i>371</i>&nbsp;            }</b>
+<b class="nc"><i>372</i>&nbsp;        }</b>
+<b class="nc"><i>373</i>&nbsp;        list.add(cont1);</b>
+<b class="nc"><i>374</i>&nbsp;        list.add(cont2);</b>
+<b class="nc"><i>375</i>&nbsp;        list.add(cont3);</b>
+<b class="nc"><i>376</i>&nbsp;        list.add(totalMedian - totalDeviation);</b>
+<b class="nc"><i>377</i>&nbsp;        list.add(totalMedian + totalDeviation);</b>
+<i>378</i>&nbsp;
+<b class="nc"><i>379</i>&nbsp;        return list;</b>
+<i>380</i>&nbsp;    }
+<i>381</i>&nbsp;
+<i>382</i>&nbsp;    /**
+<i>383</i>&nbsp;     * Gets payments interval free.
+<i>384</i>&nbsp;     *
+<i>385</i>&nbsp;     * @param id the id
+<i>386</i>&nbsp;     * @return the payments interval free
+<i>387</i>&nbsp;     */
+<i>388</i>&nbsp;    public List&lt;Double&gt; getPaymentsIntervalFree(String id) {
+<b class="nc"><i>389</i>&nbsp;        ArrayList&lt;Double&gt; list = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i>390</i>&nbsp;        Freelancer f = ApplicationPOT.getInstance().getPlatform().getFreelancersRegister().getFreelancerByID(id);</b>
+<b class="nc"><i>391</i>&nbsp;        double mean = getMeanP(f);</b>
+<b class="nc"><i>392</i>&nbsp;        double deviation = getDeviationP(f, mean);</b>
+<b class="nc"><i>393</i>&nbsp;        double cont1 = 0, cont2 = 0, cont3 = 0;</b>
+<b class="nc"><i>394</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>395</i>&nbsp;            for (PaymentTransaction t : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="nc"><i>396</i>&nbsp;                if (f.equals(t.getFreelancer())) {</b>
+<b class="nc"><i>397</i>&nbsp;                    if ((t.getValue()) &lt;= (mean - deviation)) {</b>
+<b class="nc"><i>398</i>&nbsp;                        cont1++;</b>
+<i>399</i>&nbsp;                    }
+<b class="nc"><i>400</i>&nbsp;                    if (((t.getValue()) &gt; (mean - deviation)) &amp;&amp; ((t.getValue()) &lt; (mean + deviation))) {</b>
+<b class="nc"><i>401</i>&nbsp;                        cont2++;</b>
+<i>402</i>&nbsp;                    }
+<b class="nc"><i>403</i>&nbsp;                    if ((t.getValue()) &gt;= (mean + deviation)) {</b>
+<b class="nc"><i>404</i>&nbsp;                        cont3++;</b>
+<i>405</i>&nbsp;                    }
+<i>406</i>&nbsp;                }
+<b class="nc"><i>407</i>&nbsp;            }</b>
+<b class="nc"><i>408</i>&nbsp;        }</b>
+<b class="nc"><i>409</i>&nbsp;        list.add(cont1);</b>
+<b class="nc"><i>410</i>&nbsp;        list.add(cont2);</b>
+<b class="nc"><i>411</i>&nbsp;        list.add(cont3);</b>
+<b class="nc"><i>412</i>&nbsp;        list.add(mean - deviation);</b>
+<b class="nc"><i>413</i>&nbsp;        list.add(mean + deviation);</b>
+<i>414</i>&nbsp;
+<b class="nc"><i>415</i>&nbsp;        return list;</b>
+<i>416</i>&nbsp;    }
+<i>417</i>&nbsp;
+<i>418</i>&nbsp;    /**
+<i>419</i>&nbsp;     * Gets number of delays free.
+<i>420</i>&nbsp;     *
+<i>421</i>&nbsp;     * @param id the id
+<i>422</i>&nbsp;     * @return the number of delays free
+<i>423</i>&nbsp;     */
+<i>424</i>&nbsp;    public List&lt;Double&gt; getNumberOfDelaysFree(String id) {
+<b class="nc"><i>425</i>&nbsp;        ArrayList&lt;Double&gt; list = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i>426</i>&nbsp;        Freelancer f = ApplicationPOT.getInstance().getPlatform().getFreelancersRegister().getFreelancerByID(id);</b>
+<b class="nc"><i>427</i>&nbsp;        double mean = getMeanT(f);</b>
+<b class="nc"><i>428</i>&nbsp;        double deviation = getDeviationT(f, mean);</b>
+<b class="nc"><i>429</i>&nbsp;        double cont1 = 0, cont2 = 0, cont3 = 0;</b>
+<b class="nc"><i>430</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>431</i>&nbsp;            for (PaymentTransaction t : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="nc"><i>432</i>&nbsp;                if (f.equals(t.getFreelancer())) {</b>
+<b class="nc"><i>433</i>&nbsp;                    if ((t.getTask().getTaskExecution().getDelay()) &lt;= (mean - deviation)) {</b>
+<b class="nc"><i>434</i>&nbsp;                        cont1++;</b>
+<i>435</i>&nbsp;                    }
+<b class="nc"><i>436</i>&nbsp;                    if (((t.getTask().getTaskExecution().getDelay()) &gt; (mean - deviation)) &amp;&amp; ((t.getTask().getTaskExecution().getDelay()) &lt; (mean + deviation))) {</b>
+<b class="nc"><i>437</i>&nbsp;                        cont2++;</b>
+<i>438</i>&nbsp;                    }
+<b class="nc"><i>439</i>&nbsp;                    if ((t.getTask().getTaskExecution().getDelay()) &gt;= (mean + deviation)) {</b>
+<b class="nc"><i>440</i>&nbsp;                        cont3++;</b>
+<i>441</i>&nbsp;                    }
+<i>442</i>&nbsp;                }
+<b class="nc"><i>443</i>&nbsp;            }</b>
+<b class="nc"><i>444</i>&nbsp;        }</b>
+<b class="nc"><i>445</i>&nbsp;        list.add(cont1);</b>
+<b class="nc"><i>446</i>&nbsp;        list.add(cont2);</b>
+<b class="nc"><i>447</i>&nbsp;        list.add(cont3);</b>
+<b class="nc"><i>448</i>&nbsp;        list.add(mean - deviation);</b>
+<b class="nc"><i>449</i>&nbsp;        list.add(mean + deviation);</b>
+<i>450</i>&nbsp;
+<b class="nc"><i>451</i>&nbsp;        return list;</b>
+<i>452</i>&nbsp;    }
+<i>453</i>&nbsp;
+<i>454</i>&nbsp;    private double getDeviationT(Freelancer free, double mean) {
+<b class="nc"><i>455</i>&nbsp;        double deviationFree = 0, cont = 0;</b>
+<b class="nc"><i>456</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>457</i>&nbsp;            for (PaymentTransaction trans : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="nc"><i>458</i>&nbsp;                if (free.getId().equals(trans.getFreelancer().getId())) {</b>
+<b class="nc"><i>459</i>&nbsp;                    deviationFree = Math.pow(trans.getTask().getTaskExecution().getDelay() - mean, 2) + deviationFree;</b>
+<b class="nc"><i>460</i>&nbsp;                    cont++;</b>
+<i>461</i>&nbsp;                }
+<b class="nc"><i>462</i>&nbsp;            }</b>
+<b class="nc"><i>463</i>&nbsp;        }</b>
+<b class="nc"><i>464</i>&nbsp;        return Math.sqrt(deviationFree / cont);</b>
+<i>465</i>&nbsp;    }
+<i>466</i>&nbsp;
+<i>467</i>&nbsp;    private double getMeanT(Freelancer free) {
+<b class="nc"><i>468</i>&nbsp;        double totalDelayFree = 0;</b>
+<b class="nc"><i>469</i>&nbsp;        double contFree = 0;</b>
+<b class="nc"><i>470</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>471</i>&nbsp;            totalDelayFree = totalDelayFree + (org.getMeanT(free) * org.getAmountOfTransacFree(free));</b>
+<b class="nc"><i>472</i>&nbsp;            contFree = contFree + org.getAmountOfTransacFree(free);</b>
+<b class="nc"><i>473</i>&nbsp;        }</b>
+<b class="nc"><i>474</i>&nbsp;        return totalDelayFree / contFree;</b>
+<i>475</i>&nbsp;    }
+<i>476</i>&nbsp;
+<i>477</i>&nbsp;    private double getDeviationP(Freelancer free, double mean) {
+<b class="nc"><i>478</i>&nbsp;        double deviationFree = 0, counter = 0;</b>
+<b class="nc"><i>479</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>480</i>&nbsp;            for (PaymentTransaction trans : org.getPaymentTransactionList().getPaymentTransactions()) {</b>
+<b class="nc"><i>481</i>&nbsp;                if (free.getId().equals(trans.getFreelancer().getId())) {</b>
+<b class="nc"><i>482</i>&nbsp;                    deviationFree = Math.pow(trans.getValue() - mean, 2) + deviationFree;</b>
+<b class="nc"><i>483</i>&nbsp;                    counter++;</b>
+<i>484</i>&nbsp;                }
+<b class="nc"><i>485</i>&nbsp;            }</b>
+<b class="nc"><i>486</i>&nbsp;        }</b>
+<b class="nc"><i>487</i>&nbsp;        return Math.sqrt(deviationFree / counter);</b>
+<i>488</i>&nbsp;    }
+<i>489</i>&nbsp;
+<i>490</i>&nbsp;    private double getMeanP(Freelancer free) {
+<b class="nc"><i>491</i>&nbsp;        double totalPaymentsFree = 0;</b>
+<b class="nc"><i>492</i>&nbsp;        double contFree = 0;</b>
+<b class="nc"><i>493</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="nc"><i>494</i>&nbsp;            totalPaymentsFree = totalPaymentsFree + (org.calculateMeanP(free) * org.getAmountOfTransacFree(free));</b>
+<b class="nc"><i>495</i>&nbsp;            contFree = contFree + org.getAmountOfTransacFree(free);</b>
+<b class="nc"><i>496</i>&nbsp;        }</b>
+<b class="nc"><i>497</i>&nbsp;        return totalPaymentsFree / contFree;</b>
+<i>498</i>&nbsp;    }
+<i>499</i>&nbsp;
+<i>500</i>&nbsp;    /**
+<i>501</i>&nbsp;     * Calculate probability string.
+<i>502</i>&nbsp;     *
+<i>503</i>&nbsp;     * @return the string
+<i>504</i>&nbsp;     * @throws MathException the math exception
+<i>505</i>&nbsp;     */
+<i>506</i>&nbsp;    public String calculateProbability() throws MathException {
+<b class="fc"><i>507</i>&nbsp;        double standardDeviation = 0;</b>
+<b class="fc"><i>508</i>&nbsp;        if (this.getListFreelancersWithPayments().size() &gt; 0) {</b>
+<b class="fc"><i>509</i>&nbsp;            standardDeviation = Math.pow(1.5, 2) / this.getOverallPayments();</b>
+<i>510</i>&nbsp;        }
+<b class="fc"><i>511</i>&nbsp;        NormalDistributionImpl normalDistribution = new NormalDistributionImpl();</b>
+<b class="fc"><i>512</i>&nbsp;        normalDistribution.setMean(2);</b>
+<b class="fc"><i>513</i>&nbsp;        normalDistribution.setStandardDeviation(Math.sqrt(standardDeviation));</b>
+<b class="fc"><i>514</i>&nbsp;        return String.format(&quot;%.2f&quot;, (1 - normalDistribution.cumulativeProbability(3)) * 100) + &quot; %&quot;;</b>
+<i>515</i>&nbsp;    }
+<i>516</i>&nbsp;
+<i>517</i>&nbsp;    /**
+<i>518</i>&nbsp;     * Get overall payments int.
+<i>519</i>&nbsp;     *
+<i>520</i>&nbsp;     * @return the int
+<i>521</i>&nbsp;     */
+<i>522</i>&nbsp;    public int getOverallPayments() {
+<b class="fc"><i>523</i>&nbsp;        int soma = 0;</b>
+<b class="fc"><i>524</i>&nbsp;        for (Organization org : this.m_lstOrganizations) {</b>
+<b class="fc"><i>525</i>&nbsp;            soma = soma + org.getPaymentTransactionList().getPaymentTransactions().size();</b>
+<b class="fc"><i>526</i>&nbsp;        }</b>
+<b class="fc"><i>527</i>&nbsp;        return soma;</b>
+<i>528</i>&nbsp;    }
+<i>529</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

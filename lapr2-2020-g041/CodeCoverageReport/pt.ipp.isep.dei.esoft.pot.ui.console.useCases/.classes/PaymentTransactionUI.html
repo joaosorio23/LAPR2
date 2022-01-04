@@ -1,0 +1,218 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: PaymentTransactionUI</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.ui.console.useCases</a> ]
+</div>
+
+<h1>Coverage Summary for Class: PaymentTransactionUI (pt.ipp.isep.dei.esoft.pot.ui.console.useCases)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">PaymentTransactionUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 43)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;/*
+<i>2</i>&nbsp; * To change this license header, choose License Headers in Project Properties.
+<i>3</i>&nbsp; * To change this template file, choose Tools | Templates
+<i>4</i>&nbsp; * and open the template in the editor.
+<i>5</i>&nbsp; */
+<i>6</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.ui.console.useCases;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;import javafx.event.ActionEvent;
+<i>9</i>&nbsp;import javafx.fxml.FXML;
+<i>10</i>&nbsp;import javafx.fxml.Initializable;
+<i>11</i>&nbsp;import javafx.scene.control.Alert;
+<i>12</i>&nbsp;import javafx.scene.control.ComboBox;
+<i>13</i>&nbsp;import javafx.scene.control.DatePicker;
+<i>14</i>&nbsp;import javafx.scene.control.TextField;
+<i>15</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.useCases.PaymentTransactionController;
+<i>16</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.Alerts;
+<i>17</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.Stages;
+<i>18</i>&nbsp;
+<i>19</i>&nbsp;import java.net.URL;
+<i>20</i>&nbsp;import java.util.ResourceBundle;
+<i>21</i>&nbsp;
+<i>22</i>&nbsp;/**
+<i>23</i>&nbsp; * FXML Controller class
+<i>24</i>&nbsp; *
+<i>25</i>&nbsp; * @author Berkelios
+<i>26</i>&nbsp; */
+<b class="nc"><i>27</i>&nbsp;public class PaymentTransactionUI implements Initializable {</b>
+<i>28</i>&nbsp;
+<i>29</i>&nbsp;    @FXML
+<i>30</i>&nbsp;    private TextField delay;
+<i>31</i>&nbsp;    @FXML
+<i>32</i>&nbsp;    private TextField description;
+<i>33</i>&nbsp;    @FXML
+<i>34</i>&nbsp;    private TextField ID;
+<i>35</i>&nbsp;    @FXML
+<i>36</i>&nbsp;    private ComboBox&lt;String&gt; cmbFreelancers;
+<i>37</i>&nbsp;    @FXML
+<i>38</i>&nbsp;    private ComboBox&lt;String&gt; cmbTasks;
+<i>39</i>&nbsp;    @FXML
+<i>40</i>&nbsp;    private DatePicker date;
+<i>41</i>&nbsp;
+<i>42</i>&nbsp;    private PaymentTransactionController appController;
+<i>43</i>&nbsp;
+<i>44</i>&nbsp;    @Override
+<i>45</i>&nbsp;    public void initialize(URL url, ResourceBundle rb) {
+<b class="nc"><i>46</i>&nbsp;        this.appController = new PaymentTransactionController();</b>
+<b class="nc"><i>47</i>&nbsp;        if (!appController.getFreelancersID().isEmpty()) {</b>
+<b class="nc"><i>48</i>&nbsp;            this.cmbFreelancers.getSelectionModel().select(appController.getFreelancersID().get(0));</b>
+<b class="nc"><i>49</i>&nbsp;            this.cmbFreelancers.getItems().setAll(appController.getFreelancersID());</b>
+<i>50</i>&nbsp;        }
+<b class="nc"><i>51</i>&nbsp;        if (!appController.getTaskID().isEmpty()) {</b>
+<b class="nc"><i>52</i>&nbsp;            this.cmbTasks.getSelectionModel().select(appController.getTaskID().get(0));</b>
+<b class="nc"><i>53</i>&nbsp;            this.cmbTasks.getItems().setAll(appController.getTaskID());</b>
+<i>54</i>&nbsp;        }
+<b class="nc"><i>55</i>&nbsp;    }</b>
+<i>56</i>&nbsp;
+<i>57</i>&nbsp;    @FXML
+<i>58</i>&nbsp;    private void CreateTransactionAction(ActionEvent event) {
+<b class="nc"><i>59</i>&nbsp;        if (this.cmbTasks.getValue() == null) {</b>
+<b class="nc"><i>60</i>&nbsp;            Alerts.createAlert(Alert.AlertType.ERROR, &quot;Data Error...&quot;, &quot;Create one Task to Continue!&quot;).show();</b>
+<i>61</i>&nbsp;        } else {
+<b class="nc"><i>62</i>&nbsp;            if (this.cmbFreelancers.getValue() == null) {</b>
+<b class="nc"><i>63</i>&nbsp;                Alerts.createAlert(Alert.AlertType.ERROR, &quot;Data Error...&quot;, &quot;Create one Freelancer to Continue!&quot;).show();</b>
+<i>64</i>&nbsp;            } else {
+<b class="nc"><i>65</i>&nbsp;                if (appController.setData(this.date.getValue(), this.delay.getText().trim(), this.description.getText().trim(), appController.getFreelancerByID(this.cmbFreelancers.getValue()), appController.getTaskByID(this.cmbTasks.getValue()))) {</b>
+<b class="nc"><i>66</i>&nbsp;                    if (appController.newPaymentTransaction(ID.getText().trim())) {</b>
+<b class="nc"><i>67</i>&nbsp;                        if (showDataAndConfirmation()) {</b>
+<b class="nc"><i>68</i>&nbsp;                            if (appController.registerPaymentTransaction()) {</b>
+<b class="nc"><i>69</i>&nbsp;                                Alerts.createAlert(Alert.AlertType.INFORMATION, &quot;Success...&quot;, &quot;Successfully registered Transaction!&quot;).show();</b>
+<i>70</i>&nbsp;                            } else {
+<b class="nc"><i>71</i>&nbsp;                                Alerts.createAlert(Alert.AlertType.INFORMATION, &quot;Error...&quot;, &quot;Error registering the Transaction!&quot;).show();</b>
+<i>72</i>&nbsp;                            }
+<b class="nc"><i>73</i>&nbsp;                            clearData();</b>
+<i>74</i>&nbsp;                        }
+<i>75</i>&nbsp;                    }
+<i>76</i>&nbsp;                }
+<i>77</i>&nbsp;            }
+<i>78</i>&nbsp;        }
+<b class="nc"><i>79</i>&nbsp;    }</b>
+<i>80</i>&nbsp;
+<i>81</i>&nbsp;    private boolean showDataAndConfirmation() {
+<b class="nc"><i>82</i>&nbsp;        return Alerts.showDataAndConfirmation(appController.getPaymentTransactionString() + appController.getValueString());</b>
+<i>83</i>&nbsp;    }
+<i>84</i>&nbsp;
+<i>85</i>&nbsp;    /**
+<i>86</i>&nbsp;     * Create freelancer action.
+<i>87</i>&nbsp;     *
+<i>88</i>&nbsp;     * @param actionEvent the action event
+<i>89</i>&nbsp;     */
+<i>90</i>&nbsp;    @FXML
+<i>91</i>&nbsp;    public void createFreelancerAction(ActionEvent actionEvent) {
+<b class="nc"><i>92</i>&nbsp;        if (Alerts.backTF(actionEvent, &quot;Do you really want to create a new Freelancer?&quot;)) {</b>
+<b class="nc"><i>93</i>&nbsp;            Stages.newWindow(&quot;/fxml/useCases/RegisterFreelancerWindow.fxml&quot;, &quot;Register Freelancer&quot;, false);</b>
+<i>94</i>&nbsp;        }
+<b class="nc"><i>95</i>&nbsp;    }</b>
+<i>96</i>&nbsp;
+<i>97</i>&nbsp;    /**
+<i>98</i>&nbsp;     * Create task action.
+<i>99</i>&nbsp;     *
+<i>100</i>&nbsp;     * @param actionEvent the action event
+<i>101</i>&nbsp;     */
+<i>102</i>&nbsp;    @FXML
+<i>103</i>&nbsp;    public void CreateTaskAction(ActionEvent actionEvent) {
+<b class="nc"><i>104</i>&nbsp;        if (Alerts.backTF(actionEvent, &quot;Do you really want to create a new Task?&quot;)) {</b>
+<b class="nc"><i>105</i>&nbsp;            Stages.newWindow(&quot;/fxml/useCases/CreateTaskWindow.fxml&quot;, &quot;Create Task&quot;, false);</b>
+<i>106</i>&nbsp;        }
+<b class="nc"><i>107</i>&nbsp;    }</b>
+<i>108</i>&nbsp;
+<i>109</i>&nbsp;    @FXML
+<i>110</i>&nbsp;    private void BackToMenuAction(ActionEvent actionEvent) {
+<b class="nc"><i>111</i>&nbsp;        Alerts.back(actionEvent, &quot;Do you really want to go back to the Menu?&quot;);</b>
+<b class="nc"><i>112</i>&nbsp;    }</b>
+<i>113</i>&nbsp;
+<i>114</i>&nbsp;    /**
+<i>115</i>&nbsp;     * Clear data.
+<i>116</i>&nbsp;     */
+<i>117</i>&nbsp;    public void clearData() {
+<b class="nc"><i>118</i>&nbsp;        this.delay.clear();</b>
+<b class="nc"><i>119</i>&nbsp;        this.description.clear();</b>
+<b class="nc"><i>120</i>&nbsp;        this.ID.clear();</b>
+<b class="nc"><i>121</i>&nbsp;        this.date.getEditor().clear();</b>
+<b class="nc"><i>122</i>&nbsp;        if (!appController.getFreelancersID().isEmpty()) {</b>
+<b class="nc"><i>123</i>&nbsp;            this.cmbFreelancers.getSelectionModel().select(appController.getFreelancersID().get(0));</b>
+<b class="nc"><i>124</i>&nbsp;            this.cmbFreelancers.getItems().setAll(appController.getFreelancersID());</b>
+<i>125</i>&nbsp;        } else {
+<b class="nc"><i>126</i>&nbsp;            this.cmbFreelancers.getItems().clear();</b>
+<i>127</i>&nbsp;        }
+<b class="nc"><i>128</i>&nbsp;        if (!appController.getTaskID().isEmpty()) {</b>
+<b class="nc"><i>129</i>&nbsp;            this.cmbTasks.getSelectionModel().select(appController.getTaskID().get(0));</b>
+<b class="nc"><i>130</i>&nbsp;            this.cmbTasks.getItems().setAll(appController.getTaskID());</b>
+<i>131</i>&nbsp;        } else {
+<b class="nc"><i>132</i>&nbsp;            this.cmbTasks.getItems().clear();</b>
+<i>133</i>&nbsp;        }
+<b class="nc"><i>134</i>&nbsp;    }</b>
+<i>135</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@startuml
+autonumber
+'hide footbox
+
+participant ":LoadFrom(Txt/Csv)" as CTRL
+participant "AplicacaoPOT" as _APP
+participant "app\n:AplicacaoPOT" as APP
+participant "session\n:UserSession" as SESSAO
+participant ":Platform" as PLAT
+participant "rorgs:OrganizationsRegister" as RORGS
+participant "org\n:Organization" as ORG
+participant "tl\n:TasksList" as LTASKS
+participant "rfr\n:FreelancersRegister" as FREG
+participant "free\n: Freelancer" as FREE
+participant "local: Location" as LOC
+participant "task\n:Task" as TASK
+participant "payl\n:PaymentTransactionList" as PL
+participant "pay\n:PaymentTransaction" as PT
+
+[o-> CTRL : readFile(file)
+
+activate CTRL
+CTRL -> _APP: app = getInstance()
+activate _APP
+deactivate _APP
+
+CTRL -> APP: session = getCurrentSession()
+activate APP
+deactivate APP
+
+CTRL -> SESSAO: email = getUserEmail()
+activate SESSAO
+deactivate SESSAO
+
+CTRL -> PLAT: rorgs = getOrganizationsRegister()
+activate PLAT
+deactivate PLAT
+
+CTRL -> RORGS: org = getOrganizationByUserEmail(email)
+activate RORGS
+deactivate RORGS
+
+CTRL -> ORG: tl = getTasksList()
+activate ORG
+deactivate ORG
+
+CTRL -> PLAT: rfr = getFreelancersRegister()
+activate PLAT
+deactivate PLAT
+
+CTRL -> ORG: payl = getPaymentTransactionList()
+activate ORG
+deactivate ORG
+
+CTRL -> LOC: freeLocation= Location(Address,Country)
+activate LOC
+deactivate LOC
+
+CTRL -> FREE: free= Freelancer(id, name, email, NIF, IBAN, level, freeLocation)
+activate FREE
+deactivate FREE
+
+CTRL -> TASK: task= Task(taskID,taskDesc,taskDuration,taskCost,taskCategory)
+activate TASK
+deactivate TASK
+
+CTRL -> LTASKS: taskValidation = contains(task)
+activate LTASKS
+deactivate LTASKS
+OPT [ taskValidation == false]
+CTRL -> LTASKS: addTask(task)
+activate LTASKS
+deactivate LTASKS
+end
+
+CTRL -> FREG: freelancerValidation = contains(free)
+activate FREG
+deactivate FREG
+
+OPT [ freelancerValidation == false]
+CTRL -> FREG: addFreelancer(free)
+activate FREG
+deactivate FREG
+CTRL -> PT: pay= PaymentTransaction(transID,free,task)
+activate PT
+deactivate PT
+CTRL -> PL: paymentValidation= contains(pay)
+activate PL
+deactivate PL
+OPT [ paymentValidation == false]
+CTRL -> PL: addPaymentTransaction(pay)
+activate PL
+deactivate PL
+CTRL -> FREE: setPayment(pay)
+activate FREE
+deactivate FREE
+
+end
+end
+OPT [ freelancerValidation == true]
+CTRL -> FREG: freelancer = getFreelancerById(free.getID())
+activate FREG
+deactivate FREG
+CTRL -> PT: pay= PaymentTransaction(transID,freelancer,task)
+activate PT
+deactivate PT
+CTRL -> PL: paymentValidation= contains(pay)
+activate PL
+deactivate PL
+OPT [ paymentValidation == false]
+CTRL -> PL: addPaymentTransaction(pay)
+activate PL
+deactivate PL
+CTRL -> FREE: setPayment(pay)
+activate FREE
+deactivate FREE
+
+end
+end
+@enduml

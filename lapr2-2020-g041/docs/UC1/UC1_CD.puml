@@ -1,0 +1,78 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Manager {
+  -String name
+  -String email
+  +Manager(nameM,emailM)
+  +String getName()
+  +String getEmail()
+}
+
+class Collaborator {
+  -String name
+  -String email
+  +Collaborator(nameC,emailC)
+  +String getName()
+  +String getEmail()
+}
+
+class Organization {
+  -String designation
+  +Organization(designation,nomeM,emailM,nomeC,emailC)
+  +Manager newManager(nomeM,emailM)
+  +Collaborator newCollaborator(nameC,emailC)
+}
+
+class Platform {
+  -String designacao
+  +OrganizationsRegister getOrganizationsRegister()
+  +ExternalPasswordGeneratorAlgorithm getExternalPasswordGeneratorAlgorithm()
+  +FacadeAuthorization getFacadeAuthorization()
+}
+
+class OrganizationsRegister {
+  +Organization newOrganization(designation,nomeM,emailM,nomeC,emailC)
+  +validateOrganization(Organization org)
+  +registerOrganization(Organization org)
+  -addOrganization(Organization org)
+  -registerManagerAsUser(Manager man)
+  -registerCollaboratorAsUser(Collaborator collab)
+  -sendEmail(String EmailSender, String EmailReceiver, String Subject, String message)
+}
+
+class FacadeAuthorization {
+   +registersUserWithRole(nameM,emailM,pwd,papel)
+   +registersUserWithRole(nameC,emailC,pwd,papel)
+}
+
+interface ExternalPasswordGeneratorAlgorithm <<interface>>{
+   +String genaratePassword(String nomeM, String emailM)
+   +String genaratePassword(String nomeC, String emailC)
+}
+
+class RegisterOrganizationController {
+    +newOrganization(designation,nomeM,emailM,nomeC,emailC)
+    +registerOrganization()
+}
+
+class RegisterOrganizationUI {
+}
+
+RegisterOrganizationUI ..> RegisterOrganizationController
+RegisterOrganizationController ..> Platform
+RegisterOrganizationController ..> OrganizationsRegister
+RegisterOrganizationController ..> Organization
+
+Platform "1" -- "1" OrganizationsRegister : has
+
+OrganizationsRegister "1" --> "*" Organization : has registered
+OrganizationsRegister ..> Manager
+OrganizationsRegister ..> Collaborator
+OrganizationsRegister ..> FacadeAuthorization
+OrganizationsRegister ..> ExternalPasswordGeneratorAlgorithm
+
+Organization "1" --> "0..1" Manager : has
+Organization "1" --> "0..1" Collaborator: has
+
+@enduml

@@ -1,0 +1,78 @@
+@startuml
+autonumber
+'hide footbox
+actor "Collaborator of the Organization" as CO
+
+participant ":RegisterFreelancerUI" as UI
+participant ":RegisterFreelancerController" as CTRL
+participant ":Platform" as PLAT
+participant "rfr: FreelancersRegister" as RF
+participant "loe :LevelOfExpertise" as LE
+participant "Freelancer" as FREE
+participant "free: Freelancer" as FR
+participant "local: Location" as LOC
+participant "lle: List<LevelOfExpertise>" as LLE
+
+
+activate CO
+
+CO -> UI : Starts registering a freelancer.
+activate UI
+UI --> CO : Requests the data that characterizes the freelancer (id, name, e­mail, NIF, bank account (IBAN), address and country)
+deactivate UI
+
+CO -> UI : Enters the requested data
+activate UI
+
+UI -> CTRL : lle =  getLevelsOfExpertise()
+activate CTRL
+CTRL -> LE : lle = values()
+activate LE
+deactivate LE
+deactivate CTRL
+
+UI -> CO : Displays a list with  levels of expertise and asks the Collaborator of the Organization to select one
+deactivate UI
+CO -> UI : Selects one.
+activate UI
+
+UI -> CTRL : newFreelancer(id, name, email, NIF, IBAN, address, country, levelId)
+activate CTRL
+CTRL -> LE : level = getLevelById()
+activate LE
+deactivate LE
+CTRL -> FREE : local = newLocation(address,country)
+activate FREE
+FREE -> LOC** : create(address,country)
+deactivate FREE
+CTRL -> PLAT : rfr = getFreelancersRegister()
+activate PLAT
+deactivate PLAT
+CTRL -> RF : free = newFreelancer(id, name, email, NIF, IBAN, level, local)
+activate RF
+RF --> FR** : create(id, name, email, NIF, IBAN, level, local)
+deactivate RF
+CTRL -> RF : validateFreelancer(free)
+activate RF
+deactivate RF
+deactivate CTRL
+
+UI --> CO : Displays the data, asking you to confirm it
+deactivate UI
+
+CO -> UI : confirm
+activate UI
+UI -> CTRL : registerFreelancer()
+activate CTRL
+CTRL -> RF : registerFreelancer(free)
+activate RF
+RF -> RF : validateFreelancer(free)
+RF -> RF : addFreelancer(free)
+UI --> CO : Informs about the success of the operation
+deactivate RF
+deactivate CTRL
+deactivate UI
+
+deactivate CO
+
+@enduml

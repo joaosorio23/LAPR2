@@ -1,0 +1,146 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: SetPaymentDayUI</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.ui.console.useCases</a> ]
+</div>
+
+<h1>Coverage Summary for Class: SetPaymentDayUI (pt.ipp.isep.dei.esoft.pot.ui.console.useCases)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">SetPaymentDayUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 16)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.ui.console.useCases;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import javafx.event.ActionEvent;
+<i>4</i>&nbsp;import javafx.fxml.FXML;
+<i>5</i>&nbsp;import javafx.fxml.Initializable;
+<i>6</i>&nbsp;import javafx.scene.control.Alert;
+<i>7</i>&nbsp;import javafx.scene.control.TextField;
+<i>8</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.useCases.SetPaymentDayController;
+<i>9</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.Alerts;
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;import java.net.URL;
+<i>12</i>&nbsp;import java.util.ResourceBundle;
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;/**
+<i>15</i>&nbsp; * The type Set payment day ui.
+<i>16</i>&nbsp; *
+<i>17</i>&nbsp; * @author Berkelios
+<i>18</i>&nbsp; */
+<b class="nc"><i>19</i>&nbsp;public class SetPaymentDayUI implements Initializable {</b>
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;    private SetPaymentDayController appController;
+<i>22</i>&nbsp;
+<i>23</i>&nbsp;    @FXML
+<i>24</i>&nbsp;    private TextField txtDay;
+<i>25</i>&nbsp;    @FXML
+<i>26</i>&nbsp;    private TextField txtHour;
+<i>27</i>&nbsp;
+<i>28</i>&nbsp;    @Override
+<i>29</i>&nbsp;    public void initialize(URL url, ResourceBundle rb) {
+<b class="nc"><i>30</i>&nbsp;        this.appController = new SetPaymentDayController();</b>
+<b class="nc"><i>31</i>&nbsp;    }</b>
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;    @FXML
+<i>34</i>&nbsp;    private void setPaymentDayAction(ActionEvent event) {
+<b class="nc"><i>35</i>&nbsp;        if (appController.convertToInt(this.txtDay.getText(), this.txtHour.getText())) {</b>
+<b class="nc"><i>36</i>&nbsp;            if (showDataAndConfirmation()) {</b>
+<b class="nc"><i>37</i>&nbsp;                if (appController.setPaymentSchedule()) {</b>
+<b class="nc"><i>38</i>&nbsp;                    Alerts.createAlert(Alert.AlertType.INFORMATION, &quot;Success...&quot;, &quot;Successfully registered the Payment Day!&quot;).show();</b>
+<i>39</i>&nbsp;                } else {
+<b class="nc"><i>40</i>&nbsp;                    Alerts.createAlert(Alert.AlertType.INFORMATION, &quot;Error...&quot;, &quot;Unsuccessfully registered the Payment Day!&quot;).show();</b>
+<i>41</i>&nbsp;                }
+<b class="nc"><i>42</i>&nbsp;                clearData();</b>
+<i>43</i>&nbsp;            }
+<i>44</i>&nbsp;        }
+<b class="nc"><i>45</i>&nbsp;    }</b>
+<i>46</i>&nbsp;
+<i>47</i>&nbsp;    private boolean showDataAndConfirmation() {
+<b class="nc"><i>48</i>&nbsp;        return Alerts.showDataAndConfirmation((&quot;Day: &quot; + this.txtDay.getText().trim() + &quot; Hour: &quot; + this.txtHour.getText().trim()));</b>
+<i>49</i>&nbsp;    }
+<i>50</i>&nbsp;
+<i>51</i>&nbsp;    @FXML
+<i>52</i>&nbsp;    private void backToMenuAction(ActionEvent event) {
+<b class="nc"><i>53</i>&nbsp;        Alerts.back(event, &quot;Do you really want to go back to the Menu?&quot;);</b>
+<b class="nc"><i>54</i>&nbsp;    }</b>
+<i>55</i>&nbsp;
+<i>56</i>&nbsp;    /**
+<i>57</i>&nbsp;     * Clear data.
+<i>58</i>&nbsp;     */
+<i>59</i>&nbsp;    public void clearData() {
+<b class="nc"><i>60</i>&nbsp;        txtDay.clear();</b>
+<b class="nc"><i>61</i>&nbsp;        txtHour.clear();</b>
+<b class="nc"><i>62</i>&nbsp;    }</b>
+<i>63</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@startuml
+autonumber
+'hide footbox
+actor "Collaborator of the Organization" as CO
+
+participant ":SetPaymentDayUI" as UI
+participant ":SetPaymentDayController" as CTRL
+participant "AplicacaoPOT" as _APP
+participant "app\n:AplicacaoPOT" as APP
+participant "session\n:UserSession" as SESSAO
+participant ":Platform" as PLAT
+participant "rorgs\n:OrganizationsRegister" as RORGS
+participant "org\n:Organization" as ORG
+participant "payment\n:MakeAutomaticPaymentTask" as MAPT
+participant "t\n:Timer" as T
+
+activate CO
+
+CO -> UI : Starts to define the dates of the payments.
+activate UI
+UI --> CO : Requests the data necessary (day of the month and time of the day).
+deactivate UI
+
+CO -> UI : Enters the requested data
+activate UI
+deactivate CTRL
+
+
+UI -> CTRL : setPaymentSchedule(day, hour)
+activate CTRL
+
+CTRL -> _APP: app = getInstance()
+activate _APP
+deactivate _APP
+
+CTRL -> APP: session = getCurrentSession()
+activate APP
+deactivate APP
+
+CTRL -> SESSAO: email = getUserEmail()
+activate SESSAO
+deactivate SESSAO
+
+CTRL -> PLAT: rorgs = getRegisterOrganizations()
+activate PLAT
+deactivate PLAT
+
+CTRL -> RORGS: org = getOrganizationByUserEmail(email)
+activate RORGS
+deactivate RORGS
+
+CTRL -> ORG: setPaymentSchedule(day, hour)
+activate ORG
+ORG --> MAPT** : create()
+ORG -> ORG : interval = getInterval()
+ORG --> T** : create()
+ORG -> T : setPaymentSchedule(day, hour)
+activate T
+deactivate T
+deactivate ORG
+
+deactivate CTRL
+
+UI --> CO : Displays the data, asking to confirm it
+deactivate UI
+
+CO -> UI : confirms
+activate UI
+UI --> CO : Informs about the success of the operation
+deactivate UI
+deactivate CO
+
+@enduml

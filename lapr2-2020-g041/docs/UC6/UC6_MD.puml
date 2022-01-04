@@ -1,0 +1,96 @@
+@startuml
+
+hide methods
+left to right direction
+
+class Platform {
+  -String designation
+}
+
+class Organization {
+  -String designation
+}
+
+class User {
+  -String name
+  -String email
+  -String password
+}
+
+
+class Manager {
+  -String name
+  -String email
+}
+
+class Freelancer {
+    -String id
+    -String name
+    -String email
+    -Integer NIF
+    -String IBAN
+    -double overallPayment
+}
+
+enum LevelOfExpertise {
+   -JUNIOR
+   -SENIOR
+}
+
+class Location {
+  -String address
+  -String country
+}
+
+class PaymentTransaction {
+  -String id
+}
+
+class Task {
+  -String id
+  -String briefDescription
+  -Double timeDuration
+  -Double costPerHour
+  -String category
+}
+
+class TaskExecution{
+  -Date deadline
+  -Double delay
+  -String descQualityWork
+}
+
+class ExternalEmailSenderAlgorithm {
+}
+
+class Conversion {
+
+}
+
+
+Platform "1" -- "*" Organization : has registered >
+Platform "1" -- "*" Freelancer : has registered >
+Platform "1" -- "*" User : has registered >
+Platform "1" -- "1" ExternalEmailSenderAlgorithm : resort to >
+Platform "1" -- "1" Conversion : resort to >
+
+Conversion "1" -- "*" PaymentTransaction : converts >
+
+Organization "1" -- "1" Manager: has >
+Organization "1" -- "*" Task : has >
+Organization "1" -- "*" PaymentTransaction : has >
+
+ExternalEmailSenderAlgorithm "1" -- "*" Freelancer : sends email to >
+
+Manager "0..1" -- "1" User : act as >
+Manager "1" -- "*" PaymentTransaction : defines >
+
+PaymentTransaction "*" -- "1" Freelancer : to >
+PaymentTransaction "1" -- "1" Task : referent >
+
+Task"1" -- "1" TaskExecution : has >
+
+Freelancer "1" -- "1" LevelOfExpertise : has >
+Freelancer "1" -- "1" Location : has >
+Freelancer "1" -- "*" Task : does > 
+@enduml

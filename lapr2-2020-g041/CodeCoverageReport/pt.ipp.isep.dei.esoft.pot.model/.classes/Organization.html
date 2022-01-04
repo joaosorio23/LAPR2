@@ -1,0 +1,607 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Organization</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.model</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Organization (pt.ipp.isep.dei.esoft.pot.model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Organization</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    37%
+  </span>
+  <span class="absValue">
+    (10/ 27)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    31,6%
+  </span>
+  <span class="absValue">
+    (62/ 196)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.model;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.ApplicationPOT;
+<i>4</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.list.PaymentTransactionList;
+<i>5</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.list.TasksList;
+<i>6</i>&nbsp;
+<i>7</i>&nbsp;import java.io.Serializable;
+<i>8</i>&nbsp;import java.util.ArrayList;
+<i>9</i>&nbsp;import java.util.Calendar;
+<i>10</i>&nbsp;import java.util.Collections;
+<i>11</i>&nbsp;import java.util.Date;
+<i>12</i>&nbsp;import java.util.List;
+<i>13</i>&nbsp;import java.util.Timer;
+<i>14</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.useCases.MakeAutomaticPaymentTask;
+<i>15</i>&nbsp;
+<i>16</i>&nbsp;/**
+<i>17</i>&nbsp; * The type Organization.
+<i>18</i>&nbsp; *
+<i>19</i>&nbsp; * @author Berkelios
+<i>20</i>&nbsp; */
+<i>21</i>&nbsp;public class Organization implements Serializable {
+<i>22</i>&nbsp;
+<i>23</i>&nbsp;    /**
+<i>24</i>&nbsp;     * The Organizations&#39;s Tasks List.
+<i>25</i>&nbsp;     */
+<i>26</i>&nbsp;    private final TasksList m_TasksList;
+<i>27</i>&nbsp;    /**
+<i>28</i>&nbsp;     * The Organizations&#39;s Payments Transactions List.
+<i>29</i>&nbsp;     */
+<i>30</i>&nbsp;    private final PaymentTransactionList m_PaymentTransactionList;
+<i>31</i>&nbsp;    /**
+<i>32</i>&nbsp;     * The Organizations&#39;s Designation.
+<i>33</i>&nbsp;     */
+<i>34</i>&nbsp;    private String m_strDesignation;
+<i>35</i>&nbsp;    /**
+<i>36</i>&nbsp;     * The Organizations&#39;s Manager.
+<i>37</i>&nbsp;     */
+<i>38</i>&nbsp;    private Manager m_oManager;
+<i>39</i>&nbsp;    /**
+<i>40</i>&nbsp;     * The Organizations&#39;s Collaborator.
+<i>41</i>&nbsp;     */
+<i>42</i>&nbsp;    private Collaborator m_oCollaborator;
+<i>43</i>&nbsp;
+<b class="fc"><i>44</i>&nbsp;    private int m_paymentSize = 0;</b>
+<i>45</i>&nbsp;
+<i>46</i>&nbsp;    /**
+<i>47</i>&nbsp;     * Instantiates a new Organization.
+<i>48</i>&nbsp;     *
+<i>49</i>&nbsp;     * @param strDesignation the designation
+<i>50</i>&nbsp;     * @param oMan the manager
+<i>51</i>&nbsp;     * @param oCollab the collaborator
+<i>52</i>&nbsp;     */
+<b class="fc"><i>53</i>&nbsp;    public Organization(String strDesignation, Manager oMan, Collaborator oCollab) {</b>
+<i>54</i>&nbsp;
+<b class="fc"><i>55</i>&nbsp;        setDesignation(strDesignation);</b>
+<b class="fc"><i>56</i>&nbsp;        this.m_oManager = oMan;</b>
+<b class="fc"><i>57</i>&nbsp;        this.m_oCollaborator = oCollab;</b>
+<i>58</i>&nbsp;
+<b class="fc"><i>59</i>&nbsp;        this.m_TasksList = new TasksList();</b>
+<b class="fc"><i>60</i>&nbsp;        this.m_PaymentTransactionList = new PaymentTransactionList();</b>
+<b class="fc"><i>61</i>&nbsp;    }</b>
+<i>62</i>&nbsp;
+<i>63</i>&nbsp;    /**
+<i>64</i>&nbsp;     * New Manager.
+<i>65</i>&nbsp;     *
+<i>66</i>&nbsp;     * @param strName the Name
+<i>67</i>&nbsp;     * @param strEmail the Email
+<i>68</i>&nbsp;     * @return the Manager
+<i>69</i>&nbsp;     */
+<i>70</i>&nbsp;    public static Manager newManager(String strName, String strEmail) {
+<b class="nc"><i>71</i>&nbsp;        return new Manager(strName, strEmail);</b>
+<i>72</i>&nbsp;    }
+<i>73</i>&nbsp;
+<i>74</i>&nbsp;    /**
+<i>75</i>&nbsp;     * New Collaborator.
+<i>76</i>&nbsp;     *
+<i>77</i>&nbsp;     * @param strName the Name
+<i>78</i>&nbsp;     * @param strEmail the Email
+<i>79</i>&nbsp;     * @return the Collaborator
+<i>80</i>&nbsp;     */
+<i>81</i>&nbsp;    public static Collaborator newCollaborator(String strName, String strEmail) {
+<b class="nc"><i>82</i>&nbsp;        return new Collaborator(strName, strEmail);</b>
+<i>83</i>&nbsp;    }
+<i>84</i>&nbsp;
+<i>85</i>&nbsp;    /**
+<i>86</i>&nbsp;     * Gets manager.
+<i>87</i>&nbsp;     *
+<i>88</i>&nbsp;     * @return the manager
+<i>89</i>&nbsp;     */
+<i>90</i>&nbsp;    public Manager getManager() {
+<b class="nc"><i>91</i>&nbsp;        return this.m_oManager;</b>
+<i>92</i>&nbsp;    }
+<i>93</i>&nbsp;
+<i>94</i>&nbsp;    /**
+<i>95</i>&nbsp;     * Gets Collaborator.
+<i>96</i>&nbsp;     *
+<i>97</i>&nbsp;     * @return the Collaborator
+<i>98</i>&nbsp;     */
+<i>99</i>&nbsp;    public Collaborator getCollaborator() {
+<b class="nc"><i>100</i>&nbsp;        return this.m_oCollaborator;</b>
+<i>101</i>&nbsp;    }
+<i>102</i>&nbsp;
+<i>103</i>&nbsp;    /**
+<i>104</i>&nbsp;     * Gets Designation.
+<i>105</i>&nbsp;     *
+<i>106</i>&nbsp;     * @return the Designation
+<i>107</i>&nbsp;     */
+<i>108</i>&nbsp;    public String getDesignation() {
+<b class="nc"><i>109</i>&nbsp;        return this.m_strDesignation;</b>
+<i>110</i>&nbsp;    }
+<i>111</i>&nbsp;
+<i>112</i>&nbsp;    /**
+<i>113</i>&nbsp;     * Sets Designation.
+<i>114</i>&nbsp;     *
+<i>115</i>&nbsp;     * @param strDesignation the Designation
+<i>116</i>&nbsp;     */
+<i>117</i>&nbsp;    private void setDesignation(String strDesignation) {
+<b class="fc"><i>118</i>&nbsp;        if (strDesignation == null || strDesignation.trim().isEmpty()) {</b>
+<b class="nc"><i>119</i>&nbsp;            throw new IllegalArgumentException(&quot;Invalid Organization&#39;s Designation!&quot;);</b>
+<i>120</i>&nbsp;        }
+<b class="fc"><i>121</i>&nbsp;        this.m_strDesignation = strDesignation;</b>
+<b class="fc"><i>122</i>&nbsp;    }</b>
+<i>123</i>&nbsp;
+<i>124</i>&nbsp;    /**
+<i>125</i>&nbsp;     * Gets List of Freelancers Transactions.
+<i>126</i>&nbsp;     *
+<i>127</i>&nbsp;     * @return the List of Freelancers Transactions
+<i>128</i>&nbsp;     */
+<i>129</i>&nbsp;    public ArrayList&lt;Freelancer&gt; getListOfFreeTrans() {
+<b class="fc"><i>130</i>&nbsp;        ArrayList&lt;Freelancer&gt; m_lstFreelancers = new ArrayList&lt;&gt;();</b>
+<b class="fc"><i>131</i>&nbsp;        for (PaymentTransaction pt : this.m_PaymentTransactionList.getPaymentTransactions()) {</b>
+<b class="fc"><i>132</i>&nbsp;            if (!m_lstFreelancers.contains(pt.getFreelancer())) {</b>
+<b class="fc"><i>133</i>&nbsp;                m_lstFreelancers.add(pt.getFreelancer());</b>
+<i>134</i>&nbsp;            }
+<b class="fc"><i>135</i>&nbsp;        }</b>
+<b class="fc"><i>136</i>&nbsp;        return m_lstFreelancers;</b>
+<i>137</i>&nbsp;    }
+<i>138</i>&nbsp;
+<i>139</i>&nbsp;    /**
+<i>140</i>&nbsp;     * Gets List Sorted by Payments.
+<i>141</i>&nbsp;     *
+<i>142</i>&nbsp;     * @param m_lstFreelancers the List with Freelancers
+<i>143</i>&nbsp;     * @return the List Sorted by Payments
+<i>144</i>&nbsp;     */
+<i>145</i>&nbsp;    public ArrayList&lt;Freelancer&gt; getListSortedByPayments(ArrayList&lt;Freelancer&gt; m_lstFreelancers) {
+<b class="nc"><i>146</i>&nbsp;        ArrayList&lt;Double&gt; m_lstP = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i>147</i>&nbsp;        for (Freelancer m_lstFreelancer : m_lstFreelancers) {</b>
+<b class="nc"><i>148</i>&nbsp;            double paymentSum = 0;</b>
+<b class="nc"><i>149</i>&nbsp;            for (PaymentTransaction pt : this.m_PaymentTransactionList.getPaymentTransactions()) {</b>
+<b class="nc"><i>150</i>&nbsp;                if (m_lstFreelancer.getId().equals(pt.getFreelancer().getId())) {</b>
+<b class="nc"><i>151</i>&nbsp;                    paymentSum = paymentSum + pt.getValue();</b>
+<i>152</i>&nbsp;                }
+<b class="nc"><i>153</i>&nbsp;            }</b>
+<b class="nc"><i>154</i>&nbsp;            m_lstP.add(paymentSum);</b>
+<b class="nc"><i>155</i>&nbsp;        }</b>
+<b class="nc"><i>156</i>&nbsp;        for (int i = 0; i &lt; m_lstP.size() - 1; i++) {</b>
+<b class="nc"><i>157</i>&nbsp;            for (int z = i + 1; z &lt; m_lstP.size(); z++) {</b>
+<b class="nc"><i>158</i>&nbsp;                if (m_lstP.get(z) &gt; m_lstP.get(i)) {</b>
+<b class="nc"><i>159</i>&nbsp;                    Collections.swap(m_lstFreelancers, z, i);</b>
+<b class="nc"><i>160</i>&nbsp;                    Collections.swap(m_lstP, z, i);</b>
+<i>161</i>&nbsp;                }
+<i>162</i>&nbsp;            }
+<i>163</i>&nbsp;        }
+<b class="nc"><i>164</i>&nbsp;        return m_lstFreelancers;</b>
+<i>165</i>&nbsp;    }
+<i>166</i>&nbsp;
+<i>167</i>&nbsp;    /**
+<i>168</i>&nbsp;     * Gets Freelancers Payments Statistics done by Organization.
+<i>169</i>&nbsp;     *
+<i>170</i>&nbsp;     * @param m_lstFreelancers the List with Freelancers
+<i>171</i>&nbsp;     * @return the Freelancers Payments Statistics done by Organization
+<i>172</i>&nbsp;     */
+<i>173</i>&nbsp;    public List&lt;String&gt; getFreelancersPaymentsStatisticsDoneByOrg(ArrayList&lt;Freelancer&gt; m_lstFreelancers) {
+<b class="nc"><i>174</i>&nbsp;        List&lt;String&gt; payments = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i>175</i>&nbsp;        for (Freelancer m_lstFreelancer : m_lstFreelancers) {</b>
+<b class="nc"><i>176</i>&nbsp;            double mean = calculateMeanP(m_lstFreelancer);</b>
+<b class="nc"><i>177</i>&nbsp;            double deviation = calculateDeviationP(m_lstFreelancer, mean);</b>
+<i>178</i>&nbsp;
+<b class="nc"><i>179</i>&nbsp;            payments.add(String.format(&quot;Freelancer: %s - ID: %s - Mean of the Payments: %.2f€ - Standard Deviation of the Payments: %.2f€&quot;, m_lstFreelancer.getName(), m_lstFreelancer.getId(), mean, deviation));</b>
+<i>180</i>&nbsp;
+<b class="nc"><i>181</i>&nbsp;        }</b>
+<b class="nc"><i>182</i>&nbsp;        return payments;</b>
+<i>183</i>&nbsp;    }
+<i>184</i>&nbsp;
+<i>185</i>&nbsp;    /**
+<i>186</i>&nbsp;     * Calculate Mean Payments.
+<i>187</i>&nbsp;     *
+<i>188</i>&nbsp;     * @param free the Freelancer.
+<i>189</i>&nbsp;     * @return Mean Payments
+<i>190</i>&nbsp;     */
+<i>191</i>&nbsp;    public double calculateMeanP(Freelancer free) {
+<b class="fc"><i>192</i>&nbsp;        double paymentSum = 0, cont = 0;</b>
+<b class="fc"><i>193</i>&nbsp;        for (PaymentTransaction pt : this.m_PaymentTransactionList.getPaymentTransactions()) {</b>
+<b class="fc"><i>194</i>&nbsp;            if (free.getId().equals(pt.getFreelancer().getId())) {</b>
+<b class="fc"><i>195</i>&nbsp;                paymentSum = paymentSum + pt.getValue();</b>
+<b class="fc"><i>196</i>&nbsp;                cont++;</b>
+<i>197</i>&nbsp;            }
+<b class="fc"><i>198</i>&nbsp;        }</b>
+<b class="fc"><i>199</i>&nbsp;        return paymentSum / cont;</b>
+<i>200</i>&nbsp;    }
+<i>201</i>&nbsp;
+<i>202</i>&nbsp;    /**
+<i>203</i>&nbsp;     * Calculate deviation p double.
+<i>204</i>&nbsp;     *
+<i>205</i>&nbsp;     * @param free the free
+<i>206</i>&nbsp;     * @param median the median
+<i>207</i>&nbsp;     * @return the double
+<i>208</i>&nbsp;     */
+<i>209</i>&nbsp;    public double calculateDeviationP(Freelancer free, double median) {
+<b class="fc"><i>210</i>&nbsp;        double counter = 0, deviation = 0;</b>
+<b class="fc"><i>211</i>&nbsp;        for (PaymentTransaction trans : this.m_PaymentTransactionList.getPaymentTransactions()) {</b>
+<b class="fc"><i>212</i>&nbsp;            if (free.getId().equals(trans.getFreelancer().getId())) {</b>
+<b class="fc"><i>213</i>&nbsp;                deviation = Math.pow(trans.getValue() - median, 2) + deviation;</b>
+<b class="fc"><i>214</i>&nbsp;                counter++;</b>
+<i>215</i>&nbsp;            }
+<b class="fc"><i>216</i>&nbsp;        }</b>
+<b class="fc"><i>217</i>&nbsp;        return Math.sqrt(deviation / counter);</b>
+<i>218</i>&nbsp;    }
+<i>219</i>&nbsp;
+<i>220</i>&nbsp;    /**
+<i>221</i>&nbsp;     * Get amount of transac free int.
+<i>222</i>&nbsp;     *
+<i>223</i>&nbsp;     * @param free the free
+<i>224</i>&nbsp;     * @return the int
+<i>225</i>&nbsp;     */
+<i>226</i>&nbsp;    public int getAmountOfTransacFree(Freelancer free) {
+<b class="nc"><i>227</i>&nbsp;        int cont = 0;</b>
+<b class="nc"><i>228</i>&nbsp;        for (PaymentTransaction pay : this.m_PaymentTransactionList.getPaymentTransactions()) {</b>
+<b class="nc"><i>229</i>&nbsp;            if (pay.getFreelancer().equals(free)) {</b>
+<b class="nc"><i>230</i>&nbsp;                cont++;</b>
+<i>231</i>&nbsp;            }
+<b class="nc"><i>232</i>&nbsp;        }</b>
+<b class="nc"><i>233</i>&nbsp;        return cont;</b>
+<i>234</i>&nbsp;    }
+<i>235</i>&nbsp;
+<i>236</i>&nbsp;    /**
+<i>237</i>&nbsp;     * Gets Tasks Statistics.
+<i>238</i>&nbsp;     *
+<i>239</i>&nbsp;     * @param m_list the List with Freelancers
+<i>240</i>&nbsp;     * @return the Tasks Statistics
+<i>241</i>&nbsp;     */
+<i>242</i>&nbsp;    public List&lt;String&gt; getTasksStatistics(List&lt;Freelancer&gt; m_list) {
+<b class="nc"><i>243</i>&nbsp;        List&lt;String&gt; tasks = new ArrayList&lt;&gt;();</b>
+<i>244</i>&nbsp;
+<b class="nc"><i>245</i>&nbsp;        for (Freelancer freelancer : m_list) {</b>
+<b class="nc"><i>246</i>&nbsp;            double mean = getMeanT(freelancer);</b>
+<b class="nc"><i>247</i>&nbsp;            double deviation = getDeviationT(freelancer, mean);</b>
+<i>248</i>&nbsp;
+<b class="nc"><i>249</i>&nbsp;            tasks.add(String.format(&quot;Freelancer: %s - ID: %s - Mean of the Delays: %.2f - Standard Deviation of the Delays: %.2f&quot;, freelancer.getName(), freelancer.getId(), mean, deviation));</b>
+<b class="nc"><i>250</i>&nbsp;        }</b>
+<i>251</i>&nbsp;
+<b class="nc"><i>252</i>&nbsp;        double totalMean = getTotalMeanT();</b>
+<b class="nc"><i>253</i>&nbsp;        double totalDeviation = getTotalDeviationT(totalMean);</b>
+<i>254</i>&nbsp;
+<b class="nc"><i>255</i>&nbsp;        if (m_list.isEmpty()) {</b>
+<b class="nc"><i>256</i>&nbsp;            totalMean = 0;</b>
+<b class="nc"><i>257</i>&nbsp;            totalDeviation = 0;</b>
+<i>258</i>&nbsp;        }
+<i>259</i>&nbsp;
+<b class="nc"><i>260</i>&nbsp;        String totalMeanSt = String.valueOf(totalMean);</b>
+<b class="nc"><i>261</i>&nbsp;        String totalDeviationSt = String.valueOf(totalDeviation);</b>
+<i>262</i>&nbsp;
+<b class="nc"><i>263</i>&nbsp;        tasks.add(totalMeanSt);</b>
+<b class="nc"><i>264</i>&nbsp;        tasks.add(totalDeviationSt);</b>
+<i>265</i>&nbsp;
+<b class="nc"><i>266</i>&nbsp;        return tasks;</b>
+<i>267</i>&nbsp;    }
+<i>268</i>&nbsp;
+<i>269</i>&nbsp;    /**
+<i>270</i>&nbsp;     * Gets mean t.
+<i>271</i>&nbsp;     *
+<i>272</i>&nbsp;     * @param free the free
+<i>273</i>&nbsp;     * @return the mean t
+<i>274</i>&nbsp;     */
+<i>275</i>&nbsp;    public double getMeanT(Freelancer free) {
+<b class="fc"><i>276</i>&nbsp;        double tasksSum = 0;</b>
+<b class="fc"><i>277</i>&nbsp;        int sum = 0;</b>
+<b class="fc"><i>278</i>&nbsp;        for (PaymentTransaction trans : this.m_PaymentTransactionList.getPaymentTransactions()) {</b>
+<b class="fc"><i>279</i>&nbsp;            if (free.getId().equals(trans.getFreelancer().getId())) {</b>
+<b class="fc"><i>280</i>&nbsp;                tasksSum = tasksSum + trans.getTask().getTaskExecution().getDelay();</b>
+<b class="fc"><i>281</i>&nbsp;                sum++;</b>
+<i>282</i>&nbsp;            }
+<b class="fc"><i>283</i>&nbsp;        }</b>
+<b class="fc"><i>284</i>&nbsp;        return tasksSum / sum;</b>
+<i>285</i>&nbsp;    }
+<i>286</i>&nbsp;
+<i>287</i>&nbsp;    /**
+<i>288</i>&nbsp;     * Gets deviation t.
+<i>289</i>&nbsp;     *
+<i>290</i>&nbsp;     * @param free the free
+<i>291</i>&nbsp;     * @param median the median
+<i>292</i>&nbsp;     * @return the deviation t
+<i>293</i>&nbsp;     */
+<i>294</i>&nbsp;    public double getDeviationT(Freelancer free, Double median) {
+<b class="fc"><i>295</i>&nbsp;        double deviation = 0;</b>
+<b class="fc"><i>296</i>&nbsp;        int counter = 0;</b>
+<b class="fc"><i>297</i>&nbsp;        for (PaymentTransaction trans : this.m_PaymentTransactionList.getPaymentTransactions()) {</b>
+<b class="fc"><i>298</i>&nbsp;            if (free.getId().equals(trans.getFreelancer().getId())) {</b>
+<b class="fc"><i>299</i>&nbsp;                deviation = Math.pow(trans.getTask().getTaskExecution().getDelay() - median, 2) + deviation;</b>
+<b class="fc"><i>300</i>&nbsp;                counter++;</b>
+<i>301</i>&nbsp;            }
+<b class="fc"><i>302</i>&nbsp;        }</b>
+<b class="fc"><i>303</i>&nbsp;        return Math.sqrt(deviation / counter);</b>
+<i>304</i>&nbsp;    }
+<i>305</i>&nbsp;
+<i>306</i>&nbsp;    /**
+<i>307</i>&nbsp;     * Gets total mean t.
+<i>308</i>&nbsp;     *
+<i>309</i>&nbsp;     * @return the total mean t
+<i>310</i>&nbsp;     */
+<i>311</i>&nbsp;    public double getTotalMeanT() {
+<b class="fc"><i>312</i>&nbsp;        double totalMean = 0;</b>
+<b class="fc"><i>313</i>&nbsp;        int counterMedian = 0;</b>
+<b class="fc"><i>314</i>&nbsp;        for (PaymentTransaction trans : this.m_PaymentTransactionList.getPaymentTransactions()) {</b>
+<b class="fc"><i>315</i>&nbsp;            totalMean = totalMean + trans.getTask().getTaskExecution().getDelay();</b>
+<b class="fc"><i>316</i>&nbsp;            counterMedian++;</b>
+<b class="fc"><i>317</i>&nbsp;        }</b>
+<b class="fc"><i>318</i>&nbsp;        return totalMean / counterMedian;</b>
+<i>319</i>&nbsp;    }
+<i>320</i>&nbsp;
+<i>321</i>&nbsp;    /**
+<i>322</i>&nbsp;     * Gets total deviation t.
+<i>323</i>&nbsp;     *
+<i>324</i>&nbsp;     * @param totalMean the total mean
+<i>325</i>&nbsp;     * @return the total deviation t
+<i>326</i>&nbsp;     */
+<i>327</i>&nbsp;    public double getTotalDeviationT(double totalMean) {
+<b class="fc"><i>328</i>&nbsp;        double totalDeviation = 0;</b>
+<b class="fc"><i>329</i>&nbsp;        int counterDeviation = 0;</b>
+<b class="fc"><i>330</i>&nbsp;        for (PaymentTransaction trans : this.m_PaymentTransactionList.getPaymentTransactions()) {</b>
+<b class="fc"><i>331</i>&nbsp;            totalDeviation = Math.pow(trans.getTask().getTaskExecution().getDelay() - totalMean, 2) + totalDeviation;</b>
+<b class="fc"><i>332</i>&nbsp;            counterDeviation++;</b>
+<b class="fc"><i>333</i>&nbsp;        }</b>
+<b class="fc"><i>334</i>&nbsp;        return Math.sqrt(totalDeviation / counterDeviation);</b>
+<i>335</i>&nbsp;    }
+<i>336</i>&nbsp;
+<i>337</i>&nbsp;    /**
+<i>338</i>&nbsp;     * Gets Delays for each Interval.
+<i>339</i>&nbsp;     *
+<i>340</i>&nbsp;     * @param tasks the Tasks
+<i>341</i>&nbsp;     * @return the Delays for each Interval
+<i>342</i>&nbsp;     */
+<i>343</i>&nbsp;    public ArrayList&lt;Double&gt; getDelaysForEachInterval(List&lt;String&gt; tasks) {
+<b class="nc"><i>344</i>&nbsp;        ArrayList&lt;Double&gt; list = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i>345</i>&nbsp;        double totalMedian = Double.parseDouble(tasks.get(tasks.size() - 2));</b>
+<b class="nc"><i>346</i>&nbsp;        double totalDeviation = Double.parseDouble(tasks.get(tasks.size() - 1));</b>
+<b class="nc"><i>347</i>&nbsp;        tasks.remove(tasks.size() - 1);</b>
+<b class="nc"><i>348</i>&nbsp;        tasks.remove(tasks.size() - 1);</b>
+<b class="nc"><i>349</i>&nbsp;        tasks.add(String.format(&quot;Mean of the Delays: %.2f\nStandard Deviation of the Delays: %.2f&quot;, totalMedian, totalDeviation));</b>
+<b class="nc"><i>350</i>&nbsp;        double cont1 = 0, cont2 = 0, cont3 = 0;</b>
+<b class="nc"><i>351</i>&nbsp;        for (PaymentTransaction t : this.m_PaymentTransactionList.getPaymentTransactions()) {</b>
+<b class="nc"><i>352</i>&nbsp;            if ((t.getTask().getTaskExecution().getDelay()) &lt;= (totalMedian - totalDeviation)) {</b>
+<b class="nc"><i>353</i>&nbsp;                cont1++;</b>
+<i>354</i>&nbsp;            }
+<b class="nc"><i>355</i>&nbsp;            if ((t.getTask().getTaskExecution().getDelay()) &gt; (totalMedian - totalDeviation) &amp;&amp; ((t.getTask().getTaskExecution().getDelay()) &lt; (totalMedian + totalDeviation))) {</b>
+<b class="nc"><i>356</i>&nbsp;                cont2++;</b>
+<i>357</i>&nbsp;            }
+<b class="nc"><i>358</i>&nbsp;            if ((t.getTask().getTaskExecution().getDelay()) &gt;= (totalMedian + totalDeviation)) {</b>
+<b class="nc"><i>359</i>&nbsp;                cont3++;</b>
+<i>360</i>&nbsp;            }
+<b class="nc"><i>361</i>&nbsp;        }</b>
+<b class="nc"><i>362</i>&nbsp;        list.add(cont1);</b>
+<b class="nc"><i>363</i>&nbsp;        list.add(cont2);</b>
+<b class="nc"><i>364</i>&nbsp;        list.add(cont3);</b>
+<b class="nc"><i>365</i>&nbsp;        list.add(totalMedian - totalDeviation);</b>
+<b class="nc"><i>366</i>&nbsp;        list.add(totalMedian + totalDeviation);</b>
+<i>367</i>&nbsp;
+<b class="nc"><i>368</i>&nbsp;        return list;</b>
+<i>369</i>&nbsp;    }
+<i>370</i>&nbsp;
+<i>371</i>&nbsp;    /**
+<i>372</i>&nbsp;     * Gets number of delays free.
+<i>373</i>&nbsp;     *
+<i>374</i>&nbsp;     * @param id the id
+<i>375</i>&nbsp;     * @return the number of delays free
+<i>376</i>&nbsp;     */
+<i>377</i>&nbsp;    public List&lt;Double&gt; getNumberOfDelaysFree(String id) {
+<b class="nc"><i>378</i>&nbsp;        ArrayList&lt;Double&gt; list = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i>379</i>&nbsp;        Freelancer f = ApplicationPOT.getInstance().getPlatform().getFreelancersRegister().getFreelancerByID(id);</b>
+<b class="nc"><i>380</i>&nbsp;        double mean = getMeanT(f);</b>
+<b class="nc"><i>381</i>&nbsp;        double deviation = getDeviationT(f, mean);</b>
+<b class="nc"><i>382</i>&nbsp;        double cont1 = 0, cont2 = 0, cont3 = 0;</b>
+<b class="nc"><i>383</i>&nbsp;        for (PaymentTransaction t : this.m_PaymentTransactionList.getPaymentTransactions()) {</b>
+<b class="nc"><i>384</i>&nbsp;            if (f.equals(t.getFreelancer())) {</b>
+<b class="nc"><i>385</i>&nbsp;                if ((t.getTask().getTaskExecution().getDelay()) &lt;= (mean - deviation)) {</b>
+<b class="nc"><i>386</i>&nbsp;                    cont1++;</b>
+<i>387</i>&nbsp;                }
+<b class="nc"><i>388</i>&nbsp;                if (((t.getTask().getTaskExecution().getDelay()) &gt; (mean - deviation)) &amp;&amp; ((t.getTask().getTaskExecution().getDelay()) &lt; (mean + deviation))) {</b>
+<b class="nc"><i>389</i>&nbsp;                    cont2++;</b>
+<i>390</i>&nbsp;                }
+<b class="nc"><i>391</i>&nbsp;                if ((t.getTask().getTaskExecution().getDelay()) &gt;= (mean + deviation)) {</b>
+<b class="nc"><i>392</i>&nbsp;                    cont3++;</b>
+<i>393</i>&nbsp;                }
+<i>394</i>&nbsp;            }
+<b class="nc"><i>395</i>&nbsp;        }</b>
+<b class="nc"><i>396</i>&nbsp;        list.add(cont1);</b>
+<b class="nc"><i>397</i>&nbsp;        list.add(cont2);</b>
+<b class="nc"><i>398</i>&nbsp;        list.add(cont3);</b>
+<b class="nc"><i>399</i>&nbsp;        list.add(mean - deviation);</b>
+<b class="nc"><i>400</i>&nbsp;        list.add(mean + deviation);</b>
+<i>401</i>&nbsp;
+<b class="nc"><i>402</i>&nbsp;        return list;</b>
+<i>403</i>&nbsp;    }
+<i>404</i>&nbsp;
+<i>405</i>&nbsp;    /**
+<i>406</i>&nbsp;     * Gets Tasks List.
+<i>407</i>&nbsp;     *
+<i>408</i>&nbsp;     * @return the Tasks List
+<i>409</i>&nbsp;     */
+<i>410</i>&nbsp;    public TasksList getTasksList() {
+<b class="nc"><i>411</i>&nbsp;        return this.m_TasksList;</b>
+<i>412</i>&nbsp;    }
+<i>413</i>&nbsp;
+<i>414</i>&nbsp;    /**
+<i>415</i>&nbsp;     * Gets Payment Transaction List.
+<i>416</i>&nbsp;     *
+<i>417</i>&nbsp;     * @return the Payment Transaction List
+<i>418</i>&nbsp;     */
+<i>419</i>&nbsp;    public PaymentTransactionList getPaymentTransactionList() {
+<b class="fc"><i>420</i>&nbsp;        return this.m_PaymentTransactionList;</b>
+<i>421</i>&nbsp;    }
+<i>422</i>&nbsp;
+<i>423</i>&nbsp;    /**
+<i>424</i>&nbsp;     * Get payment size int.
+<i>425</i>&nbsp;     *
+<i>426</i>&nbsp;     * @return the int
+<i>427</i>&nbsp;     */
+<i>428</i>&nbsp;    public int getPaymentSize() {
+<b class="nc"><i>429</i>&nbsp;        return this.m_paymentSize;</b>
+<i>430</i>&nbsp;    }
+<i>431</i>&nbsp;
+<i>432</i>&nbsp;    /**
+<i>433</i>&nbsp;     * Set payment size.
+<i>434</i>&nbsp;     *
+<i>435</i>&nbsp;     * @param paymentSize the payment size
+<i>436</i>&nbsp;     */
+<i>437</i>&nbsp;    public void setPaymentSize(int paymentSize) {
+<b class="nc"><i>438</i>&nbsp;        this.m_paymentSize = paymentSize;</b>
+<b class="nc"><i>439</i>&nbsp;    }</b>
+<i>440</i>&nbsp;
+<i>441</i>&nbsp;    /**
+<i>442</i>&nbsp;     * Sets Payment Schedule.
+<i>443</i>&nbsp;     *
+<i>444</i>&nbsp;     * @param thisDay the this day
+<i>445</i>&nbsp;     * @param thisHour the this hour
+<i>446</i>&nbsp;     */
+<i>447</i>&nbsp;    public void setPaymentSchedule(int thisDay, int thisHour) {
+<b class="nc"><i>448</i>&nbsp;        Timer timer = new TimerT4J();</b>
+<b class="nc"><i>449</i>&nbsp;        Calendar cal = Calendar.getInstance();</b>
+<i>450</i>&nbsp;
+<b class="nc"><i>451</i>&nbsp;        int thisYear = cal.get(Calendar.YEAR);</b>
+<b class="nc"><i>452</i>&nbsp;        int thisMonth = cal.get(Calendar.MONTH);</b>
+<b class="nc"><i>453</i>&nbsp;        int thisDayAux = cal.get(Calendar.DAY_OF_MONTH);</b>
+<b class="nc"><i>454</i>&nbsp;        int thisHourAux = cal.get(Calendar.HOUR_OF_DAY);</b>
+<b class="nc"><i>455</i>&nbsp;        int thisMinuteAux = cal.get(Calendar.MINUTE);</b>
+<i>456</i>&nbsp;
+<b class="nc"><i>457</i>&nbsp;        int dayAux = thisDay;</b>
+<i>458</i>&nbsp;
+<b class="nc"><i>459</i>&nbsp;        if (dayAux == 30) {</b>
+<b class="nc"><i>460</i>&nbsp;            if (thisMonth == Calendar.FEBRUARY) {</b>
+<b class="nc"><i>461</i>&nbsp;                dayAux = February(thisYear, dayAux);</b>
+<i>462</i>&nbsp;            }
+<b class="nc"><i>463</i>&nbsp;        } else if (dayAux == 31) {</b>
+<b class="nc"><i>464</i>&nbsp;            if (thisMonth == Calendar.APRIL || thisMonth == Calendar.JUNE || thisMonth == Calendar.SEPTEMBER || thisMonth == Calendar.NOVEMBER) {</b>
+<b class="nc"><i>465</i>&nbsp;                dayAux = 30;</b>
+<b class="nc"><i>466</i>&nbsp;            } else if (thisMonth == Calendar.FEBRUARY) {</b>
+<b class="nc"><i>467</i>&nbsp;                dayAux = February(thisYear, dayAux);</b>
+<i>468</i>&nbsp;            }
+<i>469</i>&nbsp;        }
+<i>470</i>&nbsp;
+<b class="nc"><i>471</i>&nbsp;        cal.set(thisYear, thisMonth, dayAux, thisHour, 0);</b>
+<b class="nc"><i>472</i>&nbsp;        System.out.println(cal.getTime().toString());</b>
+<i>473</i>&nbsp;
+<b class="nc"><i>474</i>&nbsp;        if (thisDayAux &gt; dayAux) {</b>
+<b class="nc"><i>475</i>&nbsp;            cal.add(Calendar.MONTH, 1);</b>
+<b class="nc"><i>476</i>&nbsp;        } else if (thisDayAux == dayAux) {</b>
+<b class="nc"><i>477</i>&nbsp;            if (thisHourAux &gt; thisHour) {</b>
+<b class="nc"><i>478</i>&nbsp;                cal.add(Calendar.MONTH, 1);</b>
+<b class="nc"><i>479</i>&nbsp;            } else if (thisHourAux == thisHour) {</b>
+<b class="nc"><i>480</i>&nbsp;                if (thisMinuteAux != 0) {</b>
+<b class="nc"><i>481</i>&nbsp;                    cal.add(Calendar.MONTH, 1);</b>
+<i>482</i>&nbsp;                }
+<i>483</i>&nbsp;            }
+<i>484</i>&nbsp;        }
+<i>485</i>&nbsp;
+<b class="nc"><i>486</i>&nbsp;        Date d = cal.getTime();</b>
+<i>487</i>&nbsp;
+<b class="nc"><i>488</i>&nbsp;        MakeAutomaticPaymentTask mapt = new MakeAutomaticPaymentTask(timer, cal);</b>
+<b class="nc"><i>489</i>&nbsp;        mapt.setDay(thisDay);</b>
+<i>490</i>&nbsp;
+<b class="nc"><i>491</i>&nbsp;        timer.schedule(mapt, d);</b>
+<b class="nc"><i>492</i>&nbsp;    }</b>
+<i>493</i>&nbsp;
+<i>494</i>&nbsp;    /**
+<i>495</i>&nbsp;     * February int.
+<i>496</i>&nbsp;     *
+<i>497</i>&nbsp;     * @param thisYear the this year
+<i>498</i>&nbsp;     * @param thisDay the this day
+<i>499</i>&nbsp;     * @return the int
+<i>500</i>&nbsp;     */
+<i>501</i>&nbsp;    public int February(int thisYear, int thisDay) {
+<b class="nc"><i>502</i>&nbsp;        double leapYear = (thisYear % 4);</b>
+<i>503</i>&nbsp;        int aux;
+<b class="nc"><i>504</i>&nbsp;        if (leapYear == 0) {</b>
+<b class="nc"><i>505</i>&nbsp;            aux = (thisYear / 4);</b>
+<b class="nc"><i>506</i>&nbsp;            if ((aux % 100) != 0) {</b>
+<b class="nc"><i>507</i>&nbsp;                return 29;</b>
+<i>508</i>&nbsp;            } else {
+<b class="nc"><i>509</i>&nbsp;                return 28;</b>
+<i>510</i>&nbsp;            }
+<i>511</i>&nbsp;        }
+<b class="nc"><i>512</i>&nbsp;        return thisDay;</b>
+<i>513</i>&nbsp;    }
+<i>514</i>&nbsp;
+<i>515</i>&nbsp;    /**
+<i>516</i>&nbsp;     * Textual Organization&#39;s Description.
+<i>517</i>&nbsp;     *
+<i>518</i>&nbsp;     * @return Textual Organization&#39;s Description
+<i>519</i>&nbsp;     */
+<i>520</i>&nbsp;    @Override
+<i>521</i>&nbsp;    public String toString() {
+<b class="nc"><i>522</i>&nbsp;        return String.format(&quot;Designation: %s - Manager: %s - Collaborator: %s&quot;, this.m_strDesignation, this.m_oManager, this.m_oCollaborator);</b>
+<i>523</i>&nbsp;    }
+<i>524</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

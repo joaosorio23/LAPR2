@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="673px" preserveAspectRatio="none" style="width:1257px;height:673px;" version="1.1" viewBox="0 0 1257 673" width="1257px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="fswjdl7bzkema" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0" />
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" />
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" />
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal" />
+        </filter>
+    </defs>
+    <g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="260" x="499" y="24.5332">UC1_SD_RegisterCollaboratorAsUser</text>
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="403.4609" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="90.5" y="185.5313" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="623.5" y="221.2344" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="623.5" y="281.5859" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="739" y="341.9375" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="739" y="462.6406" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="924.5" y="402.2891" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1159" y="522.9922" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="95" x2="95" y1="88.8281" y2="614.3438" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="628" x2="628" y1="88.8281" y2="614.3438" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="744" x2="744" y1="88.8281" y2="614.3438" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="929" x2="929" y1="88.8281" y2="614.3438" />
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1164" x2="1164" y1="88.8281" y2="614.3438" />
+        <rect fill="#FEFECE" filter="url(#fswjdl7bzkema)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="171" x="8" y="52.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="157" x="15" y="73.752">or:OrganizationsRegister</text>
+        <rect fill="#FEFECE" filter="url(#fswjdl7bzkema)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="171" x="8" y="613.3438" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="157" x="15" y="634.877">or:OrganizationsRegister</text>
+        <rect fill="#FEFECE" filter="url(#fswjdl7bzkema)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="133" x="560" y="52.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="119" x="567" y="73.752">collab:Collaborator</text>
+        <rect fill="#FEFECE" filter="url(#fswjdl7bzkema)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="133" x="560" y="613.3438" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="119" x="567" y="634.877">collab:Collaborator</text>
+        <rect fill="#FEFECE" filter="url(#fswjdl7bzkema)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="70" x="707" y="52.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="714" y="73.752">:Platform</text>
+        <rect fill="#FEFECE" filter="url(#fswjdl7bzkema)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="70" x="707" y="613.3438" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="714" y="634.877">:Platform</text>
+        <rect fill="#FEFECE" filter="url(#fswjdl7bzkema)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="273" x="791" y="34.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="71" x="892" y="55.6094">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="259" x="798" y="73.2188">alg:ExternalPasswordGeneratorAlgorithm</text>
+        <rect fill="#FEFECE" filter="url(#fswjdl7bzkema)" height="49.2188" style="stroke: #A80036; stroke-width: 1.5;" width="273" x="791" y="613.3438" /><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="71" x="892" y="634.3438">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="259" x="798" y="651.9531">alg:ExternalPasswordGeneratorAlgorithm</text>
+        <rect fill="#FEFECE" filter="url(#fswjdl7bzkema)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="168" x="1078" y="52.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="154" x="1085" y="73.752">aut:FacadeAuthorization</text>
+        <rect fill="#FEFECE" filter="url(#fswjdl7bzkema)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="168" x="1078" y="613.3438" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="154" x="1085" y="634.877">aut:FacadeAuthorization</text>
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="403.4609" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="90.5" y="185.5313" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="623.5" y="221.2344" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="623.5" y="281.5859" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="739" y="341.9375" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="739" y="462.6406" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="924.5" y="402.2891" />
+        <rect fill="#FFFFFF" filter="url(#fswjdl7bzkema)" height="30" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1159" y="522.9922" />
+        <path d="M829,103.8281 L829,145.8281 L1025,145.8281 L1025,113.8281 L1015,103.8281 L829,103.8281 " fill="#FBFB77" filter="url(#fswjdl7bzkema)" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M1015,103.8281 L1015,113.8281 L1025,113.8281 L1015,103.8281 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="166" x="835" y="122.3232">It is an instance of any class</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="175" x="835" y="138.6748">that implements this interface.</text>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="95.5" x2="142.5" y1="172.8828" y2="172.8828" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="142.5" x2="142.5" y1="172.8828" y2="185.8828" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="101.5" x2="142.5" y1="185.8828" y2="185.8828" />
+        <polygon fill="#A80036" points="111.5,181.8828,101.5,185.8828,111.5,189.8828,107.5,185.8828" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="107.5" y="168.0264">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="197" x="118.5" y="168.0264">registerCollaboratorAsUser(collab)</text>
+        <polygon fill="#A80036" points="611.5,217.2344,621.5,221.2344,611.5,225.2344,615.5,221.2344" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="100.5" x2="617.5" y1="221.2344" y2="221.2344" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="107.5" y="216.3779">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="117" x="118.5" y="216.3779">nameC = getName()</text>
+        <polygon fill="#A80036" points="611.5,277.5859,621.5,281.5859,611.5,285.5859,615.5,281.5859" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="100.5" x2="617.5" y1="281.5859" y2="281.5859" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="107.5" y="276.7295">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="115" x="118.5" y="276.7295">emailC = getEmail()</text>
+        <polygon fill="#A80036" points="727,337.9375,737,341.9375,727,345.9375,731,341.9375" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="100.5" x2="733" y1="341.9375" y2="341.9375" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="107.5" y="337.0811">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="268" x="118.5" y="337.0811">alg=getExternalPasswordGeneratorAlgorithm()</text>
+        <polygon fill="#A80036" points="912.5,398.2891,922.5,402.2891,912.5,406.2891,916.5,402.2891" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="100.5" x2="918.5" y1="402.2891" y2="402.2891" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="107.5" y="397.4326">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="243" x="118.5" y="397.4326">pwd = genaratePassword(nomeC, emailC)</text>
+        <polygon fill="#A80036" points="727,458.6406,737,462.6406,727,466.6406,731,462.6406" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="100.5" x2="733" y1="462.6406" y2="462.6406" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="107.5" y="457.7842">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="179" x="118.5" y="457.7842">aut = getFacadeAuthorization()</text>
+        <polygon fill="#A80036" points="1147,518.9922,1157,522.9922,1147,526.9922,1151,522.9922" style="stroke: #A80036; stroke-width: 1.0;" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="100.5" x2="1153" y1="522.9922" y2="522.9922" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="107.5" y="518.1357">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="377" x="118.5" y="518.1357">registersUserWithRole(nameC,emailC,pwd,["COLLABORATOR"])</text>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="100.5" x2="142.5" y1="588.3438" y2="588.3438" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="142.5" x2="142.5" y1="588.3438" y2="601.3438" />
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="95.5" x2="142.5" y1="601.3438" y2="601.3438" />
+        <polygon fill="#A80036" points="105.5,597.3438,95.5,601.3438,105.5,605.3438,101.5,601.3438" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="107.5" y="583.4873">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="498" x="118.5" y="583.4873">sendEmail(String EmailSender, String EmailReceiver, String Subject, String message)</text>
+        <!--
+@startuml
+title UC1_SD_RegisterCollaboratorAsUser
+autonumber
+
+participant "or:OrganizationsRegister" as ORGS
+participant "collab:Collaborator" as COLLA
+participant ":Platform" as PLAT
+participant "alg:ExternalPasswordGeneratorAlgorithm" as ALG << interface >>
+participant "aut:FacadeAuthorization" as AUT
+
+note over of ALG
+It is an instance of any class
+that implements this interface.
+end note
+
+ORGS -> ORGS: registerCollaboratorAsUser(collab)
+activate ORGS
+
+ORGS -> COLLA: nameC = getName()
+activate COLLA
+deactivate COLLA
+ORGS -> COLLA: emailC = getEmail()
+activate COLLA
+deactivate COLLA
+
+ORGS -> PLAT : alg=getExternalPasswordGeneratorAlgorithm()
+activate PLAT
+deactivate PLAT
+
+ORGS -> ALG: pwd = genaratePassword(nomeC, emailC)
+activate ALG
+deactivate ALG
+
+ORGS -> PLAT : aut = getFacadeAuthorization()
+activate PLAT
+deactivate PLAT
+
+ORGS -> AUT: registersUserWithRole(nameC,emailC,pwd,["COLLABORATOR"])
+activate AUT
+deactivate AUT
+
+
+ORGS -> ORGS: sendEmail(String EmailSender, String EmailReceiver, String Subject, String message)
+
+deactivate ORGS
+@enduml
+
+PlantUML version 1.2018.14(Fri Dec 21 16:33:16 GMT 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) Client VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+-->
+    </g>
+</svg>

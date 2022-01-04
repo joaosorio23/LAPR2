@@ -1,0 +1,129 @@
+@startuml
+
+class PaymentTransactionUI {
+
+}
+
+class PaymentTransactionController {
+  +getListOfFreelancers()
+  +getListOfTasks()
+  +setData(taskEnd, taskDelay, taskDescWork, freelId, taskId)
+  +newPaymentTransaction(id)
+  +registerPaymentTransaction()
+}
+
+class AplicacaoPOT {
+  +static getInstance()
+  +getCurrentSession()
+}
+
+class UserSession {
+  +getUserEmail()
+}
+
+class Platform {
+  -String designation
+  +FreelancersRegister getFreelancerRegister()
+  +OrganizationsRegister getOrganizationsRegister()
+}
+
+class FreelancersRegister {
+  +getListOfFreelancers()
+  +Task getFreelancerById(freelId)
+}
+
+class OrganizationsRegister {
+  +getOrganizationByUserEmail(email)
+}
+
+class Organization {
+  -String designation
+  +TasksList getTasksList()
+  +PaymentTransactionList getPaymentTransactionList()
+}
+
+class TasksList {
+  +getListOfTasks()
+  +Task getTaskById()
+}
+
+class Collaborator {
+  -String name
+  -String email
+}
+
+class Freelancer {
+  -String id
+  -String name
+  -String email
+  -double NIF
+  -String IBAN
+  -double OverallPayments
+  +setAnualDelay(taskDelay)
+  +incrementTask()
+}
+
+class PaymentTransactionList {
+  +newPaymentTransaction(id, freel, task)
+  +validatePaymentTransaction(payTrans)
+  +registerPaymentTransaction(payTrans)
+  +addPaymentTransaction(payTrans)
+}
+
+class PaymentTransaction {
+  -String id
+  +create(id, freel, task)
+}
+
+class Task {
+  -String id
+  -String briefDescription
+  -Double timeDuration
+  -Double costPerHour
+  -String category
+  +newTaskExecution(taskEnd,taskDelay,taskDescWork)
+}
+
+class TaskExecution {
+  -Date deadline
+  -Double delay
+  -String descQualityWork
+  +create(taskEnd,taskDelay,taskDescWork)
+}
+
+PaymentTransactionUI ..> PaymentTransactionController
+PaymentTransactionController ..> Platform
+PaymentTransactionController ..> Freelancer
+PaymentTransactionController ..> FreelancersRegister
+PaymentTransactionController ..> Task
+PaymentTransactionController ..> OrganizationsRegister
+PaymentTransactionController ..> Organization
+PaymentTransactionController ..> AplicacaoPOT
+PaymentTransactionController ..> UserSession
+PaymentTransactionController ..> TasksList
+PaymentTransactionController ..> PaymentTransactionList
+PaymentTransactionController ..> Collaborator
+
+Platform "1" --> "1" FreelancersRegister : has
+Platform "1" --> "1" OrganizationsRegister : has
+
+FreelancersRegister "1" --> "*" Freelancer : has registered
+OrganizationsRegister "1" --> "*" Organization : registered
+
+Organization "1" --> "1" TasksList : has
+Organization "1" --> "1" PaymentTransactionList : has
+Organization "1" --> "1" Collaborator : has
+
+TasksList "1" --> "*" Task : has registered
+PaymentTransactionList "1" --> "*" PaymentTransaction : has registered
+
+PaymentTransaction "*" --> "1" Freelancer : to
+PaymentTransaction "1" --> "1" Task : referent
+
+Collaborator "1" --> "*" Freelancer : registers
+Collaborator "1" --> "*" Task : creates
+Collaborator "1" --> "*" TaskExecution : creates
+Collaborator "1" --> "*" PaymentTransaction : does
+
+Task "1" --> "0..1" TaskExecution : has
+@enduml

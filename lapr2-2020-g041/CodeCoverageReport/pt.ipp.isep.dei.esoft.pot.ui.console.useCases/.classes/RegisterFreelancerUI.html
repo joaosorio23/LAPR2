@@ -1,0 +1,232 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: RegisterFreelancerUI</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.ui.console.useCases</a> ]
+</div>
+
+<h1>Coverage Summary for Class: RegisterFreelancerUI (pt.ipp.isep.dei.esoft.pot.ui.console.useCases)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">RegisterFreelancerUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 30)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.ui.console.useCases;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import javafx.event.ActionEvent;
+<i>4</i>&nbsp;import javafx.fxml.FXML;
+<i>5</i>&nbsp;import javafx.fxml.Initializable;
+<i>6</i>&nbsp;import javafx.scene.control.Alert;
+<i>7</i>&nbsp;import javafx.scene.control.ComboBox;
+<i>8</i>&nbsp;import javafx.scene.control.Label;
+<i>9</i>&nbsp;import javafx.scene.control.TextField;
+<i>10</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.useCases.RegisterFreelancerController;
+<i>11</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.Alerts;
+<i>12</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.enun.Country;
+<i>13</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.enun.LevelOfExpertise;
+<i>14</i>&nbsp;
+<i>15</i>&nbsp;import java.net.URL;
+<i>16</i>&nbsp;import java.util.ResourceBundle;
+<i>17</i>&nbsp;
+<i>18</i>&nbsp;/**
+<i>19</i>&nbsp; * The type Register Freelancer UI.
+<i>20</i>&nbsp; *
+<i>21</i>&nbsp; * @author Berkelios
+<i>22</i>&nbsp; */
+<b class="nc"><i>23</i>&nbsp;public class RegisterFreelancerUI implements Initializable {</b>
+<i>24</i>&nbsp;
+<i>25</i>&nbsp;    /**
+<i>26</i>&nbsp;     * The IBAN initial.
+<i>27</i>&nbsp;     */
+<i>28</i>&nbsp;    @FXML
+<i>29</i>&nbsp;    public Label initialLabel;
+<i>30</i>&nbsp;    /**
+<i>31</i>&nbsp;     * The App Controller.
+<i>32</i>&nbsp;     */
+<i>33</i>&nbsp;    private RegisterFreelancerController appController;
+<i>34</i>&nbsp;    /**
+<i>35</i>&nbsp;     * The Levels Of Expertise.
+<i>36</i>&nbsp;     */
+<i>37</i>&nbsp;    @FXML
+<i>38</i>&nbsp;    private ComboBox&lt;LevelOfExpertise&gt; cmbLevels;
+<i>39</i>&nbsp;    /**
+<i>40</i>&nbsp;     * The ID.
+<i>41</i>&nbsp;     */
+<i>42</i>&nbsp;    @FXML
+<i>43</i>&nbsp;    private TextField id;
+<i>44</i>&nbsp;    /**
+<i>45</i>&nbsp;     * The Name.
+<i>46</i>&nbsp;     */
+<i>47</i>&nbsp;    @FXML
+<i>48</i>&nbsp;    private TextField name;
+<i>49</i>&nbsp;    /**
+<i>50</i>&nbsp;     * The Email.
+<i>51</i>&nbsp;     */
+<i>52</i>&nbsp;    @FXML
+<i>53</i>&nbsp;    private TextField email;
+<i>54</i>&nbsp;    /**
+<i>55</i>&nbsp;     * The NIF.
+<i>56</i>&nbsp;     */
+<i>57</i>&nbsp;    @FXML
+<i>58</i>&nbsp;    private TextField nif;
+<i>59</i>&nbsp;    /**
+<i>60</i>&nbsp;     * The IBAN.
+<i>61</i>&nbsp;     */
+<i>62</i>&nbsp;    @FXML
+<i>63</i>&nbsp;    private TextField iban;
+<i>64</i>&nbsp;    /**
+<i>65</i>&nbsp;     * The Address.
+<i>66</i>&nbsp;     */
+<i>67</i>&nbsp;    @FXML
+<i>68</i>&nbsp;    private TextField address;
+<i>69</i>&nbsp;    /**
+<i>70</i>&nbsp;     * The Countries.
+<i>71</i>&nbsp;     */
+<i>72</i>&nbsp;    @FXML
+<i>73</i>&nbsp;    private ComboBox&lt;Country&gt; cmbCountries;
+<i>74</i>&nbsp;
+<i>75</i>&nbsp;    /**
+<i>76</i>&nbsp;     * Initialize.
+<i>77</i>&nbsp;     *
+<i>78</i>&nbsp;     * @param location local
+<i>79</i>&nbsp;     * @param resources resources
+<i>80</i>&nbsp;     */
+<i>81</i>&nbsp;    @Override
+<i>82</i>&nbsp;    public void initialize(URL location, ResourceBundle resources) {
+<b class="nc"><i>83</i>&nbsp;        this.appController = new RegisterFreelancerController();</b>
+<b class="nc"><i>84</i>&nbsp;        this.cmbLevels.getSelectionModel().select(LevelOfExpertise.JUNIOR);</b>
+<b class="nc"><i>85</i>&nbsp;        this.cmbLevels.getItems().setAll(LevelOfExpertise.values());</b>
+<b class="nc"><i>86</i>&nbsp;        this.cmbCountries.getSelectionModel().select(Country.PT);</b>
+<b class="nc"><i>87</i>&nbsp;        this.cmbCountries.getItems().setAll(Country.values());</b>
+<b class="nc"><i>88</i>&nbsp;        this.initialLabel.setText(&quot; &quot; + this.cmbCountries.getValue().initialIBAN);</b>
+<b class="nc"><i>89</i>&nbsp;    }</b>
+<i>90</i>&nbsp;
+<i>91</i>&nbsp;    /**
+<i>92</i>&nbsp;     * Register Freelancer Action.
+<i>93</i>&nbsp;     */
+<i>94</i>&nbsp;    @FXML
+<i>95</i>&nbsp;    private void registerFreelancerAction() {
+<b class="nc"><i>96</i>&nbsp;        if (appController.newFreelancer(this.id.getText().trim(), this.name.getText().trim(), this.email.getText().trim(), this.nif.getText().trim(), this.iban.getText().trim(), this.address.getText().trim(), this.cmbCountries.getValue(), this.cmbLevels.getValue())) {</b>
+<b class="nc"><i>97</i>&nbsp;            if (showDataAndConfirmation()) {</b>
+<b class="nc"><i>98</i>&nbsp;                if (appController.registerFreelancer()) {</b>
+<b class="nc"><i>99</i>&nbsp;                    Alerts.createAlert(Alert.AlertType.INFORMATION, &quot;Success...&quot;, &quot;Successfully registered Freelancer!&quot;).show();</b>
+<i>100</i>&nbsp;                } else {
+<b class="nc"><i>101</i>&nbsp;                    Alerts.createAlert(Alert.AlertType.INFORMATION, &quot;Error...&quot;, &quot;Error registering the Freelancer!&quot;).show();</b>
+<i>102</i>&nbsp;                }
+<b class="nc"><i>103</i>&nbsp;                clearData();</b>
+<i>104</i>&nbsp;            }
+<i>105</i>&nbsp;        }
+<b class="nc"><i>106</i>&nbsp;    }</b>
+<i>107</i>&nbsp;
+<i>108</i>&nbsp;    /**
+<i>109</i>&nbsp;     * Show Data And Confirmation.
+<i>110</i>&nbsp;     *
+<i>111</i>&nbsp;     * @return the Option
+<i>112</i>&nbsp;     */
+<i>113</i>&nbsp;    private boolean showDataAndConfirmation() {
+<b class="nc"><i>114</i>&nbsp;        return Alerts.showDataAndConfirmation(appController.getFreelancerString());</b>
+<i>115</i>&nbsp;    }
+<i>116</i>&nbsp;
+<i>117</i>&nbsp;    /**
+<i>118</i>&nbsp;     * Back To Menu Action.
+<i>119</i>&nbsp;     *
+<i>120</i>&nbsp;     * @param event the Event
+<i>121</i>&nbsp;     */
+<i>122</i>&nbsp;    @FXML
+<i>123</i>&nbsp;    private void backToMenuAction(ActionEvent event) {
+<b class="nc"><i>124</i>&nbsp;        Alerts.back(event, &quot;Do you really want to go back to the Menu?&quot;);</b>
+<b class="nc"><i>125</i>&nbsp;    }</b>
+<i>126</i>&nbsp;
+<i>127</i>&nbsp;    /**
+<i>128</i>&nbsp;     * Clear data.
+<i>129</i>&nbsp;     */
+<i>130</i>&nbsp;    public void clearData() {
+<b class="nc"><i>131</i>&nbsp;        id.clear();</b>
+<b class="nc"><i>132</i>&nbsp;        name.clear();</b>
+<b class="nc"><i>133</i>&nbsp;        email.clear();</b>
+<b class="nc"><i>134</i>&nbsp;        nif.clear();</b>
+<b class="nc"><i>135</i>&nbsp;        iban.clear();</b>
+<b class="nc"><i>136</i>&nbsp;        address.clear();</b>
+<b class="nc"><i>137</i>&nbsp;        this.cmbLevels.getSelectionModel().select(LevelOfExpertise.JUNIOR);</b>
+<b class="nc"><i>138</i>&nbsp;        this.cmbCountries.getSelectionModel().select(Country.PT);</b>
+<b class="nc"><i>139</i>&nbsp;        this.initialLabel.setText(&quot; &quot; + this.cmbCountries.getValue().initialIBAN);</b>
+<b class="nc"><i>140</i>&nbsp;    }</b>
+<i>141</i>&nbsp;
+<i>142</i>&nbsp;    /**
+<i>143</i>&nbsp;     * Selection Change Committed.
+<i>144</i>&nbsp;     */
+<i>145</i>&nbsp;    @FXML
+<i>146</i>&nbsp;    private void cmbItems_SelectionChangeCommitted() {
+<b class="nc"><i>147</i>&nbsp;        this.initialLabel.setText(&quot; &quot; + this.cmbCountries.getValue().initialIBAN);</b>
+<b class="nc"><i>148</i>&nbsp;    }</b>
+<i>149</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

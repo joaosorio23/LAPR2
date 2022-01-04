@@ -1,0 +1,22 @@
+@startuml
+autonumber
+actor "Manager of the Organization" as MO
+
+activate MO
+MO -> ":System" : Starts to define the dates of the payments
+activate ":System"
+":System" --> MO : Requests the data necessary (day of the month and time of the day)
+deactivate ":System"
+
+MO -> ":System" : Enters the requested data
+activate ":System"
+":System" --> MO : Displays the data asking to confirm it
+deactivate ":System"
+
+MO -> ":System" : Confirms
+activate ":System"
+":System" --> MO : Success of the operation
+deactivate ":System"
+
+deactivate MO
+@enduml

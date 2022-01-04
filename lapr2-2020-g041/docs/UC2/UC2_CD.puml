@@ -1,0 +1,81 @@
+@startuml
+
+class RegisterFreelancerUI {
+
+}
+
+class RegisterFreelancerController {
+  +getLevelsOfExpertise()
+  +newFreelancer(id, name, email, NIF, IBAN, address, country, levelId)
+  +registerFreelancer()
+}
+
+class Platform {
+  -String designation
+  +RegisterFreelancer getFreelancersRegister()
+}
+
+class FreelancersRegister {
+  +Freelancer newFreelancer(id, name, email, NIF, IBAN, level, local)
+  +validateFreelancer(free)
+  +registerFreelancer(free)
+  +addFreelancer(free)
+}
+
+class Organization {
+  -String designation
+}
+
+class Collaborator {
+  -String name
+  -String email
+}
+
+class User {
+  -String name
+  -String email
+  -String password
+}
+
+class Freelancer {
+  -String id
+  -String name
+  -String email
+  -double NIF
+  -String IBAN
+  -double OverallPayments
+  +Location newLocation(address,country)
+  +Freelancer(id, name, email, NIF, IBAN, level, local)
+}
+
+enum LevelOfExpertise {
+   -JUNIOR
+   -SENIOR
+   +values()
+   +getLevelById()
+}
+
+class Location {
+  -String address
+  -String country
+  +Location(address,country)
+}
+
+RegisterFreelancerUI ..> RegisterFreelancerController
+RegisterFreelancerController ..> Platform
+RegisterFreelancerController ..> FreelancersRegister
+
+Platform "1" --> "*" Organization : has registered >
+Platform "1" --> "*" User : has registered >
+Platform "1" --> "1" FreelancersRegister
+
+FreelancersRegister "1" --> "*" Freelancer : has registered >
+
+Organization "1" --> "1..*" Collaborator: has >
+
+Collaborator "0..1" --> "1" User : act as >
+Collaborator "1" --> "*" Freelancer : registers >
+
+Freelancer "1" --> "1" LevelOfExpertise : has >
+Freelancer "1" --> "1" Location : has >
+@enduml

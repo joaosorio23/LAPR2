@@ -1,0 +1,45 @@
+@startuml
+
+usecase UC1 as "UC1 - Register Organization"
+usecase UC2 as "UC2 - Register Freelancer"
+usecase UC3 as "UC3 - Create Task"
+usecase UC4 as "UC4 - Create Payment Transactions"
+usecase UC5 as "UC5 - Set Payment Day"
+usecase UC6 as "UC6 - Make an Automatic Payment"
+usecase UC7 as "UC7 - Load Transactions File"
+usecase UC8 as "UC8 - Freelancers Performance Statistics"
+usecase UC9 as "UC9 - Task's Execution Time Statistics"
+usecase UC10 as "UC10 - Analyse Freelancers Payments"
+usecase UC11 as "UC11 - Notify delays to Freelancers (By email)"
+usecase UC12 as "UC12 - Send Email To Freelancers"
+
+actor "Administrator" as ADM
+actor "Manager of the Organization" as MO
+actor "Collaborator of the Organization" as CO
+actor "Timer" as TM
+
+note right of UC11
+This use case will be done automatically
+on the last day of every year.
+end note
+
+left to right direction
+ADM -->(UC1)
+ADM -->(UC8)
+ADM -->(UC12)
+
+MO -->(UC5)
+MO -->(UC9)
+MO -->(UC10)
+
+CO -->(UC2)
+CO -->(UC3)
+CO -->(UC4)
+CO -->(UC7)
+CO -->(UC9)
+CO -->(UC10)
+
+TM -->(UC6)
+TM -->(UC11)
+
+@enduml

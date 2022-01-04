@@ -1,0 +1,22 @@
+@startuml
+autonumber
+actor "Administrator" as ADM
+
+activate ADM
+ADM -> ":System" : Starts the registration of a Organization.
+activate ":System"
+":System" --> ADM : Asks for the necessary data about the organization (i.e. designation), about the Manager \n(i.e. name and email) and finally about the Collaborator (i.e. name and email)
+deactivate ":System"
+
+ADM -> ":System" : Enters the requested data.
+activate ":System"
+":System" --> ADM : Displays the data, asking him to confirm it
+deactivate ":System"
+
+ADM -> ":System" : Confirms
+activate ":System"
+":System" --> ADM : Informs the Administrator about the success of the operation
+deactivate ":System"
+
+deactivate ADM
+@enduml

@@ -1,0 +1,92 @@
+@startuml
+
+hide methods
+left to right direction
+
+class Platform {
+  -String designation
+}
+
+class Administrator {
+}
+
+class Organization {
+  -String designation
+}
+
+class User {
+  -String name
+  -String email
+  -String password
+}
+
+class Collaborator {
+  -String name
+  -String email
+}
+
+class Freelancer {
+  -String id
+  -String name
+  -String email
+  -Integer NIF
+  -String IBAN
+  -double overallPayment
+}
+
+enum LevelOfExpertise {
+   -JUNIOR
+   -SENIOR
+}
+
+class Location {
+  -String address
+  -String country
+}
+
+class PaymentTransaction {
+  -String id
+}
+
+class Task {
+  -String id
+  -String briefDescription
+  -Double timeDuration
+  -Double costPerHour
+  -String category
+}
+
+class TaskExecution{
+  -Date deadline
+  -Double delay
+  -String descQualityWork
+}
+
+
+
+Platform "1" -- "*" Organization : has registered >
+Platform "1" -- "*" Freelancer : has registered >
+Platform "1" -- "*" User : has registered >
+Platform "1" -- "*" Administrator : has registered >
+
+Administrator "0..1" -- "1" User : act as >
+Administrator "1" -- "*" Organization : registers >
+
+Organization "1" -- "1" Collaborator: has >
+Organization "1" -- "*" Task : has >
+Organization "1" -- "*" PaymentTransaction : has >
+
+Task"1" -- "1" TaskExecution : has >
+
+Collaborator "0..1" -- "1" User : act as >
+Collaborator "1" -- "*" Freelancer : registers >
+Collaborator "1" -- "*" PaymentTransaction : does >
+Collaborator "1" -- "*" Task : creates >
+
+PaymentTransaction "*" -- "1" Freelancer : to >
+PaymentTransaction "1" -- "1" Task : referent >
+
+Freelancer "1" -- "1" LevelOfExpertise : has >
+Freelancer "1" -- "1" Location : has >
+Freelancer "1" -- "*" Task : does >
+@enduml

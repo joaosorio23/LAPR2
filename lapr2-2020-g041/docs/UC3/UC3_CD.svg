@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1025px" preserveAspectRatio="none" style="width:709px;height:1025px;" version="1.1" viewBox="0 0 709 1025" width="709px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1rcnmmhohaczl" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0" />
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" />
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" />
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal" />
+        </filter>
+    </defs>
+    <g>
+        <!--class AplicacaoPOT-->
+        <rect fill="#FEFECE" filter="url(#f1rcnmmhohaczl)" height="75.6719" id="AplicacaoPOT" style="stroke: #A80036; stroke-width: 1.5;" width="116" x="6" y="254" />
+        <ellipse cx="24.15" cy="270" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M26.9156,265.875 Q27.0719,265.6563 27.2594,265.5469 Q27.4469,265.4375 27.6656,265.4375 Q28.0406,265.4375 28.275,265.6953 Q28.5094,265.9531 28.5094,266.5625 L28.5094,268.0156 Q28.5094,268.625 28.275,268.8906 Q28.0406,269.1563 27.6656,269.1563 Q27.3219,269.1563 27.1188,268.9531 Q26.9156,268.7656 26.8063,268.25 Q26.7594,267.8906 26.5719,267.7031 Q26.2438,267.3281 25.6344,267.1094 Q25.025,266.8906 24.4,266.8906 Q23.6344,266.8906 23.0016,267.2188 Q22.3688,267.5469 21.8766,268.2969 Q21.3844,269.0469 21.3844,270.0781 L21.3844,271.1719 Q21.3844,272.4063 22.275,273.2266 Q23.1656,274.0469 24.7594,274.0469 Q25.6969,274.0469 26.3531,273.7969 Q26.7438,273.6406 27.1656,273.2031 Q27.4313,272.9375 27.5797,272.8594 Q27.7281,272.7813 27.9313,272.7813 Q28.2594,272.7813 28.5172,273.0391 Q28.775,273.2969 28.775,273.6406 Q28.775,273.9844 28.4313,274.3906 Q27.9313,274.9688 27.1344,275.2969 Q26.0563,275.75 24.7594,275.75 Q23.2438,275.75 22.0406,275.125 Q21.0563,274.625 20.3688,273.5547 Q19.6813,272.4844 19.6813,271.2031 L19.6813,270.0469 Q19.6813,268.7188 20.2984,267.5703 Q20.9156,266.4219 22.0094,265.8047 Q23.1031,265.1875 24.3375,265.1875 Q25.0719,265.1875 25.7203,265.3516 Q26.3688,265.5156 26.9156,265.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="77" x="38.85" y="274.9102">AplicacaoPOT</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="121" y1="286" y2="286" />
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="121" y1="294" y2="294" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="12" y="309.4189">+static getInstance()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="12" y="323.2549">+getCurrentSession()</text>
+        <!--class UserSession-->
+        <rect fill="#FEFECE" filter="url(#f1rcnmmhohaczl)" height="61.8359" id="UserSession" style="stroke: #A80036; stroke-width: 1.5;" width="105" x="157.5" y="261" />
+        <ellipse cx="172.5" cy="277" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M175.2656,272.875 Q175.4219,272.6563 175.6094,272.5469 Q175.7969,272.4375 176.0156,272.4375 Q176.3906,272.4375 176.625,272.6953 Q176.8594,272.9531 176.8594,273.5625 L176.8594,275.0156 Q176.8594,275.625 176.625,275.8906 Q176.3906,276.1563 176.0156,276.1563 Q175.6719,276.1563 175.4688,275.9531 Q175.2656,275.7656 175.1563,275.25 Q175.1094,274.8906 174.9219,274.7031 Q174.5938,274.3281 173.9844,274.1094 Q173.375,273.8906 172.75,273.8906 Q171.9844,273.8906 171.3516,274.2188 Q170.7188,274.5469 170.2266,275.2969 Q169.7344,276.0469 169.7344,277.0781 L169.7344,278.1719 Q169.7344,279.4063 170.625,280.2266 Q171.5156,281.0469 173.1094,281.0469 Q174.0469,281.0469 174.7031,280.7969 Q175.0938,280.6406 175.5156,280.2031 Q175.7813,279.9375 175.9297,279.8594 Q176.0781,279.7813 176.2813,279.7813 Q176.6094,279.7813 176.8672,280.0391 Q177.125,280.2969 177.125,280.6406 Q177.125,280.9844 176.7813,281.3906 Q176.2813,281.9688 175.4844,282.2969 Q174.4063,282.75 173.1094,282.75 Q171.5938,282.75 170.3906,282.125 Q169.4063,281.625 168.7188,280.5547 Q168.0313,279.4844 168.0313,278.2031 L168.0313,277.0469 Q168.0313,275.7188 168.6484,274.5703 Q169.2656,273.4219 170.3594,272.8047 Q171.4531,272.1875 172.6875,272.1875 Q173.4219,272.1875 174.0703,272.3516 Q174.7188,272.5156 175.2656,272.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="73" x="186.5" y="281.9102">UserSession</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="158.5" x2="261.5" y1="293" y2="293" />
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="158.5" x2="261.5" y1="301" y2="301" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="76" x="163.5" y="316.4189">+getUserEmail()</text>
+        <!--class Task-->
+        <rect fill="#FEFECE" filter="url(#f1rcnmmhohaczl)" height="131.0156" id="Task" style="stroke: #A80036; stroke-width: 1.5;" width="168" x="380" y="883" />
+        <ellipse cx="446.25" cy="899" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M449.0156,894.875 Q449.1719,894.6563 449.3594,894.5469 Q449.5469,894.4375 449.7656,894.4375 Q450.1406,894.4375 450.375,894.6953 Q450.6094,894.9531 450.6094,895.5625 L450.6094,897.0156 Q450.6094,897.625 450.375,897.8906 Q450.1406,898.1563 449.7656,898.1563 Q449.4219,898.1563 449.2188,897.9531 Q449.0156,897.7656 448.9063,897.25 Q448.8594,896.8906 448.6719,896.7031 Q448.3438,896.3281 447.7344,896.1094 Q447.125,895.8906 446.5,895.8906 Q445.7344,895.8906 445.1016,896.2188 Q444.4688,896.5469 443.9766,897.2969 Q443.4844,898.0469 443.4844,899.0781 L443.4844,900.1719 Q443.4844,901.4063 444.375,902.2266 Q445.2656,903.0469 446.8594,903.0469 Q447.7969,903.0469 448.4531,902.7969 Q448.8438,902.6406 449.2656,902.2031 Q449.5313,901.9375 449.6797,901.8594 Q449.8281,901.7813 450.0313,901.7813 Q450.3594,901.7813 450.6172,902.0391 Q450.875,902.2969 450.875,902.6406 Q450.875,902.9844 450.5313,903.3906 Q450.0313,903.9688 449.2344,904.2969 Q448.1563,904.75 446.8594,904.75 Q445.3438,904.75 444.1406,904.125 Q443.1563,903.625 442.4688,902.5547 Q441.7813,901.4844 441.7813,900.2031 L441.7813,899.0469 Q441.7813,897.7188 442.3984,896.5703 Q443.0156,895.4219 444.1094,894.8047 Q445.2031,894.1875 446.4375,894.1875 Q447.1719,894.1875 447.8203,894.3516 Q448.4688,894.5156 449.0156,894.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27" x="466.75" y="903.9102">Task</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="381" x2="547" y1="915" y2="915" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="386" y="930.4189">-String id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111" x="386" y="944.2549">-String briefDescription</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="386" y="958.0908">-Double timeDuration</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="100" x="386" y="971.9268">-Double costPerHour</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78" x="386" y="985.7627">-String category</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="381" x2="547" y1="992.1797" y2="992.1797" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="156" x="386" y="1007.5986">+Task(id,desc,duration,cost,cat)</text>
+        <!--class Organization-->
+        <rect fill="#FEFECE" filter="url(#f1rcnmmhohaczl)" height="75.6719" id="Organization" style="stroke: #A80036; stroke-width: 1.5;" width="136" x="457" y="548" />
+        <ellipse cx="487.75" cy="564" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M490.5156,559.875 Q490.6719,559.6563 490.8594,559.5469 Q491.0469,559.4375 491.2656,559.4375 Q491.6406,559.4375 491.875,559.6953 Q492.1094,559.9531 492.1094,560.5625 L492.1094,562.0156 Q492.1094,562.625 491.875,562.8906 Q491.6406,563.1563 491.2656,563.1563 Q490.9219,563.1563 490.7188,562.9531 Q490.5156,562.7656 490.4063,562.25 Q490.3594,561.8906 490.1719,561.7031 Q489.8438,561.3281 489.2344,561.1094 Q488.625,560.8906 488,560.8906 Q487.2344,560.8906 486.6016,561.2188 Q485.9688,561.5469 485.4766,562.2969 Q484.9844,563.0469 484.9844,564.0781 L484.9844,565.1719 Q484.9844,566.4063 485.875,567.2266 Q486.7656,568.0469 488.3594,568.0469 Q489.2969,568.0469 489.9531,567.7969 Q490.3438,567.6406 490.7656,567.2031 Q491.0313,566.9375 491.1797,566.8594 Q491.3281,566.7813 491.5313,566.7813 Q491.8594,566.7813 492.1172,567.0391 Q492.375,567.2969 492.375,567.6406 Q492.375,567.9844 492.0313,568.3906 Q491.5313,568.9688 490.7344,569.2969 Q489.6563,569.75 488.3594,569.75 Q486.8438,569.75 485.6406,569.125 Q484.6563,568.625 483.9688,567.5547 Q483.2813,566.4844 483.2813,565.2031 L483.2813,564.0469 Q483.2813,562.7188 483.8984,561.5703 Q484.5156,560.4219 485.6094,559.8047 Q486.7031,559.1875 487.9375,559.1875 Q488.6719,559.1875 489.3203,559.3516 Q489.9688,559.5156 490.5156,559.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="69" x="505.25" y="568.9102">Organization</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="458" x2="592" y1="580" y2="580" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="463" y="595.4189">-String designation</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="458" x2="592" y1="601.8359" y2="601.8359" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="124" x="463" y="617.2549">+TasksList getTasksList()</text>
+        <!--class TasksList-->
+        <rect fill="#FEFECE" filter="url(#f1rcnmmhohaczl)" height="103.3438" id="TasksList" style="stroke: #A80036; stroke-width: 1.5;" width="190" x="369" y="702" />
+        <ellipse cx="432.75" cy="718" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M435.5156,713.875 Q435.6719,713.6563 435.8594,713.5469 Q436.0469,713.4375 436.2656,713.4375 Q436.6406,713.4375 436.875,713.6953 Q437.1094,713.9531 437.1094,714.5625 L437.1094,716.0156 Q437.1094,716.625 436.875,716.8906 Q436.6406,717.1563 436.2656,717.1563 Q435.9219,717.1563 435.7188,716.9531 Q435.5156,716.7656 435.4063,716.25 Q435.3594,715.8906 435.1719,715.7031 Q434.8438,715.3281 434.2344,715.1094 Q433.625,714.8906 433,714.8906 Q432.2344,714.8906 431.6016,715.2188 Q430.9688,715.5469 430.4766,716.2969 Q429.9844,717.0469 429.9844,718.0781 L429.9844,719.1719 Q429.9844,720.4063 430.875,721.2266 Q431.7656,722.0469 433.3594,722.0469 Q434.2969,722.0469 434.9531,721.7969 Q435.3438,721.6406 435.7656,721.2031 Q436.0313,720.9375 436.1797,720.8594 Q436.3281,720.7813 436.5313,720.7813 Q436.8594,720.7813 437.1172,721.0391 Q437.375,721.2969 437.375,721.6406 Q437.375,721.9844 437.0313,722.3906 Q436.5313,722.9688 435.7344,723.2969 Q434.6563,723.75 433.3594,723.75 Q431.8438,723.75 430.6406,723.125 Q429.6563,722.625 428.9688,721.5547 Q428.2813,720.4844 428.2813,719.2031 L428.2813,718.0469 Q428.2813,716.7188 428.8984,715.5703 Q429.5156,714.4219 430.6094,713.8047 Q431.7031,713.1875 432.9375,713.1875 Q433.6719,713.1875 434.3203,713.3516 Q434.9688,713.5156 435.5156,713.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="54" x="453.25" y="722.9102">TasksList</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="370" x2="558" y1="734" y2="734" />
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="370" x2="558" y1="742" y2="742" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="375" y="757.4189">+newTask(id,desc,duration,cost,cat)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="375" y="771.2549">+registerTask(task)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="73" x="375" y="785.0908">-addTask(task)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="375" y="798.9268">-validateTask(task)</text>
+        <!--class Platform-->
+        <rect fill="#FEFECE" filter="url(#f1rcnmmhohaczl)" height="75.6719" id="Platform" style="stroke: #A80036; stroke-width: 1.5;" width="258" x="440" y="254" />
+        <ellipse cx="541.75" cy="270" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M544.5156,265.875 Q544.6719,265.6563 544.8594,265.5469 Q545.0469,265.4375 545.2656,265.4375 Q545.6406,265.4375 545.875,265.6953 Q546.1094,265.9531 546.1094,266.5625 L546.1094,268.0156 Q546.1094,268.625 545.875,268.8906 Q545.6406,269.1563 545.2656,269.1563 Q544.9219,269.1563 544.7188,268.9531 Q544.5156,268.7656 544.4063,268.25 Q544.3594,267.8906 544.1719,267.7031 Q543.8438,267.3281 543.2344,267.1094 Q542.625,266.8906 542,266.8906 Q541.2344,266.8906 540.6016,267.2188 Q539.9688,267.5469 539.4766,268.2969 Q538.9844,269.0469 538.9844,270.0781 L538.9844,271.1719 Q538.9844,272.4063 539.875,273.2266 Q540.7656,274.0469 542.3594,274.0469 Q543.2969,274.0469 543.9531,273.7969 Q544.3438,273.6406 544.7656,273.2031 Q545.0313,272.9375 545.1797,272.8594 Q545.3281,272.7813 545.5313,272.7813 Q545.8594,272.7813 546.1172,273.0391 Q546.375,273.2969 546.375,273.6406 Q546.375,273.9844 546.0313,274.3906 Q545.5313,274.9688 544.7344,275.2969 Q543.6563,275.75 542.3594,275.75 Q540.8438,275.75 539.6406,275.125 Q538.6563,274.625 537.9688,273.5547 Q537.2813,272.4844 537.2813,271.2031 L537.2813,270.0469 Q537.2813,268.7188 537.8984,267.5703 Q538.5156,266.4219 539.6094,265.8047 Q540.7031,265.1875 541.9375,265.1875 Q542.6719,265.1875 543.3203,265.3516 Q543.9688,265.5156 544.5156,265.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="46" x="562.25" y="274.9102">Platform</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="441" x2="697" y1="286" y2="286" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="446" y="301.4189">-String designation</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="441" x2="697" y1="307.8359" y2="307.8359" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="246" x="446" y="323.2549">+RegisterOrganizations getOrganizationsRegister()</text>
+        <!--class OrganizationsRegister-->
+        <rect fill="#FEFECE" filter="url(#f1rcnmmhohaczl)" height="61.8359" id="OrganizationsRegister" style="stroke: #A80036; stroke-width: 1.5;" width="186" x="449" y="408" />
+        <ellipse cx="477.95" cy="424" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M480.7156,419.875 Q480.8719,419.6563 481.0594,419.5469 Q481.2469,419.4375 481.4656,419.4375 Q481.8406,419.4375 482.075,419.6953 Q482.3094,419.9531 482.3094,420.5625 L482.3094,422.0156 Q482.3094,422.625 482.075,422.8906 Q481.8406,423.1563 481.4656,423.1563 Q481.1219,423.1563 480.9188,422.9531 Q480.7156,422.7656 480.6063,422.25 Q480.5594,421.8906 480.3719,421.7031 Q480.0438,421.3281 479.4344,421.1094 Q478.825,420.8906 478.2,420.8906 Q477.4344,420.8906 476.8016,421.2188 Q476.1688,421.5469 475.6766,422.2969 Q475.1844,423.0469 475.1844,424.0781 L475.1844,425.1719 Q475.1844,426.4063 476.075,427.2266 Q476.9656,428.0469 478.5594,428.0469 Q479.4969,428.0469 480.1531,427.7969 Q480.5438,427.6406 480.9656,427.2031 Q481.2313,426.9375 481.3797,426.8594 Q481.5281,426.7813 481.7313,426.7813 Q482.0594,426.7813 482.3172,427.0391 Q482.575,427.2969 482.575,427.6406 Q482.575,427.9844 482.2313,428.3906 Q481.7313,428.9688 480.9344,429.2969 Q479.8563,429.75 478.5594,429.75 Q477.0438,429.75 475.8406,429.125 Q474.8563,428.625 474.1688,427.5547 Q473.4813,426.4844 473.4813,425.2031 L473.4813,424.0469 Q473.4813,422.7188 474.0984,421.5703 Q474.7156,420.4219 475.8094,419.8047 Q476.9031,419.1875 478.1375,419.1875 Q478.8719,419.1875 479.5203,419.3516 Q480.1688,419.5156 480.7156,419.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="123" x="495.05" y="428.9102">OrganizationsRegister</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="450" x2="634" y1="440" y2="440" />
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="450" x2="634" y1="448" y2="448" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174" x="455" y="463.4189">+getOrganizationByUserEmail(email)</text>
+        <!--class CreateTaskController-->
+        <rect fill="#FEFECE" filter="url(#f1rcnmmhohaczl)" height="75.6719" id="CreateTaskController" style="stroke: #A80036; stroke-width: 1.5;" width="190" x="221" y="117" />
+        <ellipse cx="254" cy="133" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M256.7656,128.875 Q256.9219,128.6563 257.1094,128.5469 Q257.2969,128.4375 257.5156,128.4375 Q257.8906,128.4375 258.125,128.6953 Q258.3594,128.9531 258.3594,129.5625 L258.3594,131.0156 Q258.3594,131.625 258.125,131.8906 Q257.8906,132.1563 257.5156,132.1563 Q257.1719,132.1563 256.9688,131.9531 Q256.7656,131.7656 256.6563,131.25 Q256.6094,130.8906 256.4219,130.7031 Q256.0938,130.3281 255.4844,130.1094 Q254.875,129.8906 254.25,129.8906 Q253.4844,129.8906 252.8516,130.2188 Q252.2188,130.5469 251.7266,131.2969 Q251.2344,132.0469 251.2344,133.0781 L251.2344,134.1719 Q251.2344,135.4063 252.125,136.2266 Q253.0156,137.0469 254.6094,137.0469 Q255.5469,137.0469 256.2031,136.7969 Q256.5938,136.6406 257.0156,136.2031 Q257.2813,135.9375 257.4297,135.8594 Q257.5781,135.7813 257.7813,135.7813 Q258.1094,135.7813 258.3672,136.0391 Q258.625,136.2969 258.625,136.6406 Q258.625,136.9844 258.2813,137.3906 Q257.7813,137.9688 256.9844,138.2969 Q255.9063,138.75 254.6094,138.75 Q253.0938,138.75 251.8906,138.125 Q250.9063,137.625 250.2188,136.5547 Q249.5313,135.4844 249.5313,134.2031 L249.5313,133.0469 Q249.5313,131.7188 250.1484,130.5703 Q250.7656,129.4219 251.8594,128.8047 Q252.9531,128.1875 254.1875,128.1875 Q254.9219,128.1875 255.5703,128.3516 Q256.2188,128.5156 256.7656,128.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="118" x="272" y="137.9102">CreateTaskController</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="222" x2="410" y1="149" y2="149" />
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="222" x2="410" y1="157" y2="157" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="227" y="172.4189">+newTask(id,desc,duration,cost,cat)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="227" y="186.2549">+registerTask()</text>
+        <!--class CreateTaskUI-->
+        <rect fill="#FEFECE" filter="url(#f1rcnmmhohaczl)" height="48" id="CreateTaskUI" style="stroke: #A80036; stroke-width: 1.5;" width="108" x="262" y="8" />
+        <ellipse cx="277" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M279.7656,19.875 Q279.9219,19.6563 280.1094,19.5469 Q280.2969,19.4375 280.5156,19.4375 Q280.8906,19.4375 281.125,19.6953 Q281.3594,19.9531 281.3594,20.5625 L281.3594,22.0156 Q281.3594,22.625 281.125,22.8906 Q280.8906,23.1563 280.5156,23.1563 Q280.1719,23.1563 279.9688,22.9531 Q279.7656,22.7656 279.6563,22.25 Q279.6094,21.8906 279.4219,21.7031 Q279.0938,21.3281 278.4844,21.1094 Q277.875,20.8906 277.25,20.8906 Q276.4844,20.8906 275.8516,21.2188 Q275.2188,21.5469 274.7266,22.2969 Q274.2344,23.0469 274.2344,24.0781 L274.2344,25.1719 Q274.2344,26.4063 275.125,27.2266 Q276.0156,28.0469 277.6094,28.0469 Q278.5469,28.0469 279.2031,27.7969 Q279.5938,27.6406 280.0156,27.2031 Q280.2813,26.9375 280.4297,26.8594 Q280.5781,26.7813 280.7813,26.7813 Q281.1094,26.7813 281.3672,27.0391 Q281.625,27.2969 281.625,27.6406 Q281.625,27.9844 281.2813,28.3906 Q280.7813,28.9688 279.9844,29.2969 Q278.9063,29.75 277.6094,29.75 Q276.0938,29.75 274.8906,29.125 Q273.9063,28.625 273.2188,27.5547 Q272.5313,26.4844 272.5313,25.2031 L272.5313,24.0469 Q272.5313,22.7188 273.1484,21.5703 Q273.7656,20.4219 274.8594,19.8047 Q275.9531,19.1875 277.1875,19.1875 Q277.9219,19.1875 278.5703,19.3516 Q279.2188,19.5156 279.7656,19.875 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="76" x="291" y="28.9102">CreateTaskUI</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="263" x2="369" y1="40" y2="40" />
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="263" x2="369" y1="48" y2="48" />
+        <!--class Collaborator-->
+        <rect fill="#FEFECE" filter="url(#f1rcnmmhohaczl)" height="75.6719" id="Collaborator" style="stroke: #A80036; stroke-width: 1.5;" width="100" x="594" y="715.5" />
+        <ellipse cx="609" cy="731.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;" />
+        <path d="M611.7656,727.375 Q611.9219,727.1563 612.1094,727.0469 Q612.2969,726.9375 612.5156,726.9375 Q612.8906,726.9375 613.125,727.1953 Q613.3594,727.4531 613.3594,728.0625 L613.3594,729.5156 Q613.3594,730.125 613.125,730.3906 Q612.8906,730.6563 612.5156,730.6563 Q612.1719,730.6563 611.9688,730.4531 Q611.7656,730.2656 611.6563,729.75 Q611.6094,729.3906 611.4219,729.2031 Q611.0938,728.8281 610.4844,728.6094 Q609.875,728.3906 609.25,728.3906 Q608.4844,728.3906 607.8516,728.7188 Q607.2188,729.0469 606.7266,729.7969 Q606.2344,730.5469 606.2344,731.5781 L606.2344,732.6719 Q606.2344,733.9063 607.125,734.7266 Q608.0156,735.5469 609.6094,735.5469 Q610.5469,735.5469 611.2031,735.2969 Q611.5938,735.1406 612.0156,734.7031 Q612.2813,734.4375 612.4297,734.3594 Q612.5781,734.2813 612.7813,734.2813 Q613.1094,734.2813 613.3672,734.5391 Q613.625,734.7969 613.625,735.1406 Q613.625,735.4844 613.2813,735.8906 Q612.7813,736.4688 611.9844,736.7969 Q610.9063,737.25 609.6094,737.25 Q608.0938,737.25 606.8906,736.625 Q605.9063,736.125 605.2188,735.0547 Q604.5313,733.9844 604.5313,732.7031 L604.5313,731.5469 Q604.5313,730.2188 605.1484,729.0703 Q605.7656,727.9219 606.8594,727.3047 Q607.9531,726.6875 609.1875,726.6875 Q609.9219,726.6875 610.5703,726.8516 Q611.2188,727.0156 611.7656,727.375 Z " /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="68" x="623" y="736.4102">Collaborator</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="595" x2="693" y1="747.5" y2="747.5" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="600" y="762.9189">-String name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="600" y="776.7549">-String email</text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="595" x2="693" y1="783.1719" y2="783.1719" />
+        <!--link CreateTaskUI to CreateTaskController-->
+        <path d="M316,56.044 C316,71.713 316,92.908 316,111.575 " fill="none" id="CreateTaskUI-CreateTaskController" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="316,116.767,320,107.767,316,111.767,312,107.767,316,116.767" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link CreateTaskController to Platform-->
+        <path d="M385.468,193.068 C419.348,211.146 460.131,232.908 494.639,251.321 " fill="none" id="CreateTaskController-Platform" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="499.248,253.781,493.1913,246.0147,494.8369,251.4269,489.4247,253.0725,499.248,253.781" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link CreateTaskController to Task-->
+        <path d="M316,193.246 C316,220.356 316,257.953 316,291 C316,291 316,291 316,754.5 C316,802.37 345.025,845.691 377.368,879.105 " fill="none" id="CreateTaskController-Task" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="380.915,882.718,377.4632,873.4939,377.4117,879.1505,371.7551,879.0991,380.915,882.718" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link CreateTaskController to Organization-->
+        <path d="M330.601,193.15 C334.362,202.848 338.371,213.301 342,223 C382.888,332.289 373.472,368.48 431,470 C446.02,496.506 467.197,523.04 485.65,543.931 " fill="none" id="CreateTaskController-Organization" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="489.061,547.765,486.0682,538.3819,485.7379,544.0291,480.0907,543.6988,489.061,547.765" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link CreateTaskController to AplicacaoPOT-->
+        <path d="M246.807,193.068 C209.435,213.088 163.631,237.626 127.221,257.132 " fill="none" id="CreateTaskController-AplicacaoPOT" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="122.375,259.727,132.1971,259.0021,126.7822,257.3655,128.4188,251.9506,122.375,259.727" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link CreateTaskController to UserSession-->
+        <path d="M286.754,193.247 C271.258,212.982 252.346,237.069 237.172,256.394 " fill="none" id="CreateTaskController-UserSession" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" />
+        <polygon fill="#A80036" points="233.797,260.693,242.5016,256.0853,236.8852,256.7607,236.2098,251.1443,233.797,260.693" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--link Platform to OrganizationsRegister-->
+        <path d="M562.047,330.341 C557.91,352.559 552.69,380.588 548.615,402.477 " fill="none" id="Platform-OrganizationsRegister" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="547.658,407.617,553.2385,399.5017,548.5737,402.7016,545.3738,398.0367,547.658,407.617" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="558" y="374.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="553.3811" y="351.2759">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="541.1031" y="397.0425">1</text>
+        <!--link OrganizationsRegister to Organization-->
+        <path d="M538.478,470.044 C536.018,491.021 532.701,519.318 529.972,542.588 " fill="none" id="OrganizationsRegister-Organization" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="529.364,547.777,534.3832,539.3031,529.9453,542.8109,526.4375,538.373,529.364,547.777" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="536" y="514.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="530.0955" y="491.2767">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="524.696" y="537.0992">*</text>
+        <!--link Organization to TasksList-->
+        <path d="M503.68,624.227 C498.756,633.741 493.841,644.088 490,654 C484.735,667.586 480.166,682.628 476.39,696.783 " fill="none" id="Organization-TasksList" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="475.035,701.953,481.1857,694.2609,476.3024,697.1163,473.447,692.233,475.035,701.953" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="491" y="668.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="492.7243" y="645.1437">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="469.0946" y="691.0749">1</text>
+        <!--link Organization to Collaborator-->
+        <path d="M551.706,624.141 C571.304,651.398 597.806,688.255 617.383,715.483 " fill="none" id="Organization-Collaborator" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="586" y="668.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="548.4045" y="645.044">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="604.8302" y="704.5564">1</text>
+        <!--link TasksList to Task-->
+        <path d="M464,805.208 C464,827.418 464,853.839 464,877.851 " fill="none" id="TasksList-Task" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="464,882.936,468,873.936,464,877.936,460,873.936,464,882.936" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="465" y="849.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="456.5297" y="826.7269">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="458.7109" y="871.9447">*</text>
+        <!--link Collaborator to Task-->
+        <path d="M609.294,791.712 C585.287,817.454 552.709,852.385 524.485,882.647 " fill="none" id="Collaborator-Task" style="stroke: #A80036; stroke-width: 1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="43" x="566" y="849.4951">creates</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="596.2049" y="812.6263">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="525.8271" y="872.0828">*</text>
+        <!--
+@startuml
+skinparam classAttributeIconSize 0
+
+class AplicacaoPOT
+{
+  +static getInstance()
+  +getCurrentSession()
+}
+
+class UserSession
+{
+  +getUserEmail()
+}
+
+class Task {
+  -String id
+  -String briefDescription
+  -Double timeDuration
+  -Double costPerHour
+  -String category
+  +Task(id,desc,duration,cost,cat)
+}
+
+class Organization {
+  -String designation
+  +TasksList getTasksList()
+}
+
+class TasksList {
+  +newTask(id,desc,duration,cost,cat)
+  +registerTask(task)
+  -addTask(task)
+  -validateTask(task)
+}
+
+class Platform {
+  -String designation
+  +RegisterOrganizations getOrganizationsRegister()
+}
+
+class OrganizationsRegister {
+  +getOrganizationByUserEmail(email)
+}
+
+class CreateTaskController {
+  +newTask(id,desc,duration,cost,cat)
+  +registerTask()
+}
+
+class CreateTaskUI {
+
+}
+
+class Collaborator {
+  -String name
+  -String email
+}
+
+CreateTaskUI ..> CreateTaskController
+CreateTaskController ..> Platform
+CreateTaskController ..> Task
+CreateTaskController ..> Organization
+CreateTaskController ..> AplicacaoPOT
+CreateTaskController ..> UserSession
+
+Platform "1" - -> "1" OrganizationsRegister : has
+
+OrganizationsRegister "1" - -> "*" Organization : has
+
+Organization "1" - -> "1" TasksList : has
+Organization "1" - - "1" Collaborator: has
+
+TasksList "1" - -> "*" Task : has
+
+Collaborator "1" - - "*" Task : creates
+
+
+@enduml
+
+PlantUML version 1.2018.14(Fri Dec 21 16:33:16 GMT 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) Client VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+-->
+    </g>
+</svg>

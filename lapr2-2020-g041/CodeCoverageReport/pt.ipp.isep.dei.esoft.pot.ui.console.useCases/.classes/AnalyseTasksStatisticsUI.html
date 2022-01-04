@@ -1,0 +1,225 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: AnalyseTasksStatisticsUI</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.ui.console.useCases</a> ]
+</div>
+
+<h1>Coverage Summary for Class: AnalyseTasksStatisticsUI (pt.ipp.isep.dei.esoft.pot.ui.console.useCases)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">AnalyseTasksStatisticsUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 45)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;/*
+<i>2</i>&nbsp; * To change this license header, choose License Headers in Project Properties.
+<i>3</i>&nbsp; * To change this template file, choose Tools | Templates
+<i>4</i>&nbsp; * and open the template in the editor.
+<i>5</i>&nbsp; */
+<i>6</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.ui.console.useCases;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;import java.net.URL;
+<i>9</i>&nbsp;import java.util.ArrayList;
+<i>10</i>&nbsp;import java.util.List;
+<i>11</i>&nbsp;import java.util.ResourceBundle;
+<i>12</i>&nbsp;import javafx.event.ActionEvent;
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;import javafx.fxml.FXML;
+<i>15</i>&nbsp;import javafx.fxml.Initializable;
+<i>16</i>&nbsp;import javafx.scene.chart.BarChart;
+<i>17</i>&nbsp;import javafx.scene.chart.XYChart;
+<i>18</i>&nbsp;import javafx.scene.control.ComboBox;
+<i>19</i>&nbsp;import javafx.scene.control.Label;
+<i>20</i>&nbsp;import javafx.scene.control.ListView;
+<i>21</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.useCases.AnalyseTasksStatisticsController;
+<i>22</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.Alerts;
+<i>23</i>&nbsp;
+<i>24</i>&nbsp;/**
+<i>25</i>&nbsp; * The type Analyse tasks statistics ui.
+<i>26</i>&nbsp; *
+<i>27</i>&nbsp; * @author Admin
+<i>28</i>&nbsp; */
+<b class="nc"><i>29</i>&nbsp;public class AnalyseTasksStatisticsUI implements Initializable {</b>
+<i>30</i>&nbsp;
+<i>31</i>&nbsp;    @FXML
+<i>32</i>&nbsp;    private BarChart&lt;?, ?&gt; Histogram;
+<i>33</i>&nbsp;
+<i>34</i>&nbsp;    @FXML
+<i>35</i>&nbsp;    private ListView&lt;String&gt; lstViewStats;
+<i>36</i>&nbsp;
+<i>37</i>&nbsp;    @FXML
+<i>38</i>&nbsp;    private Label totalLabel;
+<i>39</i>&nbsp;
+<i>40</i>&nbsp;    @FXML
+<i>41</i>&nbsp;    private ComboBox&lt;String&gt; comboBox;
+<i>42</i>&nbsp;
+<i>43</i>&nbsp;    private AnalyseTasksStatisticsController appController;
+<i>44</i>&nbsp;
+<i>45</i>&nbsp;    @Override
+<i>46</i>&nbsp;    public void initialize(URL location, ResourceBundle resources) {
+<b class="nc"><i>47</i>&nbsp;        appController = new AnalyseTasksStatisticsController();</b>
+<i>48</i>&nbsp;
+<b class="nc"><i>49</i>&nbsp;        HistogramOfAllFreelancers();</b>
+<i>50</i>&nbsp;
+<b class="nc"><i>51</i>&nbsp;        List&lt;String&gt; FreeIds = new ArrayList&lt;&gt;();</b>
+<b class="nc"><i>52</i>&nbsp;        FreeIds.add(&quot;All&quot;);</b>
+<b class="nc"><i>53</i>&nbsp;        for (int i = 0; i &lt; appController.getLstFree().size(); i++) {</b>
+<b class="nc"><i>54</i>&nbsp;            FreeIds.add(appController.getLstFree().get(i).getId());</b>
+<i>55</i>&nbsp;        }
+<b class="nc"><i>56</i>&nbsp;        comboBox.getSelectionModel().select(FreeIds.get(0));</b>
+<b class="nc"><i>57</i>&nbsp;        comboBox.getItems().setAll(FreeIds);</b>
+<i>58</i>&nbsp;
+<b class="nc"><i>59</i>&nbsp;        totalLabel.setText(appController.getFreeList().get(appController.getFreeList().size() - 1));</b>
+<b class="nc"><i>60</i>&nbsp;        if (appController.getFreeList().size() != 1) {</b>
+<i>61</i>&nbsp;
+<b class="nc"><i>62</i>&nbsp;            appController.getFreeList().remove(appController.getFreeList().size() - 1);</b>
+<b class="nc"><i>63</i>&nbsp;            lstViewStats.getItems().addAll(appController.getFreeList());</b>
+<i>64</i>&nbsp;        }
+<b class="nc"><i>65</i>&nbsp;    }</b>
+<i>66</i>&nbsp;
+<i>67</i>&nbsp;    /**
+<i>68</i>&nbsp;     * Combo box action.
+<i>69</i>&nbsp;     *
+<i>70</i>&nbsp;     * @param event the event
+<i>71</i>&nbsp;     */
+<i>72</i>&nbsp;    @FXML
+<i>73</i>&nbsp;    public void comboBoxAction(ActionEvent event) {
+<b class="nc"><i>74</i>&nbsp;        Histogram.getData().clear();</b>
+<b class="nc"><i>75</i>&nbsp;        String selected = comboBox.getSelectionModel().getSelectedItem();</b>
+<b class="nc"><i>76</i>&nbsp;        if (selected.equals(&quot;All&quot;)) {</b>
+<b class="nc"><i>77</i>&nbsp;            HistogramOfAllFreelancers();</b>
+<i>78</i>&nbsp;        } else {
+<i>79</i>&nbsp;
+<b class="nc"><i>80</i>&nbsp;            XYChart.Series set = new XYChart.Series&lt;&gt;();</b>
+<i>81</i>&nbsp;
+<b class="nc"><i>82</i>&nbsp;            set.getData().add(new XYChart.Data((String.format(&quot;]-?, %.2f]&quot;, appController.getDelaysFree(selected).get(3))), appController.getDelaysFree(selected).get(0)));</b>
+<b class="nc"><i>83</i>&nbsp;            set.getData().add(new XYChart.Data((String.format(&quot;]%.2f, %.2f[&quot;, appController.getDelaysFree(selected).get(3), appController.getDelaysFree(selected).get(4))), appController.getDelaysFree(selected).get(1)));</b>
+<b class="nc"><i>84</i>&nbsp;            set.getData().add(new XYChart.Data((String.format(&quot;[%.2f, +?[&quot;, appController.getDelaysFree(selected).get(4))), appController.getDelaysFree(selected).get(2)));</b>
+<b class="nc"><i>85</i>&nbsp;            set.setName(&quot;Delays&quot;);</b>
+<i>86</i>&nbsp;
+<b class="nc"><i>87</i>&nbsp;            Histogram.getData().addAll(set);</b>
+<i>88</i>&nbsp;        }
+<b class="nc"><i>89</i>&nbsp;    }</b>
+<i>90</i>&nbsp;
+<i>91</i>&nbsp;    /**
+<i>92</i>&nbsp;     * Sort by name action.
+<i>93</i>&nbsp;     *
+<i>94</i>&nbsp;     * @param event the event
+<i>95</i>&nbsp;     */
+<i>96</i>&nbsp;    @FXML
+<i>97</i>&nbsp;    public void sortByNameAction(ActionEvent event) {
+<b class="nc"><i>98</i>&nbsp;        lstViewStats.getItems().clear();</b>
+<b class="nc"><i>99</i>&nbsp;        ArrayList&lt;Double&gt; test = appController.getListStats();</b>
+<b class="nc"><i>100</i>&nbsp;        if (appController.getFreeList().size() != 1) {</b>
+<b class="nc"><i>101</i>&nbsp;            appController.getFreeList().remove(appController.getFreeList().size() - 1);</b>
+<b class="nc"><i>102</i>&nbsp;            lstViewStats.getItems().addAll(appController.getFreeList());</b>
+<i>103</i>&nbsp;        }
+<b class="nc"><i>104</i>&nbsp;    }</b>
+<i>105</i>&nbsp;
+<i>106</i>&nbsp;    /**
+<i>107</i>&nbsp;     * Sort by payments action.
+<i>108</i>&nbsp;     *
+<i>109</i>&nbsp;     * @param event the event
+<i>110</i>&nbsp;     */
+<i>111</i>&nbsp;    @FXML
+<i>112</i>&nbsp;    public void sortByPaymentsAction(ActionEvent event) {
+<b class="nc"><i>113</i>&nbsp;        lstViewStats.getItems().clear();</b>
+<b class="nc"><i>114</i>&nbsp;        lstViewStats.getItems().addAll(appController.getFreeSortedByPayment());</b>
+<b class="nc"><i>115</i>&nbsp;        lstViewStats.getItems().remove(lstViewStats.getItems().size() - 1);</b>
+<b class="nc"><i>116</i>&nbsp;        lstViewStats.getItems().remove(lstViewStats.getItems().size() - 1);</b>
+<b class="nc"><i>117</i>&nbsp;    }</b>
+<i>118</i>&nbsp;
+<i>119</i>&nbsp;    /**
+<i>120</i>&nbsp;     * Histogram of all freelancers.
+<i>121</i>&nbsp;     */
+<i>122</i>&nbsp;    public void HistogramOfAllFreelancers() {
+<b class="nc"><i>123</i>&nbsp;        XYChart.Series set = new XYChart.Series&lt;&gt;();</b>
+<i>124</i>&nbsp;
+<b class="nc"><i>125</i>&nbsp;        set.getData().add(new XYChart.Data(String.format(&quot;]-?, %.2f]&quot;, appController.getListStats().get(3)), appController.getListStats().get(0)));</b>
+<b class="nc"><i>126</i>&nbsp;        set.getData().add(new XYChart.Data(String.format(&quot;]%.2f, %.2f[&quot;, appController.getListStats().get(3), appController.getListStats().get(4)), appController.getListStats().get(1)));</b>
+<b class="nc"><i>127</i>&nbsp;        set.getData().add(new XYChart.Data(String.format(&quot;[%.2f, +?[&quot;, appController.getListStats().get(4)), appController.getListStats().get(2)));</b>
+<i>128</i>&nbsp;
+<b class="nc"><i>129</i>&nbsp;        set.setName(&quot;Delays&quot;);</b>
+<i>130</i>&nbsp;
+<b class="nc"><i>131</i>&nbsp;        Histogram.getData().addAll(set);</b>
+<b class="nc"><i>132</i>&nbsp;    }</b>
+<i>133</i>&nbsp;
+<i>134</i>&nbsp;    /**
+<i>135</i>&nbsp;     * Back to menu action.
+<i>136</i>&nbsp;     *
+<i>137</i>&nbsp;     * @param actionEvent the action event
+<i>138</i>&nbsp;     */
+<i>139</i>&nbsp;    public void BackToMenuAction(ActionEvent actionEvent) {
+<b class="nc"><i>140</i>&nbsp;        Alerts.back(actionEvent, &quot;Do you really want to go back to the Menu?&quot;);</b>
+<b class="nc"><i>141</i>&nbsp;    }</b>
+<i>142</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: AnalyseFreelancerPaymentsUI</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.ui.console.useCases</a> ]
+</div>
+
+<h1>Coverage Summary for Class: AnalyseFreelancerPaymentsUI (pt.ipp.isep.dei.esoft.pot.ui.console.useCases)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">AnalyseFreelancerPaymentsUI</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 12)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;/*
+<i>2</i>&nbsp; * To change this license header, choose License Headers in Project Properties.
+<i>3</i>&nbsp; * To change this template file, choose Tools | Templates
+<i>4</i>&nbsp; * and open the template in the editor.
+<i>5</i>&nbsp; */
+<i>6</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.ui.console.useCases;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;import java.net.URL;
+<i>9</i>&nbsp;import java.util.ResourceBundle;
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;import javafx.event.ActionEvent;
+<i>12</i>&nbsp;import javafx.fxml.FXML;
+<i>13</i>&nbsp;import javafx.fxml.Initializable;
+<i>14</i>&nbsp;import javafx.scene.control.ListView;
+<i>15</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.controller.useCases.AnalyseFreelancerPaymentsController;
+<i>16</i>&nbsp;import pt.ipp.isep.dei.esoft.pot.model.Alerts;
+<i>17</i>&nbsp;
+<i>18</i>&nbsp;/**
+<i>19</i>&nbsp; * The type Analyse freelancer payments ui.
+<i>20</i>&nbsp; *
+<i>21</i>&nbsp; * @author Admin
+<i>22</i>&nbsp; */
+<b class="nc"><i>23</i>&nbsp;public class AnalyseFreelancerPaymentsUI implements Initializable {</b>
+<i>24</i>&nbsp;
+<i>25</i>&nbsp;    @FXML
+<i>26</i>&nbsp;    private ListView&lt;String&gt; lstViewFreePayments;
+<i>27</i>&nbsp;
+<i>28</i>&nbsp;    private AnalyseFreelancerPaymentsController appController;
+<i>29</i>&nbsp;
+<i>30</i>&nbsp;    @Override
+<i>31</i>&nbsp;    public void initialize(URL location, ResourceBundle resources) {
+<b class="nc"><i>32</i>&nbsp;        appController = new AnalyseFreelancerPaymentsController();</b>
+<i>33</i>&nbsp;
+<b class="nc"><i>34</i>&nbsp;        lstViewFreePayments.getItems().addAll(appController.getListStats());</b>
+<i>35</i>&nbsp;
+<b class="nc"><i>36</i>&nbsp;    }</b>
+<i>37</i>&nbsp;
+<i>38</i>&nbsp;    /**
+<i>39</i>&nbsp;     * Sort by name action.
+<i>40</i>&nbsp;     *
+<i>41</i>&nbsp;     * @param actionEvent the action event
+<i>42</i>&nbsp;     */
+<i>43</i>&nbsp;    @FXML
+<i>44</i>&nbsp;    public void sortByNameAction(ActionEvent actionEvent) {
+<b class="nc"><i>45</i>&nbsp;        lstViewFreePayments.getItems().clear();</b>
+<b class="nc"><i>46</i>&nbsp;        lstViewFreePayments.getItems().addAll(appController.getListStats());</b>
+<b class="nc"><i>47</i>&nbsp;    }</b>
+<i>48</i>&nbsp;
+<i>49</i>&nbsp;    /**
+<i>50</i>&nbsp;     * Sort by payments action.
+<i>51</i>&nbsp;     *
+<i>52</i>&nbsp;     * @param actionEvent the action event
+<i>53</i>&nbsp;     */
+<i>54</i>&nbsp;    @FXML
+<i>55</i>&nbsp;    public void sortByPaymentsAction(ActionEvent actionEvent) {
+<b class="nc"><i>56</i>&nbsp;        lstViewFreePayments.getItems().clear();</b>
+<b class="nc"><i>57</i>&nbsp;        lstViewFreePayments.getItems().addAll(appController.getFreeSortedByPayment());</b>
+<b class="nc"><i>58</i>&nbsp;    }</b>
+<i>59</i>&nbsp;
+<i>60</i>&nbsp;    /**
+<i>61</i>&nbsp;     * Back to menu action.
+<i>62</i>&nbsp;     *
+<i>63</i>&nbsp;     * @param actionEvent the action event
+<i>64</i>&nbsp;     */
+<i>65</i>&nbsp;    public void BackToMenuAction(ActionEvent actionEvent) {
+<b class="nc"><i>66</i>&nbsp;        Alerts.back(actionEvent, &quot;Do you really want to go back to the Menu?&quot;);</b>
+<b class="nc"><i>67</i>&nbsp;    }</b>
+<i>68</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

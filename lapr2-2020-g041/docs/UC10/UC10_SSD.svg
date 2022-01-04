@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="256px" preserveAspectRatio="none" style="width:461px;height:256px;" version="1.1" viewBox="0 0 461 256" width="461px" zoomAndPan="magnify"><defs><filter height="300%" id="f1eemp3ikalkvt" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1eemp3ikalkvt)" height="52.7031" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="75" y="97.6094"/><rect fill="#FFFFFF" filter="url(#f1eemp3ikalkvt)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="415" y="119.9609"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="80" x2="80" y1="87.6094" y2="168.3125"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="420" x2="420" y1="87.6094" y2="168.3125"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="138" x="8" y="84.5332">Manager/Collaborator</text><ellipse cx="80" cy="13" fill="#FEFECE" filter="url(#f1eemp3ikalkvt)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M80,21 L80,48 M67,29 L93,29 M80,48 L67,63 M80,48 L93,63 " fill="none" filter="url(#f1eemp3ikalkvt)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="138" x="8" y="181.8457">Manager/Collaborator</text><ellipse cx="80" cy="194.9219" fill="#FEFECE" filter="url(#f1eemp3ikalkvt)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M80,202.9219 L80,229.9219 M67,210.9219 L93,210.9219 M80,229.9219 L67,244.9219 M80,229.9219 L93,244.9219 " fill="none" filter="url(#f1eemp3ikalkvt)" style="stroke: #A80036; stroke-width: 2.0;"/><rect fill="#FEFECE" filter="url(#f1eemp3ikalkvt)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="64" x="386" y="51"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="393" y="72.5332">:System</text><rect fill="#FEFECE" filter="url(#f1eemp3ikalkvt)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="64" x="386" y="167.3125"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="393" y="188.8457">:System</text><rect fill="#FFFFFF" filter="url(#f1eemp3ikalkvt)" height="52.7031" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="75" y="97.6094"/><rect fill="#FFFFFF" filter="url(#f1eemp3ikalkvt)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="415" y="119.9609"/><polygon fill="#A80036" points="403,115.9609,413,119.9609,403,123.9609,407,119.9609" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="85" x2="409" y1="119.9609" y2="119.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="92" y="115.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="298" x="103" y="115.1045">starts the process of Analyse Freelancer Payments</text><polygon fill="#A80036" points="91,146.3125,81,150.3125,91,154.3125,87,150.3125" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="85" x2="419" y1="150.3125" y2="150.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="97" y="145.4561">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="295" x="108" y="145.4561">shows the statistics related to freelancer payments</text><!--
+@startuml
+autonumber
+actor "Manager/Collaborator" as MC
+
+activate MC
+MC -> ":System" : starts the process of Analyse Freelancer Payments
+activate ":System"
+":System" - -> MC : shows the statistics related to freelancer payments
+deactivate ":System"
+
+
+
+deactivate MC
+@enduml
+
+PlantUML version 1.2018.14(Fri Dec 21 16:33:16 GMT 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

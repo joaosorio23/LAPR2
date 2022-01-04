@@ -1,0 +1,55 @@
+@startuml
+
+hide methods
+left to right direction
+
+class Platform {
+  -String designation
+}
+
+class Organization {
+  -String designation
+}
+
+class Collaborator {
+  -String name
+  -String email
+}
+
+class User {
+  -String name
+  -String email
+  -String password
+}
+
+class Freelancer {
+  -String id
+  -String name
+  -String email
+  -double NIF
+  -String IBAN
+  -double OverallPayments
+}
+
+enum LevelOfExpertise {
+   -JUNIOR
+   -SENIOR
+}
+
+class Location {
+  -String address
+  -String country
+}
+
+Platform "1" -- "*" Organization : has registered >
+Platform "1" -- "*" Freelancer : has registered >
+Platform "1" -- "*" User : has registered >
+
+Organization "1" -- "1..*" Collaborator: has >
+
+Collaborator "0..1" -- "1" User : act as >
+Collaborator "1" -- "*" Freelancer : registers >
+
+Freelancer "1" -- "1" LevelOfExpertise : has >
+Freelancer "1" -- "1" Location : has >
+@enduml

@@ -1,0 +1,78 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class AplicacaoPOT
+{
+  +static getInstance()
+  +getCurrentSession()
+}
+
+class UserSession
+{
+  +getUserEmail()
+}
+
+class Task {
+  -String id
+  -String briefDescription
+  -Double timeDuration
+  -Double costPerHour
+  -String category
+  +Task(id,desc,duration,cost,cat)
+}
+
+class Organization {
+  -String designation
+  +TasksList getTasksList()
+}
+
+class TasksList {
+  +newTask(id,desc,duration,cost,cat)
+  +registerTask(task)
+  -addTask(task)
+  -validateTask(task)
+}
+
+class Platform {
+  -String designation
+  +RegisterOrganizations getOrganizationsRegister()
+}
+
+class OrganizationsRegister {
+  +getOrganizationByUserEmail(email)
+}
+
+class CreateTaskController {
+  +newTask(id,desc,duration,cost,cat)
+  +registerTask()
+}
+
+class CreateTaskUI {
+
+}
+
+class Collaborator {
+  -String name
+  -String email
+}
+
+CreateTaskUI ..> CreateTaskController
+CreateTaskController ..> Platform
+CreateTaskController ..> Task
+CreateTaskController ..> Organization
+CreateTaskController ..> AplicacaoPOT
+CreateTaskController ..> UserSession
+
+Platform "1" --> "1" OrganizationsRegister : has
+
+OrganizationsRegister "1" --> "*" Organization : has
+
+Organization "1" --> "1" TasksList : has
+Organization "1" -- "1" Collaborator: has
+
+TasksList "1" --> "*" Task : has
+
+Collaborator "1" -- "*" Task : creates
+
+
+@enduml

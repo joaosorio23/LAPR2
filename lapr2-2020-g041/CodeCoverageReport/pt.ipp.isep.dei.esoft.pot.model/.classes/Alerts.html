@@ -1,0 +1,178 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Alerts</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.pot.model</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Alerts (pt.ipp.isep.dei.esoft.pot.model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Alerts</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 27)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.pot.model;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import javafx.event.ActionEvent;
+<i>4</i>&nbsp;import javafx.scene.Node;
+<i>5</i>&nbsp;import javafx.scene.control.Alert;
+<i>6</i>&nbsp;import javafx.scene.control.Button;
+<i>7</i>&nbsp;import javafx.scene.control.ButtonType;
+<i>8</i>&nbsp;import javafx.scene.image.Image;
+<i>9</i>&nbsp;import javafx.stage.Stage;
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;/**
+<i>12</i>&nbsp; * The type Alerts.
+<i>13</i>&nbsp; *
+<i>14</i>&nbsp; * @author Berkelios
+<i>15</i>&nbsp; */
+<b class="nc"><i>16</i>&nbsp;public class Alerts {</b>
+<i>17</i>&nbsp;
+<i>18</i>&nbsp;    /**
+<i>19</i>&nbsp;     * Create Alert.
+<i>20</i>&nbsp;     *
+<i>21</i>&nbsp;     * @param typeAlert the Alert&#39;s Type
+<i>22</i>&nbsp;     * @param header the Header
+<i>23</i>&nbsp;     * @param message the Message
+<i>24</i>&nbsp;     * @return the Alert
+<i>25</i>&nbsp;     */
+<i>26</i>&nbsp;    public static Alert createAlert(Alert.AlertType typeAlert, String header, String message) {
+<i>27</i>&nbsp;
+<b class="nc"><i>28</i>&nbsp;        javafx.scene.control.Alert alert = new javafx.scene.control.Alert(typeAlert);</b>
+<i>29</i>&nbsp;
+<b class="nc"><i>30</i>&nbsp;        alert.setTitle(&quot;T4J&quot;);</b>
+<b class="nc"><i>31</i>&nbsp;        alert.setHeaderText(header);</b>
+<b class="nc"><i>32</i>&nbsp;        alert.setContentText(message);</b>
+<b class="nc"><i>33</i>&nbsp;        Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();</b>
+<b class="nc"><i>34</i>&nbsp;        stage.getIcons().add(new Image(Constants.ICON_ISEP));</b>
+<i>35</i>&nbsp;
+<b class="nc"><i>36</i>&nbsp;        return alert;</b>
+<i>37</i>&nbsp;    }
+<i>38</i>&nbsp;
+<i>39</i>&nbsp;    /**
+<i>40</i>&nbsp;     * Back Alert.
+<i>41</i>&nbsp;     *
+<i>42</i>&nbsp;     * @param event the Event
+<i>43</i>&nbsp;     * @param message the Message
+<i>44</i>&nbsp;     */
+<i>45</i>&nbsp;    public static void back(ActionEvent event, String message) {
+<b class="nc"><i>46</i>&nbsp;        Alert alerta = Alerts.createAlert(Alert.AlertType.CONFIRMATION, &quot;Action confirmation.&quot;, message);</b>
+<i>47</i>&nbsp;
+<b class="nc"><i>48</i>&nbsp;        ((Button) alerta.getDialogPane().lookupButton(ButtonType.OK)).setText(&quot;YES&quot;);</b>
+<b class="nc"><i>49</i>&nbsp;        ((Button) alerta.getDialogPane().lookupButton(ButtonType.CANCEL)).setText(&quot;NO&quot;);</b>
+<i>50</i>&nbsp;
+<b class="nc"><i>51</i>&nbsp;        if (alerta.showAndWait().get() == ButtonType.CANCEL) {</b>
+<b class="nc"><i>52</i>&nbsp;            event.consume();</b>
+<i>53</i>&nbsp;        } else {
+<b class="nc"><i>54</i>&nbsp;            ((Node) event.getSource()).getScene().getWindow().hide();</b>
+<i>55</i>&nbsp;
+<i>56</i>&nbsp;        }
+<b class="nc"><i>57</i>&nbsp;    }</b>
+<i>58</i>&nbsp;
+<i>59</i>&nbsp;    /**
+<i>60</i>&nbsp;     * Show Data and Confirmation.
+<i>61</i>&nbsp;     *
+<i>62</i>&nbsp;     * @param message the Message
+<i>63</i>&nbsp;     * @return boolean boolean
+<i>64</i>&nbsp;     */
+<i>65</i>&nbsp;    public static boolean showDataAndConfirmation(String message) {
+<b class="nc"><i>66</i>&nbsp;        Alert alerts = Alerts.createAlert(Alert.AlertType.CONFIRMATION, &quot;Confirmation of data...&quot;, message);</b>
+<i>67</i>&nbsp;
+<b class="nc"><i>68</i>&nbsp;        ((Button) alerts.getDialogPane().lookupButton(ButtonType.OK)).setText(&quot;YES&quot;);</b>
+<b class="nc"><i>69</i>&nbsp;        ((Button) alerts.getDialogPane().lookupButton(ButtonType.CANCEL)).setText(&quot;NO&quot;);</b>
+<i>70</i>&nbsp;
+<b class="nc"><i>71</i>&nbsp;        return alerts.showAndWait().get() == ButtonType.OK;</b>
+<i>72</i>&nbsp;    }
+<i>73</i>&nbsp;
+<i>74</i>&nbsp;    /**
+<i>75</i>&nbsp;     * BackTF.
+<i>76</i>&nbsp;     *
+<i>77</i>&nbsp;     * @param event the Event
+<i>78</i>&nbsp;     * @param message the Message
+<i>79</i>&nbsp;     * @return boolean boolean
+<i>80</i>&nbsp;     */
+<i>81</i>&nbsp;    public static boolean backTF(ActionEvent event, String message) {
+<b class="nc"><i>82</i>&nbsp;        Alert alerta = Alerts.createAlert(Alert.AlertType.CONFIRMATION, &quot;Action confirmation.&quot;, message);</b>
+<i>83</i>&nbsp;
+<b class="nc"><i>84</i>&nbsp;        ((Button) alerta.getDialogPane().lookupButton(ButtonType.OK)).setText(&quot;YES&quot;);</b>
+<b class="nc"><i>85</i>&nbsp;        ((Button) alerta.getDialogPane().lookupButton(ButtonType.CANCEL)).setText(&quot;NO&quot;);</b>
+<i>86</i>&nbsp;
+<b class="nc"><i>87</i>&nbsp;        if (alerta.showAndWait().get() == ButtonType.CANCEL) {</b>
+<b class="nc"><i>88</i>&nbsp;            event.consume();</b>
+<b class="nc"><i>89</i>&nbsp;            return false;</b>
+<i>90</i>&nbsp;        } else {
+<b class="nc"><i>91</i>&nbsp;            ((Node) event.getSource()).getScene().getWindow().hide();</b>
+<b class="nc"><i>92</i>&nbsp;            return true;</b>
+<i>93</i>&nbsp;        }
+<i>94</i>&nbsp;    }
+<i>95</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

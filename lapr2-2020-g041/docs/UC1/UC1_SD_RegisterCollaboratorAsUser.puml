@@ -1,0 +1,46 @@
+@startuml
+title UC1_SD_RegisterCollaboratorAsUser
+autonumber
+
+participant "or:OrganizationsRegister" as ORGS
+participant "collab:Collaborator" as COLLA
+participant ":Platform" as PLAT
+participant "alg:ExternalPasswordGeneratorAlgorithm" as ALG << interface >>
+participant "aut:FacadeAuthorization" as AUT
+
+note over of ALG
+It is an instance of any class
+that implements this interface.
+end note
+
+ORGS -> ORGS: registerCollaboratorAsUser(collab)
+activate ORGS
+
+ORGS -> COLLA: nameC = getName()
+activate COLLA
+deactivate COLLA
+ORGS -> COLLA: emailC = getEmail()
+activate COLLA
+deactivate COLLA
+
+ORGS -> PLAT : alg=getExternalPasswordGeneratorAlgorithm()
+activate PLAT
+deactivate PLAT
+
+ORGS -> ALG: pwd = genaratePassword(nomeC, emailC)
+activate ALG
+deactivate ALG
+
+ORGS -> PLAT : aut = getFacadeAuthorization()
+activate PLAT
+deactivate PLAT
+
+ORGS -> AUT: registersUserWithRole(nameC,emailC,pwd,["COLLABORATOR"])
+activate AUT
+deactivate AUT
+
+
+ORGS -> ORGS: sendEmail(String EmailSender, String EmailReceiver, String Subject, String message)
+
+deactivate ORGS
+@enduml

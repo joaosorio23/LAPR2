@@ -1,0 +1,140 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Platform {
+  -String designation
+  +schedulePayment()
+  +getInterval()
+  +getOrganizationsRegister()
+  +getBankTransferAlgorithm
+  +getExternalEmailSenderAlgorithm()
+  +getUploadPaymentsFile()
+}
+class MakeAutomaticPaymentTask {
+create()
++run()
++makeAutomaticPayment()
+}
+
+class OrganizationsRegister{
++getOrganizationsList()
+}
+
+abstract Timer{
+create()
++schedule(payment, interval)
+}
+
+class Organization {
+  -String designation
+  +getPaymentsToMake()
+}
+
+class User {
+  -String name
+  -String email
+  -String password
+}
+
+
+class Manager {
+  -String name
+  -String email
+}
+
+class Freelancer {
+  -String id
+    -String name
+    -String email
+    -Integer NIF
+    -Integer IBAN
+    -Integer anualDelay
+    -Integer amountOfDelays
+    -Integer amountOfTasks
+    -double overallPayment
+    +getIBAN()
+    +getName()
+    +getEmail()
+    +setOverallPayment(value)
+    +getOverallPayment()
+}
+
+
+enum LevelOfExpertise {
+   -JUNIOR
+   -SENIOR
+}
+
+class Location {
+  -String address
+  -String country
+}
+
+class PaymentTransaction {
+  -String id
+  -Double value
+  -Date dateOfPayment
+  +getTask()
+  +getFreelancer()
+  +getValue()
+}
+
+class Task {
+  -String id
+  -String briefDescription
+  -Double timeDuration
+  -Double costPerHour
+  -String category
+}
+
+class TaskExecution{
+  -Date deadline
+  -Double delay
+  -String descQualityWork
+}
+
+interface ExternalEmailSenderAlgorithm {
++sendEmail(nameF,emailF,value,overall)
+}
+
+interface BankTransferAlgorithm{
+sendBankTransfer(IBANF,value)
+}
+
+
+
+Platform "1" -- "*" Freelancer : has registered >
+Platform "1" -- "*" User : has registered >
+Platform "1" -- "1" ExternalEmailSenderAlgorithm : resort to >
+Platform "1" -- "1" BankTransferAlgorithm :resort to >
+Platform "1" -- "1" OrganizationsRegister : has >
+Platform "1" -- "1" MakeAutomaticPaymentTask: has >
+
+Organization "1" -- "1" Manager: has >
+Organization "1" -- "*" Task : has >
+Organization "1" -- "*" PaymentTransaction : has >
+
+ExternalEmailSenderAlgorithm "1" -- "*" Freelancer : sends email to >
+
+BankTransferAlgorithm "1" -- "1" Freelancer : makes transfer to >
+
+MakeAutomaticPaymentTask"1" -- "*" Timer : resort to >
+MakeAutomaticPaymentTask"1" -- "*" PaymentTransaction : does >
+
+Timer"*" ..> "1"Platform :  prompts >
+
+Manager "0..1" -- "1" User : act as >
+Manager "1" -- "*" PaymentTransaction : defines >
+
+PaymentTransaction "*" -- "1" Freelancer : to >
+PaymentTransaction "1" -- "1" Task : referent >
+
+OrganizationsRegister "1" -- "*" Organization : has registered >
+
+Task"1" -- "1" TaskExecution : has >
+
+Freelancer "1" -- "1" LevelOfExpertise : has >
+Freelancer "1" -- "1" Location : has >
+Freelancer "1" -- "*" Task : does >
+
+@enduml

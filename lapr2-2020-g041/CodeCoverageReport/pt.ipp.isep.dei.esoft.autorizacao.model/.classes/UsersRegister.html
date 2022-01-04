@@ -1,0 +1,155 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: UsersRegister</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pt.ipp.isep.dei.esoft.autorizacao.model</a> ]
+</div>
+
+<h1>Coverage Summary for Class: UsersRegister (pt.ipp.isep.dei.esoft.autorizacao.model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">UsersRegister</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (12/ 15)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package pt.ipp.isep.dei.esoft.autorizacao.model;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.io.Serializable;
+<i>4</i>&nbsp;import java.util.HashSet;
+<i>5</i>&nbsp;import java.util.Set;
+<i>6</i>&nbsp;
+<i>7</i>&nbsp;/**
+<i>8</i>&nbsp; * The type Users Register.
+<i>9</i>&nbsp; *
+<i>10</i>&nbsp; * @author paulomaio
+<i>11</i>&nbsp; */
+<b class="fc"><i>12</i>&nbsp;public class UsersRegister implements Serializable {</b>
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;    /**
+<i>15</i>&nbsp;     * The Users List.
+<i>16</i>&nbsp;     */
+<b class="fc"><i>17</i>&nbsp;    private Set&lt;User&gt; m_lstUsers = new HashSet&lt;User&gt;();</b>
+<i>18</i>&nbsp;
+<i>19</i>&nbsp;    /**
+<i>20</i>&nbsp;     * New User.
+<i>21</i>&nbsp;     *
+<i>22</i>&nbsp;     * @param strName the Name
+<i>23</i>&nbsp;     * @param strEmail the Email
+<i>24</i>&nbsp;     * @param strPassword the Password
+<i>25</i>&nbsp;     * @return the User
+<i>26</i>&nbsp;     */
+<i>27</i>&nbsp;    public User newUser(String strName, String strEmail, String strPassword) {
+<b class="fc"><i>28</i>&nbsp;        return new User(strName, strEmail, strPassword);</b>
+<i>29</i>&nbsp;    }
+<i>30</i>&nbsp;
+<i>31</i>&nbsp;    /**
+<i>32</i>&nbsp;     * Add User.
+<i>33</i>&nbsp;     *
+<i>34</i>&nbsp;     * @param user the User
+<i>35</i>&nbsp;     * @return boolean boolean
+<i>36</i>&nbsp;     */
+<i>37</i>&nbsp;    public boolean addUser(User user) {
+<b class="fc"><i>38</i>&nbsp;        if (user != null) {</b>
+<b class="fc"><i>39</i>&nbsp;            return this.m_lstUsers.add(user);</b>
+<i>40</i>&nbsp;        }
+<b class="nc"><i>41</i>&nbsp;        return false;</b>
+<i>42</i>&nbsp;    }
+<i>43</i>&nbsp;
+<i>44</i>&nbsp;    /**
+<i>45</i>&nbsp;     * Find User.
+<i>46</i>&nbsp;     *
+<i>47</i>&nbsp;     * @param strId the ID
+<i>48</i>&nbsp;     * @return the User
+<i>49</i>&nbsp;     */
+<i>50</i>&nbsp;    public User findUser(String strId) {
+<b class="fc"><i>51</i>&nbsp;        for (User user : this.m_lstUsers) {</b>
+<b class="fc"><i>52</i>&nbsp;            if (user.hasId(strId)) {</b>
+<b class="nc"><i>53</i>&nbsp;                return user;</b>
+<i>54</i>&nbsp;            }
+<b class="fc"><i>55</i>&nbsp;        }</b>
+<b class="fc"><i>56</i>&nbsp;        return null;</b>
+<i>57</i>&nbsp;    }
+<i>58</i>&nbsp;
+<i>59</i>&nbsp;    /**
+<i>60</i>&nbsp;     * Has User.
+<i>61</i>&nbsp;     *
+<i>62</i>&nbsp;     * @param strId the ID
+<i>63</i>&nbsp;     * @return boolean boolean
+<i>64</i>&nbsp;     */
+<i>65</i>&nbsp;    public boolean hasUser(String strId) {
+<b class="fc"><i>66</i>&nbsp;        User user = findUser(strId);</b>
+<b class="fc"><i>67</i>&nbsp;        if (user != null) {</b>
+<b class="nc"><i>68</i>&nbsp;            return this.m_lstUsers.contains(user);</b>
+<i>69</i>&nbsp;        }
+<b class="fc"><i>70</i>&nbsp;        return false;</b>
+<i>71</i>&nbsp;    }
+<i>72</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-14 19:56</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="289px" preserveAspectRatio="none" style="width:680px;height:289px;" version="1.1" viewBox="0 0 680 289" width="680px" zoomAndPan="magnify"><defs><filter height="300%" id="f198ek3wnrd3hf" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f198ek3wnrd3hf)" height="85.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="47.5" y="97.6094"/><rect fill="#FFFFFF" filter="url(#f198ek3wnrd3hf)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="634.5" y="152.6641"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="52" x2="52" y1="87.6094" y2="201.0156"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="639.5" x2="639.5" y1="87.6094" y2="201.0156"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="83" x="8" y="84.5332">Administrator</text><ellipse cx="52.5" cy="13" fill="#FEFECE" filter="url(#f198ek3wnrd3hf)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M52.5,21 L52.5,48 M39.5,29 L65.5,29 M52.5,48 L39.5,63 M52.5,48 L65.5,63 " fill="none" filter="url(#f198ek3wnrd3hf)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="83" x="8" y="214.5488">Administrator</text><ellipse cx="52.5" cy="227.625" fill="#FEFECE" filter="url(#f198ek3wnrd3hf)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M52.5,235.625 L52.5,262.625 M39.5,243.625 L65.5,243.625 M52.5,262.625 L39.5,277.625 M52.5,262.625 L65.5,277.625 " fill="none" filter="url(#f198ek3wnrd3hf)" style="stroke: #A80036; stroke-width: 2.0;"/><rect fill="#FEFECE" filter="url(#f198ek3wnrd3hf)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="64" x="605.5" y="51"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="612.5" y="72.5332">:System</text><rect fill="#FEFECE" filter="url(#f198ek3wnrd3hf)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="64" x="605.5" y="200.0156"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="612.5" y="221.5488">:System</text><rect fill="#FFFFFF" filter="url(#f198ek3wnrd3hf)" height="85.4063" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="47.5" y="97.6094"/><rect fill="#FFFFFF" filter="url(#f198ek3wnrd3hf)" height="30.3516" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="634.5" y="152.6641"/><polygon fill="#A80036" points="622.5,148.6641,632.5,152.6641,622.5,156.6641,626.5,152.6641" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="57.5" x2="628.5" y1="152.6641" y2="152.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="64.5" y="131.4561">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="543" x="75.5" y="115.1045">starts the process of sending the email to all the freelancers who have a mean task delay time</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="483" x="79.5" y="131.4561">(during the current year) that is higher than 3 hours and have a percentage of delays</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="432" x="79.5" y="147.8076">(during the current year) that is higher than the overall percentage of delays</text><polygon fill="#A80036" points="63.5,179.0156,53.5,183.0156,63.5,187.0156,59.5,183.0156" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="57.5" x2="638.5" y1="183.0156" y2="183.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="7" x="69.5" y="178.1592">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="347" x="80.5" y="178.1592">informs the administrator about the success of the operation</text><!--
+@startuml
+autonumber
+actor "Administrator" as ADM
+
+activate ADM
+
+ADM -> ":System" : starts the process of sending the email to all the freelancers who have a mean task delay time \n (during the current year) that is higher than 3 hours and have a percentage of delays\n (during the current year) that is higher than the overall percentage of delays
+activate ":System"
+":System" - -> ADM : informs the administrator about the success of the operation
+deactivate ":System"
+
+
+
+deactivate ADM
+
+
+
+
+@enduml
+
+PlantUML version 1.2018.14(Fri Dec 21 16:33:16 GMT 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>
